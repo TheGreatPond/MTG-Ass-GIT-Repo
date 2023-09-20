@@ -43,7 +43,7 @@ MonoBehaviour:
     width: 2542
     height: 1331
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_MinSize: {x: 630, y: 601}
   m_MaxSize: {x: 4000, y: 4021}
   vertical: 0
-  controlID: 193
+  controlID: 2757
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 61
+  controlID: 182
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 85
+  controlID: 226
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 160
+  controlID: 129
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -591,7 +591,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fef5ffff18f6ffffbcf6ffffc6f6ffffcef6ffffd8f6ffffe2f6fffff0f6fffff8f6ffff06f7ffff16f7ffff24f8ffff
+      m_ExpandedIDs: d0e9ffffeae9fffff0e9fffff8e9ffff00eaffff0aeaffff14eaffff22eaffff2aeaffff38eaffff48eaffffeaeaffff14ecffff2eecffffd2ecffffdaecffffe2ecffffececfffff6ecffff04edffff0cedffff1aedffff2aedffff98eeffffdef2ffffcaf3ffff98faffff6efbffff6240000084400000a2400000ae4000003e4500006045000092450000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -692,13 +692,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\Unity
     Project
@@ -706,9 +706,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ce450000
-    m_LastClickedID: 17870
-    m_ExpandedIDs: 00000000ce450000d0450000d2450000d4450000d6450000d8450000da450000dc450000de450000e045000000ca9a3b
+    m_SelectedIDs: 38400000
+    m_LastClickedID: 16440
+    m_ExpandedIDs: 000000001440000016400000184000001a4000001c4000001e4000002040000022400000244000002640000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -736,7 +736,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ce450000d0450000d2450000d4450000d6450000d8450000da450000dc450000de450000e0450000
+    m_ExpandedIDs: 000000001440000016400000184000001a4000001c4000001e40000020400000224000002440000026400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -763,7 +763,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 32630000be4f0000b64f0000164a000000000000705b00004c4800001a4f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
       y: 21
       width: 1198
       height: 644
-    m_Scale: {x: 0.86588544, y: 0.86588544}
+    m_Scale: {x: 0.8385417, y: 0.8385417}
     m_Translation: {x: 599, y: 322}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -870,12 +870,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -691.7774
-      y: -371.8737
-      width: 1383.5548
-      height: 743.7474
+      x: -714.3354
+      y: -384
+      width: 1428.6708
+      height: 768
     m_MinimalGUI: 1
-  m_defaultScale: 0.86588544
+  m_defaultScale: 0.8385417
   m_LastWindowPixelSize: {x: 1198, y: 665}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
