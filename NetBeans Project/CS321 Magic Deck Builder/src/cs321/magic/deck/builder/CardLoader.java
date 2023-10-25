@@ -19,7 +19,7 @@ public class CardLoader {
 
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                Card card = new Card(jsonObject);
+                Card card = new Card(jsonObject.getString(jsonContent));
                 cards.add(card);
             }
         } catch (IOException e) {

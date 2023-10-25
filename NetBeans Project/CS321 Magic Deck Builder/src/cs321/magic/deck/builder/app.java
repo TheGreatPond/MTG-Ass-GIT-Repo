@@ -168,7 +168,7 @@ public void start(Stage primaryStage) {
 
     // Populate the cardListView with card names
     for (Card card : cards) {
-        cardListView.getItems().add(card.getName());
+        cardListView.getItems().add(card.GetName());
     }
 
     // Create a TextArea to display card information
@@ -188,7 +188,7 @@ public void start(Stage primaryStage) {
         // Find the selected card
         Card selectedCard = null;
         for (Card card : cards) {
-            if (card.getName().equals(newValue)) {
+            if (card.GetName().equals(newValue)) {
                 selectedCard = card;
                 break;
             }
@@ -196,10 +196,10 @@ public void start(Stage primaryStage) {
 
         // Display card information and image
         if (selectedCard != null) {
-            cardInfoTextArea.setText("Name: " + selectedCard.getName() + "\n" +
-                                      "Cost: " + selectedCard.getCmc() + "\n" +
-                                      "Effect: " + selectedCard.getText());
-            Image cardImage = new Image("file:src/mtg_data/image_data/" + selectedCard.getMultiverseid() + ".jpg");
+            cardInfoTextArea.setText("Name: " + selectedCard.GetName() + "\n" +
+                                      "Cost: " + selectedCard.GetCmc() + "\n" +
+                                      "Effect: " + selectedCard.GetText());
+            Image cardImage = new Image("file:src/mtg_data/image_data/" + selectedCard.GetMultiverseId() + ".jpg");
             imageView.setImage(cardImage);
         }
     });

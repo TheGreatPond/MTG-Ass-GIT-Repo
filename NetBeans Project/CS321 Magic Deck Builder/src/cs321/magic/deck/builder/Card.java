@@ -14,8 +14,8 @@ public class Card
     
     // making cost a string as there are many possibilites of what cost could be
     // may be easier to use a code like 3B 2G and then decode that as needed
-    private String name, costIncludingColor, type;
-    private int health, damage, totalCost; // do we need these?
+    private String name, costIncludingColor, type, text, multiverseId;
+    private int health, damage, totalCost, cmc; // do we need these?
     // private Image cardImage; we need an image library
     
     // make a dictionary with the name (might be called pair in java)
@@ -90,4 +90,21 @@ public class Card
     {
         return totalCost;
     }
+    
+    public int GetCmc()
+    {
+        return cmc;
+    }
+    
+    public String GetText()
+    {
+        return text;
+    }
+    
+    public String GetMultiverseId()
+    {
+        return multiverseId;
+    }
+    
+    
 }
