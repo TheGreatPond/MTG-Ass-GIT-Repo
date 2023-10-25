@@ -22,18 +22,18 @@ public class Deck {
         // getDeck();
     }
     
-    public void SaveDeck()
+    public void saveDeck()
     {
         // this should write the deck information to a file
     }
     
-    public void GetDeck()
+    public void getDeck()
     {
         // retrieves decks that are already made from a file
         // may want the parameter of name?
     }
     
-    public boolean AddCard()
+    public boolean addCard()
     {
      return false;//default return value   
     }

@@ -61,47 +61,47 @@ public class Card
     
     // shouldn't need set methods as these should all be immutable
     
-    public String GetName()
+    public String getName()
     {
         return name;
     }
     
-    public String GetCostIncludingColor()
+    public String getCostIncludingColor()
     {
         return costIncludingColor;
     }
     
-    public String GetType()
+    public String getType()
     {
         return type;
     }
     
-    public int GetHealth()
+    public int getHealth()
     {
         return health;
     }
     
-    public int GetDamage()
+    public int getDamage()
     {
         return damage;
     }
     
-    public int GetTotalCost()
+    public int getTotalCost()
     {
         return totalCost;
     }
     
-    public int GetCmc()
+    public int getCmc()
     {
         return cmc;
     }
     
-    public String GetText()
+    public String getText()
     {
         return text;
     }
     
-    public String GetMultiverseId()
+    public String getMultiverseId()
     {
         return multiverseId;
     }
