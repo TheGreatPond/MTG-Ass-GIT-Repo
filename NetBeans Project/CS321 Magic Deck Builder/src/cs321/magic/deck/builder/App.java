@@ -15,10 +15,9 @@ import javafx.stage.Stage;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 
 public class App extends Application {
-    private Stage primaryStage;
+    private Stage primaryStage; //main menu
     private Scene mainScene;
     private Stage helpStage;
     private BorderPane mainLayout;
