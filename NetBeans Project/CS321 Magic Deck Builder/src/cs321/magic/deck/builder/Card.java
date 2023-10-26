@@ -1,93 +1,63 @@
-
 package cs321.magic.deck.builder;
 
-/**
- *
- * @author Michael
- */
+import org.json.JSONObject;
+import java.util.HashMap;
+import java.util.Map;
 
-// not sure if this should be public actually
-public class Card 
-{
-    // need to figure out what info we need for analysis/general use, as the card image be used for
-    // everything else including deck building
+public class Card {
+    private static Map<Integer, Card> allCards = new HashMap<>(); // Map to store all card objects
+
+    private final int cardID; // Represents the multiverseid
+    private final String name;
+    private final String cardType;  // e.g., creature, spell, land
+    private final String manaCost;  // e.g., 1UU, 2R
+    private final int totalMana;    // Previously named 'cmc'
+    private final String description;  // Represents the text
+    private final String imageFile;    // Previously named 'imageUrl'
     
-    // making cost a string as there are many possibilites of what cost could be
-    // may be easier to use a code like 3B 2G and then decode that as needed
-    private String name, costIncludingColor, type;
-    private int health, damage, totalCost; // do we need these?
-    // private Image cardImage; we need an image library
-    
-    // make a dictionary with the name (might be called pair in java)
-    // use ID to group data
-    private int id;
-    
-    public Card()
-    {
-        name = "";
-        costIncludingColor = "";
-        type = "";
-        health = 1;
-        damage = 1;
-        totalCost = 0;
+    public Card(JSONObject jsonObject) {
+        this.cardID = jsonObject.optInt("multiverseid", 0);
+        this.name = jsonObject.getString("name");
+        this.cardType = jsonObject.optString("type", "");
+        this.manaCost = jsonObject.optString("manaCost", "");
+        this.totalMana = jsonObject.optInt("cmc", 0);
+        this.description = jsonObject.optString("text", "");
+        this.imageFile = "src/mtg_data/image_data/" + cardID + ".jpg";
+
+        allCards.put(cardID, this); // Add card to the map
     }
-    
-    // for general use
-    public Card(String n, String cic, String t, int h, int d, int tc)
-    {
-        name = n;
-        costIncludingColor = cic;
-        type = t;
-        health = h;
-        damage = d;
-        totalCost = tc;
+
+    // Static method to get a Card by its ID
+    public static Card getCardFromID(int cardID) {
+        return allCards.get(cardID);
+        
+    }    // Getter methods
+    public int getCardID() {
+        return cardID;
     }
-    
-    // not all cards have health and damage
-    public Card(String n, String cic, String t, int tc)
-    {
-        name = n;
-        costIncludingColor = cic;
-        type = t;
-        totalCost = tc;
-    }
-    
-    // this one should be used when the database is working
-    // should put in all the needed info just based off of the name put in
-    public Card(String n)
-    {
-        // GetCardInfo(n);
-    }
-    
-    // shouldn't need set methods as these should all be immutable
-    
-    public String GetName()
-    {
+
+    public String getName() {
         return name;
     }
-    
-    public String GetCostIncludingColor()
-    {
-        return costIncludingColor;
+
+    public String getCardType() {
+        return cardType;
     }
-    
-    public String GetType()
-    {
-        return type;
+
+    public String getManaCost() {
+        return manaCost;
     }
-    
-    public int GetHealth()
-    {
-        return health;
+
+    public int getTotalMana() {
+        return totalMana;
     }
-    
-    public int GetDamage()
-    {
-        return damage;
+
+    public String getDescription() {
+        return description;
     }
-    
-    public int GetTotalCost()
-    {
-        return totalCost;
+
+    public String getImageFile() {
+        return imageFile;
     }
 }
+
