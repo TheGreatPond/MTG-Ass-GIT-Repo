@@ -302,12 +302,13 @@ private void showDeckEditWindow(Deck selectedDeck) {
 
 
 private void updateCardInDeck(Deck deck, CardWithQuantity cardWithQuantity) {
-    if (cardWithQuantity.getQuantity() == 0) {
-        deck.getCards().remove(cardWithQuantity);
-    } else if (!deck.getCards().contains(cardWithQuantity)) {
+    // Remove the card with the same ID if it exists.
+    deck.getCards().removeIf(cwq -> cwq.getCard().getCardID() == cardWithQuantity.getCard().getCardID());
+    
+    // If the card has a quantity greater than 0, then add it to the deck.
+    if (cardWithQuantity.getQuantity() > 0) {
         deck.getCards().add(cardWithQuantity);
     }
-    // If the card already exists in the deck, the quantity has already been updated.
 }
 
     // Function to show card viewer scene
