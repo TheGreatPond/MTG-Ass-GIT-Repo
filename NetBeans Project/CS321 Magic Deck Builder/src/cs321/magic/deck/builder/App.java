@@ -1,5 +1,5 @@
 
-package deckBuilderMain;
+package cs321.magic.deck.builder;
 import java.util.List;
 import java.util.Optional;
 import javafx.application.Application;
