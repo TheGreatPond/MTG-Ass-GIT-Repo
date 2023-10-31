@@ -41,7 +41,8 @@ public class DeckLoader {
     /**
      * Uses file stream to load all off the JSON files in the mtg_data folder that store deck data.
      * <p>
-     * Calls the loadDeck(File file) function to load each deck found in directory
+     * Calls the loadDeck(File file) function to load each deck found in directory.
+     * Skips any decks that already exits and updates the list with any new decks that were created.
      * </p>
      */
     private void loadDecksFromDirectory() {
@@ -125,6 +126,7 @@ public class DeckLoader {
      * @return deck object
      */
     public Deck getDeckByName(String name) {
+        loadDecksFromDirectory();
         return loadedDecks.stream()
                           .filter(deck -> deck.getName().equals(name))
                           .findFirst()
@@ -137,6 +139,7 @@ public class DeckLoader {
      * @return deck object
      */
      public Deck getDeckByHashID(long hashID) {
+        loadDecksFromDirectory();
         return loadedDecks.stream()
                           .filter(deck -> deck.getHashID() == hashID)
                           .findFirst()
