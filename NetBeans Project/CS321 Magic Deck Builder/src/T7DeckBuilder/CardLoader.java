@@ -3,7 +3,7 @@
  * 
  */
 
-package cs321.magic.deck.builder;
+package T7DeckBuilder;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import java.io.IOException;

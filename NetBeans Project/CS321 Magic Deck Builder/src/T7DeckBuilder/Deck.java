@@ -2,7 +2,7 @@
  * File originally created and commented by Adam Pierce
  * 
  */
-package cs321.magic.deck.builder;
+package T7DeckBuilder;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,7 +2,7 @@
  * File originally created and commented by Adam Pierce
  * 
  */
-package cs321.magic.deck.builder;
+package T7DeckBuilder;
 
 /**
  * This class keeps track of the of the quantity of each card in the decks
