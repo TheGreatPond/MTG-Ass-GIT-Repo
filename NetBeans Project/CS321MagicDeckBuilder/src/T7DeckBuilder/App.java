@@ -136,56 +136,52 @@ private void showDecklistWindow() {
     ListView<String> deckListView = new ListView<>();
 
     // Ensure deckLoader is properly instantiated and has loaded decks
-    deckLoader = new DeckLoader(); // Assuming deckLoader is a class field
-    List<Deck> deckList = deckLoader.getDecks(); // Use getDecks from DeckLoader
-
+    deckLoader = new DeckLoader();
+        // Use getDecks from DeckLoader
+        // Assuming deckLoader is a class field
+    
     // Populate the ListView with loaded decks
-    if (deckList.isEmpty()) {
-        deckListView.getItems().add("No decks available");
-    } else {
-        for (Deck deck : deckList) {
-            deckListView.getItems().add(deck.getName());
-        }
-    }
+    populateDeckListView(deckListView);
 
     exitButton.setOnAction(e -> System.exit(0));
     backButton.setOnAction(e -> primaryStage.setScene(mainScene));
 
-createDeckButton.setOnAction(e -> {
-    ObservableList<String> items = deckListView.getItems();
-    
-    if (items.size() < MAX_DECKS || items.contains("No decks available")) {
-        TextInputDialog dialog = new TextInputDialog("Deck Name");
-        dialog.setTitle("Create New Deck");
-        dialog.setHeaderText(null);
-        dialog.setContentText("Please enter the deck name:");
+    createDeckButton.setOnAction(e -> {
+        ObservableList<String> items = deckListView.getItems();
 
-        Optional<String> result = dialog.showAndWait();
-        result.ifPresent(deckName -> {
-            String trimmedName = deckName.trim();
-            if (!trimmedName.isEmpty()) {
-                // Check for duplicate names
-                if (items.stream().anyMatch(name -> name.equalsIgnoreCase(trimmedName))) {
-                    Alert duplicateAlert = new Alert(Alert.AlertType.ERROR, "A deck with this name already exists!");
-                    duplicateAlert.showAndWait();
-                    return;
+        if (items.size() < MAX_DECKS || items.contains("No decks available")) {
+            TextInputDialog dialog = new TextInputDialog("Deck Name");
+            dialog.setTitle("Create New Deck");
+            dialog.setHeaderText(null);
+            dialog.setContentText("Please enter the deck name:");
+
+            Optional<String> result = dialog.showAndWait();
+            result.ifPresent(deckName -> {
+                String trimmedName = deckName.trim();
+                if (!trimmedName.isEmpty()) {
+                    // Check for duplicate names
+                    if (items.stream().anyMatch(name -> name.equalsIgnoreCase(trimmedName))) {
+                        Alert duplicateAlert = new Alert(Alert.AlertType.ERROR, "A deck with this name already exists!");
+                        duplicateAlert.showAndWait();
+                        return;
+                    }
+
+                    Deck newDeck = new Deck(trimmedName);
+                    deckLoader.saveDeck(newDeck); // Ensure this sets the hash ID in newDeck
+
+                    if (items.contains("No decks available")) {
+                        items.clear();
+                    }
+                    // Add only the name to the ListView
+                    populateDeckListView(deckListView);
+                    //items.add(trimmedName);
                 }
-
-                Deck newDeck = new Deck(trimmedName);
-                deckLoader.saveDeck(newDeck); // Ensure this sets the hash ID in newDeck
-
-                if (items.contains("No decks available")) {
-                    items.clear();
-                }
-                // Add only the name to the ListView
-                items.add(newDeck.getName());
-            }
-        });
-    } else {
-        Alert alert = new Alert(Alert.AlertType.ERROR, "Maximum decks reached!");
-        alert.showAndWait();
-    }
-});
+            });
+        } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Maximum decks reached!");
+            alert.showAndWait();
+        }
+    });
 
 
 
@@ -197,11 +193,13 @@ createDeckButton.setOnAction(e -> {
             if (toRemove != null) {
                 deckLoader.deleteDeck(toRemove); // Delete using DeckLoader
                 deckListView.getItems().remove(selectedDeckName);
+                populateDeckListView(deckListView);
+                
             }
         }
     });
 
-editDeckButton.setOnAction(e -> {
+    editDeckButton.setOnAction(e -> {
     String selectedDeckName = deckListView.getSelectionModel().getSelectedItem();
     if (selectedDeckName != null && !selectedDeckName.equals("No decks available")) {
         Deck toEdit = deckLoader.getDeckByName(selectedDeckName);
@@ -224,6 +222,21 @@ editDeckButton.setOnAction(e -> {
     primaryStage.setScene(decklistScene);
 }
 
+private void populateDeckListView(ListView<String> deckListView) {
+    // Clear existing items
+    deckListView.getItems().clear();
+
+    // Reload decks from DeckLoader
+    List<Deck> deckList = deckLoader.getDecks();
+
+    if (deckList.isEmpty()) {
+        deckListView.getItems().add("No decks available");
+    } else {
+        for (Deck deck : deckList) {
+            deckListView.getItems().add(deck.getName());
+        }
+    }
+}
 
 
 

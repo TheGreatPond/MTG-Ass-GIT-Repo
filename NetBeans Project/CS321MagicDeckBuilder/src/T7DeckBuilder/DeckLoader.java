@@ -10,7 +10,10 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -42,14 +45,27 @@ public class DeckLoader {
      * </p>
      */
     private void loadDecksFromDirectory() {
-    try {
-        Files.newDirectoryStream(Paths.get(DECKS_DIRECTORY),
-            path -> path.toString().endsWith(".json") && !path.getFileName().toString().equals("WAR_cards.json"))
-            .forEach(filePath -> loadDeck(filePath.toFile()));
-    } catch (IOException e) {
-        e.printStackTrace();
+        Set<String> existingDeckFileNames = loadedDecks.stream().map(deck -> "deck_" + deck.getHashID()).collect(Collectors.toSet());
+
+        try {
+            Files.newDirectoryStream(Paths.get(DECKS_DIRECTORY),
+                path -> path.toString().endsWith(".json") && !path.getFileName().toString().equals("WAR_cards.json"))
+                .forEach(filePath -> {
+                    // Extract the deck name from the file path (without the .json extension)
+                    String deckName = filePath.getFileName().toString().replace(".json", "");
+
+                    // Only load the deck if it's not already in the loadedDecks list
+                    if (!existingDeckFileNames.contains(deckName)) {
+                        loadDeck(filePath.toFile());
+                    }
+                });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-}
+
+    
+    
 
     /**
      * Uses the file parameter to create a JSON object 
@@ -99,6 +115,7 @@ public class DeckLoader {
      * @return ArrayList(loadedDecks)
      */
     public List<Deck> getDecks() {
+        loadDecksFromDirectory();
         return new ArrayList<>(loadedDecks);
     }
 
@@ -139,12 +156,13 @@ public class DeckLoader {
      * @param deck 
      */
     public void deleteDeck(Deck deck) {
-    String filename = "deck_" + deck.getHashID() + ".json";
-    File file = new File(DECKS_DIRECTORY + filename);
 
-    if (file.exists()) {
-        file.delete();
-        loadedDecks.remove(deck);
+        String filename = "deck_" + deck.getHashID() + ".json";
+        File file = new File(DECKS_DIRECTORY + filename);
+
+        if (file.exists()) {
+            file.delete();
+            loadedDecks.remove(deck);
+        }
     }
-}
 }
