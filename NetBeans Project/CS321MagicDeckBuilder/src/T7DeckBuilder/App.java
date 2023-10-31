@@ -33,7 +33,7 @@ public class App extends Application {
     @Override
 public void start(Stage primaryStage) {
     this.primaryStage = primaryStage;
-    primaryStage.setTitle("JavaFX Button Example");
+    primaryStage.setTitle("MTG Deck Builder");
 
     // Create the main layout
     mainLayout = new BorderPane();
