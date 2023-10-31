@@ -1,5 +1,6 @@
 
 package T7DeckBuilder;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import javafx.application.Application;
@@ -233,6 +234,7 @@ private void showDeckEditWindow(Deck selectedDeck) {
     VBox layout = new VBox(10);
     layout.setAlignment(Pos.CENTER);
 
+    
     // Load card data from WAR_cards.json
     List<Card> allCards = CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json");
 
@@ -240,13 +242,19 @@ private void showDeckEditWindow(Deck selectedDeck) {
     String jsonFilePath = selectedDeck.getJsonFilePath();
     Deck updatedDeck = Deck.loadFromJson(jsonFilePath);
     
+    //puts the deck in an array so that it can be edited by a lambda expression
+    Deck[] updatedDeckHolder = { Deck.loadFromJson(jsonFilePath) };
+        if (updatedDeckHolder[0] == null) {
+            updatedDeckHolder[0] = selectedDeck;
+        }
+    
     if (updatedDeck == null) {
         updatedDeck = selectedDeck;
     }
 
     // Create a ListView to display the list of cards with '+' and '-' buttons
     ListView<HBox> cardListView = new ListView<>();
-    cardListView.setPrefHeight(300);
+    cardListView.setPrefHeight(600);
 
     for (Card card : allCards) {
         HBox cardBox = new HBox(10);
@@ -269,19 +277,19 @@ private void showDeckEditWindow(Deck selectedDeck) {
 
         Label quantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
 
-        plusButton.setOnAction(e -> {
-            cardWithQuantity.incrementQuantity();
-            quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
-            updateCardInDeck(selectedDeck, cardWithQuantity);
-        });
+    plusButton.setOnAction(e -> {
+        cardWithQuantity.incrementQuantity();
+        quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
+        updateCardInDeck(updatedDeckHolder[0], cardWithQuantity); // Use updatedDeckHolder[0]
+    });
 
-        minusButton.setOnAction(e -> {
-            if (cardWithQuantity.getQuantity() > 0) {
-                cardWithQuantity.decrementQuantity();
-                quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
-                updateCardInDeck(selectedDeck, cardWithQuantity);
-            }
-        });
+    minusButton.setOnAction(e -> {
+        if (cardWithQuantity.getQuantity() > 0) {
+            cardWithQuantity.decrementQuantity();
+            quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
+            updateCardInDeck(updatedDeckHolder[0], cardWithQuantity); // Use updatedDeckHolder[0]
+        }
+    });
 
         cardBox.getChildren().addAll(cardImageView, cardLabel, plusButton, minusButton, quantityLabel);
         cardListView.getItems().add(cardBox);
@@ -289,6 +297,7 @@ private void showDeckEditWindow(Deck selectedDeck) {
 
     Button saveDeckButton = new Button("Save Deck");
     saveDeckButton.setOnAction(e -> {
+        selectedDeck.setCards(new ArrayList<>(updatedDeckHolder[0].getCards())); // Update selectedDeck to match updatedDeck
         deckLoader.saveDeck(selectedDeck);
     });
 
