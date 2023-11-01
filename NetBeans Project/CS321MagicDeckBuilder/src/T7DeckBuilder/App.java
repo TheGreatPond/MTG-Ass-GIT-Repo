@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -16,6 +17,7 @@ import javafx.stage.Stage;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.collections.ObservableList;
+import javafx.stage.Modality;
 
 public class App extends Application {
     private Stage primaryStage; //main menu
@@ -200,21 +202,21 @@ private void showDecklistWindow() {
     });
 
     editDeckButton.setOnAction(e -> {
-    String selectedDeckName = deckListView.getSelectionModel().getSelectedItem();
-    if (selectedDeckName != null && !selectedDeckName.equals("No decks available")) {
-        Deck toEdit = deckLoader.getDeckByName(selectedDeckName);
+        String selectedDeckName = deckListView.getSelectionModel().getSelectedItem();
+        if (selectedDeckName != null && !selectedDeckName.equals("No decks available")) {
+            Deck toEdit = deckLoader.getDeckByName(selectedDeckName);
 
-        if (toEdit != null) {
-            showDeckEditWindow(toEdit); // Implement this method to show the deck editing interface
+            if (toEdit != null) {
+                showDeckEditWindow(toEdit); // Implement this method to show the deck editing interface
+            } else {
+                Alert alert = new Alert(Alert.AlertType.ERROR, "The selected deck was not found!");
+                alert.showAndWait();
+            }
         } else {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "The selected deck was not found!");
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Please select a deck to edit!");
             alert.showAndWait();
         }
-    } else {
-        Alert alert = new Alert(Alert.AlertType.WARNING, "Please select a deck to edit!");
-        alert.showAndWait();
-    }
-});
+    });
 
 
     buttonBox.getChildren().addAll(createDeckButton, deleteDeckButton, editDeckButton, exitButton, backButton);
@@ -309,10 +311,41 @@ private void showDeckEditWindow(Deck selectedDeck) {
     }
 
     Button saveDeckButton = new Button("Save Deck");
-    saveDeckButton.setOnAction(e -> {
-        selectedDeck.setCards(new ArrayList<>(updatedDeckHolder[0].getCards())); // Update selectedDeck to match updatedDeck
-        deckLoader.saveDeck(selectedDeck);
-    });
+        saveDeckButton.setOnAction(e -> {
+            // Create a new stage for the popup
+            Stage popupStage = new Stage();
+            popupStage.initModality(Modality.APPLICATION_MODAL); // Make it block other user input
+
+            // Create a VBox layout for the popup contents
+            VBox popupVBox = new VBox();
+            popupVBox.setAlignment(Pos.CENTER);
+
+            // Add a label to show a message to the user
+            Label savingLabel = new Label("Saving your changes...");
+            popupVBox.getChildren().add(savingLabel);
+
+            // Set the scene for the popup
+            Scene popupScene = new Scene(popupVBox, 200, 100);
+            popupStage.setScene(popupScene);
+
+            // Show the popup
+            popupStage.show();
+
+            // Run the saving operation on a new thread to avoid blocking the UI thread
+            Thread saveThread = new Thread(() -> {
+                selectedDeck.setCards(new ArrayList<>(updatedDeckHolder[0].getCards())); // Update selectedDeck to match updatedDeck
+                deckLoader.saveDeck(selectedDeck);
+
+                // Close the popup on the JavaFX Application thread once the save operation completes
+                Platform.runLater(() -> {
+                    popupStage.close();
+                });
+            });
+
+            // Start the save thread
+            saveThread.start();
+        });
+
 
     layout.getChildren().addAll(cardListView, saveDeckButton);
     Scene deckEditScene = new Scene(layout, 500, 400);
