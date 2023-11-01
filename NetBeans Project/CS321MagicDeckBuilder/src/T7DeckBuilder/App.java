@@ -164,7 +164,8 @@ public class App extends Application {
     }
     
     private void analyzeManaCostCurve(Deck selectedDeck) {
-        List<Card> allCards = CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json");
+        //loads card data into memory
+        CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json");
         
         
         // Load the selected deck from the JSON file to get the updated quantities
@@ -176,18 +177,7 @@ public class App extends Application {
         if (updatedDeck == null) {
             updatedDeck = selectedDeck;
         }
-        
-        /**
-         * loads all the cards into memory to check quantities
-         */
-        for (Card card : allCards) {
-            HBox cardBox = new HBox(10);
-            cardBox.setAlignment(Pos.CENTER_LEFT);
-            CardWithQuantity cardWithQuantity = updatedDeck.getCards().stream()
-                .filter(cwq -> cwq.getCard().getCardID() == card.getCardID())
-                .findFirst()
-                .orElse(new CardWithQuantity(card, 0));
-        }
+       
         
         int[] manaCostArray = updatedDeck.extractManaCosts(updatedDeck);
         
