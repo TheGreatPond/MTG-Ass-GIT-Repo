@@ -2,8 +2,9 @@
  * File originally created and commented by Adam Pierce
  * 
  */
-package T7DeckBuilder;
+package T7DeckBuilder.DeckPackage;
 
+import T7DeckBuilder.CardPackage.Card;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

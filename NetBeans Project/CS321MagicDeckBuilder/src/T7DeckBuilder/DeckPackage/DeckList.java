@@ -2,7 +2,7 @@
  * File originally created and commented by Adam Pierce
  * 
  */
-package T7DeckBuilder;
+package T7DeckBuilder.DeckPackage;
 
 import org.json.JSONObject;
 import java.io.File;

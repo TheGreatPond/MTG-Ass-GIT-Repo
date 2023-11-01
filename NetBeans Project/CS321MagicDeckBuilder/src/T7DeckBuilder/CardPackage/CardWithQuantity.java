@@ -2,7 +2,7 @@
  * File originally created and commented by Adam Pierce
  * 
  */
-package T7DeckBuilder;
+package T7DeckBuilder.CardPackage;
 
 /**
  * This class keeps track of the of the quantity of each card in the decks

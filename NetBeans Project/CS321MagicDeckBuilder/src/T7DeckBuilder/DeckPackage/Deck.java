@@ -2,8 +2,10 @@
  * File originally created and commented by Adam Pierce
  * 
  */
-package T7DeckBuilder;
+package T7DeckBuilder.DeckPackage;
 
+import T7DeckBuilder.CardPackage.CardWithQuantity;
+import T7DeckBuilder.CardPackage.Card;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
