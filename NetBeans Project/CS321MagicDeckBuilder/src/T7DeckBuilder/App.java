@@ -163,14 +163,33 @@ public class App extends Application {
         primaryStage.setScene(analyzeScene);
     }
     
-    private void analyzeManaCostCurve(Deck deck) {
-        // Extract the data for the mana cost curve from the deck
-        // You'll need to have some method to get this from your Deck object
-        // For now, I'll use hardcoded data as the example did
-        String jsonFilePath = deck.getJsonFilePath();
-        deck = Deck.loadFromJson(jsonFilePath);
+    private void analyzeManaCostCurve(Deck selectedDeck) {
+        List<Card> allCards = CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json");
         
-        int[] manaCostArray = deck.extractManaCosts(deck);
+        
+        // Load the selected deck from the JSON file to get the updated quantities
+        String jsonFilePath = selectedDeck.getJsonFilePath();
+        Deck updatedDeck = Deck.loadFromJson(jsonFilePath);
+        
+
+        // If the loaded deck is null, use the provided deck object
+        if (updatedDeck == null) {
+            updatedDeck = selectedDeck;
+        }
+        
+        /**
+         * loads all the cards into memory to check quantities
+         */
+        for (Card card : allCards) {
+            HBox cardBox = new HBox(10);
+            cardBox.setAlignment(Pos.CENTER_LEFT);
+            CardWithQuantity cardWithQuantity = updatedDeck.getCards().stream()
+                .filter(cwq -> cwq.getCard().getCardID() == card.getCardID())
+                .findFirst()
+                .orElse(new CardWithQuantity(card, 0));
+        }
+        
+        int[] manaCostArray = updatedDeck.extractManaCosts(updatedDeck);
         
         
         Map<String, Integer> manaCostCurveData = new HashMap<>();
@@ -199,7 +218,7 @@ public class App extends Application {
 
         // Add data to the chart
         XYChart.Series<String, Number> series = new XYChart.Series<>();
-        series.setName(deck.getName());  // Use the deck's name as the series name
+        series.setName(selectedDeck.getName());  // Use the deck's name as the series name
 
         for (Map.Entry<String, Integer> entry : manaCostCurveData.entrySet()) {
             series.getData().add(new XYChart.Data<>(entry.getKey(), entry.getValue()));
