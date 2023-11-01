@@ -1,6 +1,7 @@
 
 package T7DeckBuilder;
 
+import AppClasses.MTGDeckBuilder;
 import T7DeckBuilder.DeckPackage.*;
 import T7DeckBuilder.CardPackage.*;
 import java.util.ArrayList;
@@ -46,63 +47,12 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        this.primaryStage = primaryStage;
-        primaryStage.setTitle("MTG Deck Builder");
-
-        // Create the main layout
-        mainLayout = new BorderPane();
-        mainScene = new Scene(mainLayout, 300, 200);
-
-        // Create a top HBox for the Exit button
-        HBox topBox = new HBox();
-        topBox.setAlignment(Pos.TOP_RIGHT);
-
-        // Create the Exit button
-        Button exitButton = new Button("Exit");
-        exitButton.setOnAction(e -> System.exit(0));
-
-        // Create the Card List button
-        Button cardListButton = new Button("Card List");
-        cardListButton.setOnAction(e -> showCardViewerScene());
-
-        // Add the Exit and Card List buttons to the top HBox
-        topBox.getChildren().addAll(exitButton, cardListButton);
-
-        // Create the grid for other buttons
-        GridPane grid = new GridPane();
-        grid.setAlignment(Pos.CENTER);
-        grid.setVgap(10);
-        grid.setHgap(10);
-
-        // Create buttons
-        Button helpButton = new Button("Help");
-        Button analyzeButton = new Button("Analyze");
-        Button decklistButton = new Button("Decklist");
-
-        // Add event handlers to the buttons
-        helpButton.setOnAction(e -> showHelpWindow());
-        analyzeButton.setOnAction(e -> showAnalyzeWindow());
-        decklistButton.setOnAction(e -> showDecklistWindow());
-
-        // Add buttons to the grid
-        grid.add(helpButton, 0, 0);
-        grid.add(analyzeButton, 1, 0);
-        grid.add(decklistButton, 0, 1);
-        grid.add(cardListButton, 1, 1);
-
-        // Set the top HBox and grid in the main layout
-        mainLayout.setTop(topBox);
-        mainLayout.setCenter(grid);
-
-        // Set the main scene
-        primaryStage.setScene(mainScene);
-
-        // Show the main window
-        primaryStage.show();
+        MTGDeckBuilder application = new MTGDeckBuilder();
+        application.start(primaryStage);
     }
 
 
-    private void showHelpWindow() {
+    public void showHelpWindow() {
         // Create a new help window
         helpStage = new Stage();
         helpStage.setTitle("Help");
@@ -120,7 +70,7 @@ public class App extends Application {
         helpStage.show();
     }
 
-    private void showAnalyzeWindow() {
+    public void showAnalyzeWindow() {
         VBox analyzeLayout = new VBox(10);
         analyzeLayout.setAlignment(Pos.CENTER);
         Scene analyzeScene = new Scene(analyzeLayout, 500, 400);
@@ -227,7 +177,7 @@ public class App extends Application {
     }
     
     
-    private void showDecklistWindow() {
+    public void showDecklistWindow() {
         VBox decklistLayout = new VBox(10);
         decklistLayout.setAlignment(Pos.CENTER);
         Scene decklistScene = new Scene(decklistLayout, 500, 400);
@@ -528,7 +478,7 @@ public class App extends Application {
     }
 
     // Function to show card viewer scene
-    private void showCardViewerScene() {
+    public void showCardViewerScene() {
             // Create a new card viewer window
             Stage cardViewerStage = new Stage();
             cardViewerStage.setTitle("Card Viewer");
