@@ -530,6 +530,7 @@ public class App extends Application {
                 // Display card information and image
                 if (selectedCard != null) {
                     cardInfoTextArea.setText("Name: " + selectedCard.getName() + "\n" +
+                                              "Color: " + selectedCard.getColors() + "\n" +
                                               "Cost: " + selectedCard.getTotalMana() + "\n" +
                                               "Effect: " + selectedCard.getDescription());
                     Image cardImage = new Image("file:" + selectedCard.getImageFile());

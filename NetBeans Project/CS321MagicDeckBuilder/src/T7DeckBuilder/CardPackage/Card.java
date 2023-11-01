@@ -28,11 +28,11 @@ public class Card {
      * name of card
      */
     private final String name;
-    
+   
     /**
      * color identity of the card symbolized by the first letter of the color
      */
-    private final String colorIdentity;
+    private final String colors;
             
     /**
      * type of the card, e.g. creature, spell, land 
@@ -66,7 +66,7 @@ public class Card {
     public Card(JSONObject jsonObject) {
         this.cardID = jsonObject.optInt("multiverseid", 0);
         this.name = jsonObject.getString("name");
-        this.colorIdentity = jsonObject.optString("colorIdentity", "");
+        this.colors = jsonObject.optString("colors", "");
         this.cardType = jsonObject.optString("type", "");
         this.manaCost = jsonObject.optString("manaCost", "");
         this.totalMana = jsonObject.optInt("cmc", 0);
@@ -105,8 +105,8 @@ public class Card {
      * Returns the color identity of the card
      * @return colorIdentity
      */
-    public String getColorIdentity(){
-        return colorIdentity;
+    public String getColors(){
+        return colors;
     }
     
     /**

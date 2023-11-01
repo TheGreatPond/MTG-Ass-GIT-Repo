@@ -6,7 +6,8 @@
     "multiverseid": "460928",
     "imageUrl": "image_data\\460928.jpg",
     "cardType": "Legendary Planeswalker \u2014 Karn",
-    "manaCost": "{4}"
+    "manaCost": "{4}",
+    "colors": ""
   },
   {
     "name": "Ugin, the Ineffable",
@@ -15,7 +16,8 @@
     "multiverseid": "460929",
     "imageUrl": "image_data\\460929.jpg",
     "cardType": "Legendary Planeswalker \u2014 Ugin",
-    "manaCost": "{6}"
+    "manaCost": "{6}",
+    "colors": ""
   },
   {
     "name": "Ugin's Conjurant",
@@ -24,7 +26,8 @@
     "multiverseid": "460930",
     "imageUrl": "image_data\\460930.jpg",
     "cardType": "Creature \u2014 Spirit Monk",
-    "manaCost": "{X}"
+    "manaCost": "{X}",
+    "colors": ""
   },
   {
     "name": "Ajani's Pridemate",
@@ -33,7 +36,10 @@
     "multiverseid": "460931",
     "imageUrl": "image_data\\460931.jpg",
     "cardType": "Creature \u2014 Cat Soldier",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Battlefield Promotion",
@@ -42,7 +48,10 @@
     "multiverseid": "460932",
     "imageUrl": "image_data\\460932.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Bond of Discipline",
@@ -51,7 +60,10 @@
     "multiverseid": "460933",
     "imageUrl": "image_data\\460933.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{4}{W}"
+    "manaCost": "{4}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Bulwark Giant",
@@ -60,7 +72,10 @@
     "multiverseid": "460934",
     "imageUrl": "image_data\\460934.jpg",
     "cardType": "Creature \u2014 Giant Soldier",
-    "manaCost": "{5}{W}"
+    "manaCost": "{5}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Charmed Stray",
@@ -69,7 +84,10 @@
     "multiverseid": "460935",
     "imageUrl": "image_data\\460935.jpg",
     "cardType": "Creature \u2014 Cat",
-    "manaCost": "{W}"
+    "manaCost": "{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Defiant Strike",
@@ -78,7 +96,10 @@
     "multiverseid": "460936",
     "imageUrl": "image_data\\460936.jpg",
     "cardType": "Instant",
-    "manaCost": "{W}"
+    "manaCost": "{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Divine Arrow",
@@ -87,7 +108,10 @@
     "multiverseid": "460937",
     "imageUrl": "image_data\\460937.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Enforcer Griffin",
@@ -96,7 +120,10 @@
     "multiverseid": "460938",
     "imageUrl": "image_data\\460938.jpg",
     "cardType": "Creature \u2014 Griffin",
-    "manaCost": "{4}{W}"
+    "manaCost": "{4}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Finale of Glory",
@@ -105,7 +132,10 @@
     "multiverseid": "460939",
     "imageUrl": "image_data\\460939.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{X}{W}{W}"
+    "manaCost": "{X}{W}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Gideon Blackblade",
@@ -114,7 +144,10 @@
     "multiverseid": "460940",
     "imageUrl": "image_data\\460940.jpg",
     "cardType": "Legendary Planeswalker \u2014 Gideon",
-    "manaCost": "{1}{W}{W}"
+    "manaCost": "{1}{W}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Gideon's Sacrifice",
@@ -123,7 +156,10 @@
     "multiverseid": "460941",
     "imageUrl": "image_data\\460941.jpg",
     "cardType": "Instant",
-    "manaCost": "{W}"
+    "manaCost": "{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Gideon's Triumph",
@@ -132,7 +168,10 @@
     "multiverseid": "460942",
     "imageUrl": "image_data\\460942.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "God-Eternal Oketra",
@@ -141,7 +180,10 @@
     "multiverseid": "460943",
     "imageUrl": "image_data\\460943.jpg",
     "cardType": "Legendary Creature \u2014 Zombie God",
-    "manaCost": "{3}{W}{W}"
+    "manaCost": "{3}{W}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Grateful Apparition",
@@ -150,7 +192,10 @@
     "multiverseid": "460944",
     "imageUrl": "image_data\\460944.jpg",
     "cardType": "Creature \u2014 Spirit",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Ignite the Beacon",
@@ -159,7 +204,10 @@
     "multiverseid": "460945",
     "imageUrl": "image_data\\460945.jpg",
     "cardType": "Instant",
-    "manaCost": "{4}{W}"
+    "manaCost": "{4}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Ironclad Krovod",
@@ -168,7 +216,10 @@
     "multiverseid": "460946",
     "imageUrl": "image_data\\460946.jpg",
     "cardType": "Creature \u2014 Beast",
-    "manaCost": "{3}{W}"
+    "manaCost": "{3}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Law-Rune Enforcer",
@@ -177,7 +228,10 @@
     "multiverseid": "460947",
     "imageUrl": "image_data\\460947.jpg",
     "cardType": "Creature \u2014 Human Soldier",
-    "manaCost": "{W}"
+    "manaCost": "{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Loxodon Sergeant",
@@ -186,7 +240,10 @@
     "multiverseid": "460948",
     "imageUrl": "image_data\\460948.jpg",
     "cardType": "Creature \u2014 Elephant Soldier",
-    "manaCost": "{3}{W}"
+    "manaCost": "{3}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Makeshift Battalion",
@@ -195,7 +252,10 @@
     "multiverseid": "460949",
     "imageUrl": "image_data\\460949.jpg",
     "cardType": "Creature \u2014 Human Soldier",
-    "manaCost": "{2}{W}"
+    "manaCost": "{2}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Martyr for the Cause",
@@ -204,7 +264,10 @@
     "multiverseid": "460950",
     "imageUrl": "image_data\\460950.jpg",
     "cardType": "Creature \u2014 Human Soldier",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Parhelion II",
@@ -213,7 +276,10 @@
     "multiverseid": "460951",
     "imageUrl": "image_data\\460951.jpg",
     "cardType": "Legendary Artifact \u2014 Vehicle",
-    "manaCost": "{6}{W}{W}"
+    "manaCost": "{6}{W}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Pouncing Lynx",
@@ -222,7 +288,10 @@
     "multiverseid": "460952",
     "imageUrl": "image_data\\460952.jpg",
     "cardType": "Creature \u2014 Cat",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Prison Realm",
@@ -231,7 +300,10 @@
     "multiverseid": "460953",
     "imageUrl": "image_data\\460953.jpg",
     "cardType": "Enchantment",
-    "manaCost": "{2}{W}"
+    "manaCost": "{2}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Rally of Wings",
@@ -240,7 +312,10 @@
     "multiverseid": "460954",
     "imageUrl": "image_data\\460954.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Ravnica at War",
@@ -249,7 +324,10 @@
     "multiverseid": "460955",
     "imageUrl": "image_data\\460955.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{3}{W}"
+    "manaCost": "{3}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Rising Populace",
@@ -258,7 +336,10 @@
     "multiverseid": "460956",
     "imageUrl": "image_data\\460956.jpg",
     "cardType": "Creature \u2014 Human",
-    "manaCost": "{2}{W}"
+    "manaCost": "{2}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Single Combat",
@@ -267,7 +348,10 @@
     "multiverseid": "460957",
     "imageUrl": "image_data\\460957.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{3}{W}{W}"
+    "manaCost": "{3}{W}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Sunblade Angel",
@@ -276,7 +360,10 @@
     "multiverseid": "460958",
     "imageUrl": "image_data\\460958.jpg",
     "cardType": "Creature \u2014 Angel",
-    "manaCost": "{5}{W}"
+    "manaCost": "{5}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Teyo, the Shieldmage",
@@ -285,7 +372,10 @@
     "multiverseid": "460959",
     "imageUrl": "image_data\\460959.jpg",
     "cardType": "Legendary Planeswalker \u2014 Teyo",
-    "manaCost": "{2}{W}"
+    "manaCost": "{2}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Teyo's Lightshield",
@@ -294,7 +384,10 @@
     "multiverseid": "460960",
     "imageUrl": "image_data\\460960.jpg",
     "cardType": "Creature \u2014 Illusion",
-    "manaCost": "{2}{W}"
+    "manaCost": "{2}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Tomik, Distinguished Advokist",
@@ -303,7 +396,10 @@
     "multiverseid": "460961",
     "imageUrl": "image_data\\460961.jpg",
     "cardType": "Legendary Creature \u2014 Human Advisor",
-    "manaCost": "{W}{W}"
+    "manaCost": "{W}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Topple the Statue",
@@ -312,7 +408,10 @@
     "multiverseid": "460962",
     "imageUrl": "image_data\\460962.jpg",
     "cardType": "Instant",
-    "manaCost": "{2}{W}"
+    "manaCost": "{2}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Trusted Pegasus",
@@ -321,7 +420,10 @@
     "multiverseid": "460963",
     "imageUrl": "image_data\\460963.jpg",
     "cardType": "Creature \u2014 Pegasus",
-    "manaCost": "{2}{W}"
+    "manaCost": "{2}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "The Wanderer",
@@ -330,7 +432,10 @@
     "multiverseid": "460964",
     "imageUrl": "image_data\\460964.jpg",
     "cardType": "Legendary Planeswalker",
-    "manaCost": "{3}{W}"
+    "manaCost": "{3}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Wanderer's Strike",
@@ -339,7 +444,10 @@
     "multiverseid": "460965",
     "imageUrl": "image_data\\460965.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{4}{W}"
+    "manaCost": "{4}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "War Screecher",
@@ -348,7 +456,10 @@
     "multiverseid": "460966",
     "imageUrl": "image_data\\460966.jpg",
     "cardType": "Creature \u2014 Bird",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Ashiok's Skulker",
@@ -357,7 +468,10 @@
     "multiverseid": "460967",
     "imageUrl": "image_data\\460967.jpg",
     "cardType": "Creature \u2014 Nightmare",
-    "manaCost": "{4}{U}"
+    "manaCost": "{4}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Augur of Bolas",
@@ -366,7 +480,10 @@
     "multiverseid": "460968",
     "imageUrl": "image_data\\460968.jpg",
     "cardType": "Creature \u2014 Merfolk Wizard",
-    "manaCost": "{1}{U}"
+    "manaCost": "{1}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Aven Eternal",
@@ -375,7 +492,10 @@
     "multiverseid": "460969",
     "imageUrl": "image_data\\460969.jpg",
     "cardType": "Creature \u2014 Zombie Bird Warrior",
-    "manaCost": "{2}{U}"
+    "manaCost": "{2}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Bond of Insight",
@@ -384,7 +504,10 @@
     "multiverseid": "460970",
     "imageUrl": "image_data\\460970.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{3}{U}"
+    "manaCost": "{3}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Callous Dismissal",
@@ -393,7 +516,10 @@
     "multiverseid": "460971",
     "imageUrl": "image_data\\460971.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{1}{U}"
+    "manaCost": "{1}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Commence the Endgame",
@@ -402,7 +528,10 @@
     "multiverseid": "460972",
     "imageUrl": "image_data\\460972.jpg",
     "cardType": "Instant",
-    "manaCost": "{4}{U}{U}"
+    "manaCost": "{4}{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Contentious Plan",
@@ -411,7 +540,10 @@
     "multiverseid": "460973",
     "imageUrl": "image_data\\460973.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{1}{U}"
+    "manaCost": "{1}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Crush Dissent",
@@ -420,7 +552,10 @@
     "multiverseid": "460974",
     "imageUrl": "image_data\\460974.jpg",
     "cardType": "Instant",
-    "manaCost": "{3}{U}"
+    "manaCost": "{3}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Erratic Visionary",
@@ -429,7 +564,10 @@
     "multiverseid": "460975",
     "imageUrl": "image_data\\460975.jpg",
     "cardType": "Creature \u2014 Human Wizard",
-    "manaCost": "{1}{U}"
+    "manaCost": "{1}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Eternal Skylord",
@@ -438,7 +576,10 @@
     "multiverseid": "460976",
     "imageUrl": "image_data\\460976.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
-    "manaCost": "{4}{U}"
+    "manaCost": "{4}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Fblthp, the Lost",
@@ -447,7 +588,10 @@
     "multiverseid": "460977",
     "imageUrl": "image_data\\460977.jpg",
     "cardType": "Legendary Creature \u2014 Homunculus",
-    "manaCost": "{1}{U}"
+    "manaCost": "{1}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Finale of Revelation",
@@ -456,7 +600,10 @@
     "multiverseid": "460978",
     "imageUrl": "image_data\\460978.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{X}{U}{U}"
+    "manaCost": "{X}{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Flux Channeler",
@@ -465,7 +612,10 @@
     "multiverseid": "460979",
     "imageUrl": "image_data\\460979.jpg",
     "cardType": "Creature \u2014 Human Wizard",
-    "manaCost": "{2}{U}"
+    "manaCost": "{2}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "God-Eternal Kefnet",
@@ -474,7 +624,10 @@
     "multiverseid": "460980",
     "imageUrl": "image_data\\460980.jpg",
     "cardType": "Legendary Creature \u2014 Zombie God",
-    "manaCost": "{2}{U}{U}"
+    "manaCost": "{2}{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Jace, Wielder of Mysteries",
@@ -483,7 +636,10 @@
     "multiverseid": "460981",
     "imageUrl": "image_data\\460981.jpg",
     "cardType": "Legendary Planeswalker \u2014 Jace",
-    "manaCost": "{1}{U}{U}{U}"
+    "manaCost": "{1}{U}{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Jace's Triumph",
@@ -492,7 +648,10 @@
     "multiverseid": "460982",
     "imageUrl": "image_data\\460982.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{U}"
+    "manaCost": "{2}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Kasmina, Enigmatic Mentor",
@@ -501,7 +660,10 @@
     "multiverseid": "460983",
     "imageUrl": "image_data\\460983.jpg",
     "cardType": "Legendary Planeswalker \u2014 Kasmina",
-    "manaCost": "{3}{U}"
+    "manaCost": "{3}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Kasmina's Transmutation",
@@ -510,7 +672,10 @@
     "multiverseid": "460984",
     "imageUrl": "image_data\\460984.jpg",
     "cardType": "Enchantment \u2014 Aura",
-    "manaCost": "{1}{U}"
+    "manaCost": "{1}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Kiora's Dambreaker",
@@ -519,7 +684,10 @@
     "multiverseid": "460985",
     "imageUrl": "image_data\\460985.jpg",
     "cardType": "Creature \u2014 Leviathan",
-    "manaCost": "{5}{U}"
+    "manaCost": "{5}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Lazotep Plating",
@@ -528,7 +696,10 @@
     "multiverseid": "460986",
     "imageUrl": "image_data\\460986.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{U}"
+    "manaCost": "{1}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Naga Eternal",
@@ -537,7 +708,10 @@
     "multiverseid": "460987",
     "imageUrl": "image_data\\460987.jpg",
     "cardType": "Creature \u2014 Zombie Naga",
-    "manaCost": "{2}{U}"
+    "manaCost": "{2}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Narset, Parter of Veils",
@@ -546,7 +720,10 @@
     "multiverseid": "460988",
     "imageUrl": "image_data\\460988.jpg",
     "cardType": "Legendary Planeswalker \u2014 Narset",
-    "manaCost": "{1}{U}{U}"
+    "manaCost": "{1}{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Narset's Reversal",
@@ -555,7 +732,10 @@
     "multiverseid": "460989",
     "imageUrl": "image_data\\460989.jpg",
     "cardType": "Instant",
-    "manaCost": "{U}{U}"
+    "manaCost": "{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "No Escape",
@@ -564,7 +744,10 @@
     "multiverseid": "460990",
     "imageUrl": "image_data\\460990.jpg",
     "cardType": "Instant",
-    "manaCost": "{2}{U}"
+    "manaCost": "{2}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Relentless Advance",
@@ -573,7 +756,10 @@
     "multiverseid": "460991",
     "imageUrl": "image_data\\460991.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{3}{U}"
+    "manaCost": "{3}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Rescuer Sphinx",
@@ -582,7 +768,10 @@
     "multiverseid": "460992",
     "imageUrl": "image_data\\460992.jpg",
     "cardType": "Creature \u2014 Sphinx",
-    "manaCost": "{2}{U}{U}"
+    "manaCost": "{2}{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Silent Submersible",
@@ -591,7 +780,10 @@
     "multiverseid": "460993",
     "imageUrl": "image_data\\460993.jpg",
     "cardType": "Artifact \u2014 Vehicle",
-    "manaCost": "{U}{U}"
+    "manaCost": "{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Sky Theater Strix",
@@ -600,7 +792,10 @@
     "multiverseid": "460994",
     "imageUrl": "image_data\\460994.jpg",
     "cardType": "Creature \u2014 Bird",
-    "manaCost": "{1}{U}"
+    "manaCost": "{1}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Spark Double",
@@ -609,7 +804,10 @@
     "multiverseid": "460995",
     "imageUrl": "image_data\\460995.jpg",
     "cardType": "Creature \u2014 Illusion",
-    "manaCost": "{3}{U}"
+    "manaCost": "{3}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Spellkeeper Weird",
@@ -618,7 +816,10 @@
     "multiverseid": "460996",
     "imageUrl": "image_data\\460996.jpg",
     "cardType": "Creature \u2014 Weird",
-    "manaCost": "{2}{U}"
+    "manaCost": "{2}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Stealth Mission",
@@ -627,7 +828,10 @@
     "multiverseid": "460997",
     "imageUrl": "image_data\\460997.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{U}"
+    "manaCost": "{2}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Tamiyo's Epiphany",
@@ -636,7 +840,10 @@
     "multiverseid": "460998",
     "imageUrl": "image_data\\460998.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{3}{U}"
+    "manaCost": "{3}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Teferi's Time Twist",
@@ -645,7 +852,10 @@
     "multiverseid": "460999",
     "imageUrl": "image_data\\460999.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{U}"
+    "manaCost": "{1}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Thunder Drake",
@@ -654,7 +864,10 @@
     "multiverseid": "461000",
     "imageUrl": "image_data\\461000.jpg",
     "cardType": "Creature \u2014 Elemental Drake",
-    "manaCost": "{3}{U}"
+    "manaCost": "{3}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Totally Lost",
@@ -663,7 +876,10 @@
     "multiverseid": "461001",
     "imageUrl": "image_data\\461001.jpg",
     "cardType": "Instant",
-    "manaCost": "{4}{U}"
+    "manaCost": "{4}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Wall of Runes",
@@ -672,7 +888,10 @@
     "multiverseid": "461002",
     "imageUrl": "image_data\\461002.jpg",
     "cardType": "Creature \u2014 Wall",
-    "manaCost": "{U}"
+    "manaCost": "{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Aid the Fallen",
@@ -681,7 +900,10 @@
     "multiverseid": "461003",
     "imageUrl": "image_data\\461003.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{1}{B}"
+    "manaCost": "{1}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Banehound",
@@ -690,7 +912,10 @@
     "multiverseid": "461004",
     "imageUrl": "image_data\\461004.jpg",
     "cardType": "Creature \u2014 Nightmare Dog",
-    "manaCost": "{B}"
+    "manaCost": "{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Bleeding Edge",
@@ -699,7 +924,10 @@
     "multiverseid": "461005",
     "imageUrl": "image_data\\461005.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{1}{B}{B}"
+    "manaCost": "{1}{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Bolas's Citadel",
@@ -708,7 +936,10 @@
     "multiverseid": "461006",
     "imageUrl": "image_data\\461006.jpg",
     "cardType": "Legendary Artifact",
-    "manaCost": "{3}{B}{B}{B}"
+    "manaCost": "{3}{B}{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Bond of Revival",
@@ -717,7 +948,10 @@
     "multiverseid": "461007",
     "imageUrl": "image_data\\461007.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{4}{B}"
+    "manaCost": "{4}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Charity Extractor",
@@ -726,7 +960,10 @@
     "multiverseid": "461008",
     "imageUrl": "image_data\\461008.jpg",
     "cardType": "Creature \u2014 Human Knight",
-    "manaCost": "{3}{B}"
+    "manaCost": "{3}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Command the Dreadhorde",
@@ -735,7 +972,10 @@
     "multiverseid": "461009",
     "imageUrl": "image_data\\461009.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{4}{B}{B}"
+    "manaCost": "{4}{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Davriel, Rogue Shadowmage",
@@ -744,7 +984,10 @@
     "multiverseid": "461010",
     "imageUrl": "image_data\\461010.jpg",
     "cardType": "Legendary Planeswalker \u2014 Davriel",
-    "manaCost": "{2}{B}"
+    "manaCost": "{2}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Davriel's Shadowfugue",
@@ -753,7 +996,10 @@
     "multiverseid": "461011",
     "imageUrl": "image_data\\461011.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{3}{B}"
+    "manaCost": "{3}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Deliver Unto Evil",
@@ -762,7 +1008,10 @@
     "multiverseid": "461012",
     "imageUrl": "image_data\\461012.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{B}"
+    "manaCost": "{2}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Dreadhorde Invasion",
@@ -771,7 +1020,10 @@
     "multiverseid": "461013",
     "imageUrl": "image_data\\461013.jpg",
     "cardType": "Enchantment",
-    "manaCost": "{1}{B}"
+    "manaCost": "{1}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Dreadmalkin",
@@ -780,7 +1032,10 @@
     "multiverseid": "461014",
     "imageUrl": "image_data\\461014.jpg",
     "cardType": "Creature \u2014 Zombie Cat",
-    "manaCost": "{B}"
+    "manaCost": "{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Duskmantle Operative",
@@ -789,7 +1044,10 @@
     "multiverseid": "461015",
     "imageUrl": "image_data\\461015.jpg",
     "cardType": "Creature \u2014 Human Rogue",
-    "manaCost": "{1}{B}"
+    "manaCost": "{1}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "The Elderspell",
@@ -798,7 +1056,10 @@
     "multiverseid": "461016",
     "imageUrl": "image_data\\461016.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{B}{B}"
+    "manaCost": "{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Eternal Taskmaster",
@@ -807,7 +1068,10 @@
     "multiverseid": "461017",
     "imageUrl": "image_data\\461017.jpg",
     "cardType": "Creature \u2014 Zombie",
-    "manaCost": "{1}{B}"
+    "manaCost": "{1}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Finale of Eternity",
@@ -816,7 +1080,10 @@
     "multiverseid": "461018",
     "imageUrl": "image_data\\461018.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{X}{B}{B}"
+    "manaCost": "{X}{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "God-Eternal Bontu",
@@ -825,7 +1092,10 @@
     "multiverseid": "461019",
     "imageUrl": "image_data\\461019.jpg",
     "cardType": "Legendary Creature \u2014 Zombie God",
-    "manaCost": "{3}{B}{B}"
+    "manaCost": "{3}{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Herald of the Dreadhorde",
@@ -834,7 +1104,10 @@
     "multiverseid": "461020",
     "imageUrl": "image_data\\461020.jpg",
     "cardType": "Creature \u2014 Zombie Warrior",
-    "manaCost": "{3}{B}"
+    "manaCost": "{3}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Kaya's Ghostform",
@@ -843,7 +1116,10 @@
     "multiverseid": "461021",
     "imageUrl": "image_data\\461021.jpg",
     "cardType": "Enchantment \u2014 Aura",
-    "manaCost": "{B}"
+    "manaCost": "{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Lazotep Behemoth",
@@ -852,7 +1128,10 @@
     "multiverseid": "461022",
     "imageUrl": "image_data\\461022.jpg",
     "cardType": "Creature \u2014 Zombie Hippo",
-    "manaCost": "{4}{B}"
+    "manaCost": "{4}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Lazotep Reaver",
@@ -861,7 +1140,10 @@
     "multiverseid": "461023",
     "imageUrl": "image_data\\461023.jpg",
     "cardType": "Creature \u2014 Zombie Beast",
-    "manaCost": "{1}{B}"
+    "manaCost": "{1}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Liliana, Dreadhorde General",
@@ -870,7 +1152,10 @@
     "multiverseid": "461024",
     "imageUrl": "image_data\\461024.jpg",
     "cardType": "Legendary Planeswalker \u2014 Liliana",
-    "manaCost": "{4}{B}{B}"
+    "manaCost": "{4}{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Liliana's Triumph",
@@ -879,7 +1164,10 @@
     "multiverseid": "461025",
     "imageUrl": "image_data\\461025.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{B}"
+    "manaCost": "{1}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Massacre Girl",
@@ -888,7 +1176,10 @@
     "multiverseid": "461026",
     "imageUrl": "image_data\\461026.jpg",
     "cardType": "Legendary Creature \u2014 Human Assassin",
-    "manaCost": "{3}{B}{B}"
+    "manaCost": "{3}{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Ob Nixilis, the Hate-Twisted",
@@ -897,7 +1188,10 @@
     "multiverseid": "461027",
     "imageUrl": "image_data\\461027.jpg",
     "cardType": "Legendary Planeswalker \u2014 Nixilis",
-    "manaCost": "{3}{B}{B}"
+    "manaCost": "{3}{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Ob Nixilis's Cruelty",
@@ -906,7 +1200,10 @@
     "multiverseid": "461028",
     "imageUrl": "image_data\\461028.jpg",
     "cardType": "Instant",
-    "manaCost": "{2}{B}"
+    "manaCost": "{2}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Price of Betrayal",
@@ -915,7 +1212,10 @@
     "multiverseid": "461029",
     "imageUrl": "image_data\\461029.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{B}"
+    "manaCost": "{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Shriekdiver",
@@ -924,7 +1224,10 @@
     "multiverseid": "461030",
     "imageUrl": "image_data\\461030.jpg",
     "cardType": "Creature \u2014 Zombie Bird Warrior",
-    "manaCost": "{2}{B}"
+    "manaCost": "{2}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Sorin's Thirst",
@@ -933,7 +1236,10 @@
     "multiverseid": "461031",
     "imageUrl": "image_data\\461031.jpg",
     "cardType": "Instant",
-    "manaCost": "{B}{B}"
+    "manaCost": "{B}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Spark Harvest",
@@ -942,7 +1248,10 @@
     "multiverseid": "461032",
     "imageUrl": "image_data\\461032.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{B}"
+    "manaCost": "{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Spark Reaper",
@@ -951,7 +1260,10 @@
     "multiverseid": "461033",
     "imageUrl": "image_data\\461033.jpg",
     "cardType": "Creature \u2014 Zombie",
-    "manaCost": "{2}{B}"
+    "manaCost": "{2}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Tithebearer Giant",
@@ -960,7 +1272,10 @@
     "multiverseid": "461034",
     "imageUrl": "image_data\\461034.jpg",
     "cardType": "Creature \u2014 Giant Warrior",
-    "manaCost": "{5}{B}"
+    "manaCost": "{5}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Toll of the Invasion",
@@ -969,7 +1284,10 @@
     "multiverseid": "461035",
     "imageUrl": "image_data\\461035.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{B}"
+    "manaCost": "{2}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Unlikely Aid",
@@ -978,7 +1296,10 @@
     "multiverseid": "461036",
     "imageUrl": "image_data\\461036.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{B}"
+    "manaCost": "{1}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Vampire Opportunist",
@@ -987,7 +1308,10 @@
     "multiverseid": "461037",
     "imageUrl": "image_data\\461037.jpg",
     "cardType": "Creature \u2014 Vampire",
-    "manaCost": "{1}{B}"
+    "manaCost": "{1}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Vizier of the Scorpion",
@@ -996,7 +1320,10 @@
     "multiverseid": "461038",
     "imageUrl": "image_data\\461038.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
-    "manaCost": "{2}{B}"
+    "manaCost": "{2}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Vraska's Finisher",
@@ -1005,7 +1332,10 @@
     "multiverseid": "461039",
     "imageUrl": "image_data\\461039.jpg",
     "cardType": "Creature \u2014 Gorgon Assassin",
-    "manaCost": "{2}{B}"
+    "manaCost": "{2}{B}",
+    "colors": [
+      "B"
+    ]
   },
   {
     "name": "Ahn-Crop Invader",
@@ -1014,7 +1344,10 @@
     "multiverseid": "461040",
     "imageUrl": "image_data\\461040.jpg",
     "cardType": "Creature \u2014 Zombie Minotaur Warrior",
-    "manaCost": "{2}{R}"
+    "manaCost": "{2}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Blindblast",
@@ -1023,7 +1356,10 @@
     "multiverseid": "461041",
     "imageUrl": "image_data\\461041.jpg",
     "cardType": "Instant",
-    "manaCost": "{2}{R}"
+    "manaCost": "{2}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Bolt Bend",
@@ -1032,7 +1368,10 @@
     "multiverseid": "461042",
     "imageUrl": "image_data\\461042.jpg",
     "cardType": "Instant",
-    "manaCost": "{3}{R}"
+    "manaCost": "{3}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Bond of Passion",
@@ -1041,7 +1380,10 @@
     "multiverseid": "461043",
     "imageUrl": "image_data\\461043.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{4}{R}{R}"
+    "manaCost": "{4}{R}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Burning Prophet",
@@ -1050,7 +1392,10 @@
     "multiverseid": "461044",
     "imageUrl": "image_data\\461044.jpg",
     "cardType": "Creature \u2014 Human Wizard",
-    "manaCost": "{1}{R}"
+    "manaCost": "{1}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Chainwhip Cyclops",
@@ -1059,7 +1404,10 @@
     "multiverseid": "461045",
     "imageUrl": "image_data\\461045.jpg",
     "cardType": "Creature \u2014 Cyclops Warrior",
-    "manaCost": "{4}{R}"
+    "manaCost": "{4}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Chandra, Fire Artisan",
@@ -1068,7 +1416,10 @@
     "multiverseid": "461046",
     "imageUrl": "image_data\\461046.jpg",
     "cardType": "Legendary Planeswalker \u2014 Chandra",
-    "manaCost": "{2}{R}{R}"
+    "manaCost": "{2}{R}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Chandra's Pyrohelix",
@@ -1077,7 +1428,10 @@
     "multiverseid": "461047",
     "imageUrl": "image_data\\461047.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{R}"
+    "manaCost": "{1}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Chandra's Triumph",
@@ -1086,7 +1440,10 @@
     "multiverseid": "461048",
     "imageUrl": "image_data\\461048.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{R}"
+    "manaCost": "{1}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Cyclops Electromancer",
@@ -1095,7 +1452,10 @@
     "multiverseid": "461049",
     "imageUrl": "image_data\\461049.jpg",
     "cardType": "Creature \u2014 Cyclops Wizard",
-    "manaCost": "{4}{R}"
+    "manaCost": "{4}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Demolish",
@@ -1104,7 +1464,10 @@
     "multiverseid": "461050",
     "imageUrl": "image_data\\461050.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{3}{R}"
+    "manaCost": "{3}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Devouring Hellion",
@@ -1113,7 +1476,10 @@
     "multiverseid": "461051",
     "imageUrl": "image_data\\461051.jpg",
     "cardType": "Creature \u2014 Hellion",
-    "manaCost": "{2}{R}"
+    "manaCost": "{2}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Dreadhorde Arcanist",
@@ -1122,7 +1488,10 @@
     "multiverseid": "461052",
     "imageUrl": "image_data\\461052.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
-    "manaCost": "{1}{R}"
+    "manaCost": "{1}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Dreadhorde Twins",
@@ -1131,7 +1500,10 @@
     "multiverseid": "461053",
     "imageUrl": "image_data\\461053.jpg",
     "cardType": "Creature \u2014 Zombie Jackal Warrior",
-    "manaCost": "{3}{R}"
+    "manaCost": "{3}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Finale of Promise",
@@ -1140,7 +1512,10 @@
     "multiverseid": "461054",
     "imageUrl": "image_data\\461054.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{X}{R}{R}"
+    "manaCost": "{X}{R}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Goblin Assailant",
@@ -1149,7 +1524,10 @@
     "multiverseid": "461055",
     "imageUrl": "image_data\\461055.jpg",
     "cardType": "Creature \u2014 Goblin Warrior",
-    "manaCost": "{1}{R}"
+    "manaCost": "{1}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Goblin Assault Team",
@@ -1158,7 +1536,10 @@
     "multiverseid": "461056",
     "imageUrl": "image_data\\461056.jpg",
     "cardType": "Creature \u2014 Goblin Warrior",
-    "manaCost": "{3}{R}"
+    "manaCost": "{3}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Grim Initiate",
@@ -1167,7 +1548,10 @@
     "multiverseid": "461057",
     "imageUrl": "image_data\\461057.jpg",
     "cardType": "Creature \u2014 Zombie Warrior",
-    "manaCost": "{R}"
+    "manaCost": "{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Heartfire",
@@ -1176,7 +1560,10 @@
     "multiverseid": "461058",
     "imageUrl": "image_data\\461058.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{R}"
+    "manaCost": "{1}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Honor the God-Pharaoh",
@@ -1185,7 +1572,10 @@
     "multiverseid": "461059",
     "imageUrl": "image_data\\461059.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{R}"
+    "manaCost": "{2}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Ilharg, the Raze-Boar",
@@ -1194,7 +1584,10 @@
     "multiverseid": "461060",
     "imageUrl": "image_data\\461060.jpg",
     "cardType": "Legendary Creature \u2014 Boar God",
-    "manaCost": "{3}{R}{R}"
+    "manaCost": "{3}{R}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Invading Manticore",
@@ -1203,7 +1596,10 @@
     "multiverseid": "461061",
     "imageUrl": "image_data\\461061.jpg",
     "cardType": "Creature \u2014 Zombie Manticore",
-    "manaCost": "{5}{R}"
+    "manaCost": "{5}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Jaya, Venerated Firemage",
@@ -1212,7 +1608,10 @@
     "multiverseid": "461062",
     "imageUrl": "image_data\\461062.jpg",
     "cardType": "Legendary Planeswalker \u2014 Jaya",
-    "manaCost": "{4}{R}"
+    "manaCost": "{4}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Jaya's Greeting",
@@ -1221,7 +1620,10 @@
     "multiverseid": "461063",
     "imageUrl": "image_data\\461063.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{R}"
+    "manaCost": "{1}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Krenko, Tin Street Kingpin",
@@ -1230,7 +1632,10 @@
     "multiverseid": "461064",
     "imageUrl": "image_data\\461064.jpg",
     "cardType": "Legendary Creature \u2014 Goblin",
-    "manaCost": "{2}{R}"
+    "manaCost": "{2}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Mizzium Tank",
@@ -1239,7 +1644,10 @@
     "multiverseid": "461065",
     "imageUrl": "image_data\\461065.jpg",
     "cardType": "Artifact \u2014 Vehicle",
-    "manaCost": "{1}{R}{R}"
+    "manaCost": "{1}{R}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Nahiri's Stoneblades",
@@ -1248,7 +1656,10 @@
     "multiverseid": "461066",
     "imageUrl": "image_data\\461066.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{R}"
+    "manaCost": "{1}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Neheb, Dreadhorde Champion",
@@ -1257,7 +1668,10 @@
     "multiverseid": "461067",
     "imageUrl": "image_data\\461067.jpg",
     "cardType": "Legendary Creature \u2014 Zombie Minotaur Warrior",
-    "manaCost": "{2}{R}{R}"
+    "manaCost": "{2}{R}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Raging Kronch",
@@ -1266,7 +1680,10 @@
     "multiverseid": "461068",
     "imageUrl": "image_data\\461068.jpg",
     "cardType": "Creature \u2014 Beast",
-    "manaCost": "{2}{R}"
+    "manaCost": "{2}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Samut's Sprint",
@@ -1275,7 +1692,10 @@
     "multiverseid": "461069",
     "imageUrl": "image_data\\461069.jpg",
     "cardType": "Instant",
-    "manaCost": "{R}"
+    "manaCost": "{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Sarkhan the Masterless",
@@ -1284,7 +1704,10 @@
     "multiverseid": "461070",
     "imageUrl": "image_data\\461070.jpg",
     "cardType": "Legendary Planeswalker \u2014 Sarkhan",
-    "manaCost": "{3}{R}{R}"
+    "manaCost": "{3}{R}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Sarkhan's Catharsis",
@@ -1293,7 +1716,10 @@
     "multiverseid": "461071",
     "imageUrl": "image_data\\461071.jpg",
     "cardType": "Instant",
-    "manaCost": "{4}{R}"
+    "manaCost": "{4}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Spellgorger Weird",
@@ -1302,7 +1728,10 @@
     "multiverseid": "461072",
     "imageUrl": "image_data\\461072.jpg",
     "cardType": "Creature \u2014 Weird",
-    "manaCost": "{2}{R}"
+    "manaCost": "{2}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Tibalt, Rakish Instigator",
@@ -1311,7 +1740,10 @@
     "multiverseid": "461073",
     "imageUrl": "image_data\\461073.jpg",
     "cardType": "Legendary Planeswalker \u2014 Tibalt",
-    "manaCost": "{2}{R}"
+    "manaCost": "{2}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Tibalt's Rager",
@@ -1320,7 +1752,10 @@
     "multiverseid": "461074",
     "imageUrl": "image_data\\461074.jpg",
     "cardType": "Creature \u2014 Devil",
-    "manaCost": "{1}{R}"
+    "manaCost": "{1}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Turret Ogre",
@@ -1329,7 +1764,10 @@
     "multiverseid": "461075",
     "imageUrl": "image_data\\461075.jpg",
     "cardType": "Creature \u2014 Ogre Warrior",
-    "manaCost": "{3}{R}"
+    "manaCost": "{3}{R}",
+    "colors": [
+      "R"
+    ]
   },
   {
     "name": "Arboreal Grazer",
@@ -1338,7 +1776,10 @@
     "multiverseid": "461076",
     "imageUrl": "image_data\\461076.jpg",
     "cardType": "Creature \u2014 Beast",
-    "manaCost": "{G}"
+    "manaCost": "{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Arlinn, Voice of the Pack",
@@ -1347,7 +1788,10 @@
     "multiverseid": "461077",
     "imageUrl": "image_data\\461077.jpg",
     "cardType": "Legendary Planeswalker \u2014 Arlinn",
-    "manaCost": "{4}{G}{G}"
+    "manaCost": "{4}{G}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Arlinn's Wolf",
@@ -1356,7 +1800,10 @@
     "multiverseid": "461078",
     "imageUrl": "image_data\\461078.jpg",
     "cardType": "Creature \u2014 Wolf",
-    "manaCost": "{2}{G}"
+    "manaCost": "{2}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Awakening of Vitu-Ghazi",
@@ -1365,7 +1812,10 @@
     "multiverseid": "461079",
     "imageUrl": "image_data\\461079.jpg",
     "cardType": "Instant",
-    "manaCost": "{3}{G}{G}"
+    "manaCost": "{3}{G}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Band Together",
@@ -1374,7 +1824,10 @@
     "multiverseid": "461080",
     "imageUrl": "image_data\\461080.jpg",
     "cardType": "Instant",
-    "manaCost": "{2}{G}"
+    "manaCost": "{2}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Bloom Hulk",
@@ -1383,7 +1836,10 @@
     "multiverseid": "461081",
     "imageUrl": "image_data\\461081.jpg",
     "cardType": "Creature \u2014 Plant Elemental",
-    "manaCost": "{3}{G}"
+    "manaCost": "{3}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Bond of Flourishing",
@@ -1392,7 +1848,10 @@
     "multiverseid": "461082",
     "imageUrl": "image_data\\461082.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{1}{G}"
+    "manaCost": "{1}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Centaur Nurturer",
@@ -1401,7 +1860,10 @@
     "multiverseid": "461083",
     "imageUrl": "image_data\\461083.jpg",
     "cardType": "Creature \u2014 Centaur Druid",
-    "manaCost": "{3}{G}"
+    "manaCost": "{3}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Challenger Troll",
@@ -1410,7 +1872,10 @@
     "multiverseid": "461084",
     "imageUrl": "image_data\\461084.jpg",
     "cardType": "Creature \u2014 Troll",
-    "manaCost": "{4}{G}"
+    "manaCost": "{4}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Courage in Crisis",
@@ -1419,7 +1884,10 @@
     "multiverseid": "461085",
     "imageUrl": "image_data\\461085.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{G}"
+    "manaCost": "{2}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Evolution Sage",
@@ -1428,7 +1896,10 @@
     "multiverseid": "461086",
     "imageUrl": "image_data\\461086.jpg",
     "cardType": "Creature \u2014 Elf Druid",
-    "manaCost": "{2}{G}"
+    "manaCost": "{2}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Finale of Devastation",
@@ -1437,7 +1908,10 @@
     "multiverseid": "461087",
     "imageUrl": "image_data\\461087.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{X}{G}{G}"
+    "manaCost": "{X}{G}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Forced Landing",
@@ -1446,7 +1920,10 @@
     "multiverseid": "461088",
     "imageUrl": "image_data\\461088.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{G}"
+    "manaCost": "{1}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Giant Growth",
@@ -1455,7 +1932,10 @@
     "multiverseid": "461089",
     "imageUrl": "image_data\\461089.jpg",
     "cardType": "Instant",
-    "manaCost": "{G}"
+    "manaCost": "{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "God-Eternal Rhonas",
@@ -1464,7 +1944,10 @@
     "multiverseid": "461090",
     "imageUrl": "image_data\\461090.jpg",
     "cardType": "Legendary Creature \u2014 Zombie God",
-    "manaCost": "{3}{G}{G}"
+    "manaCost": "{3}{G}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Jiang Yanggu, Wildcrafter",
@@ -1473,7 +1956,10 @@
     "multiverseid": "461091",
     "imageUrl": "image_data\\461091.jpg",
     "cardType": "Legendary Planeswalker \u2014 Yanggu",
-    "manaCost": "{2}{G}"
+    "manaCost": "{2}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Kraul Stinger",
@@ -1482,7 +1968,10 @@
     "multiverseid": "461092",
     "imageUrl": "image_data\\461092.jpg",
     "cardType": "Creature \u2014 Insect Assassin",
-    "manaCost": "{2}{G}"
+    "manaCost": "{2}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Kronch Wrangler",
@@ -1491,7 +1980,10 @@
     "multiverseid": "461093",
     "imageUrl": "image_data\\461093.jpg",
     "cardType": "Creature \u2014 Human Warrior",
-    "manaCost": "{1}{G}"
+    "manaCost": "{1}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Mowu, Loyal Companion",
@@ -1500,7 +1992,10 @@
     "multiverseid": "461094",
     "imageUrl": "image_data\\461094.jpg",
     "cardType": "Legendary Creature \u2014 Dog",
-    "manaCost": "{3}{G}"
+    "manaCost": "{3}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "New Horizons",
@@ -1509,7 +2004,10 @@
     "multiverseid": "461095",
     "imageUrl": "image_data\\461095.jpg",
     "cardType": "Enchantment \u2014 Aura",
-    "manaCost": "{2}{G}"
+    "manaCost": "{2}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Nissa, Who Shakes the World",
@@ -1518,7 +2016,10 @@
     "multiverseid": "461096",
     "imageUrl": "image_data\\461096.jpg",
     "cardType": "Legendary Planeswalker \u2014 Nissa",
-    "manaCost": "{3}{G}{G}"
+    "manaCost": "{3}{G}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Nissa's Triumph",
@@ -1527,7 +2028,10 @@
     "multiverseid": "461097",
     "imageUrl": "image_data\\461097.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{G}{G}"
+    "manaCost": "{G}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Paradise Druid",
@@ -1536,7 +2040,10 @@
     "multiverseid": "461098",
     "imageUrl": "image_data\\461098.jpg",
     "cardType": "Creature \u2014 Elf Druid",
-    "manaCost": "{1}{G}"
+    "manaCost": "{1}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Planewide Celebration",
@@ -1545,7 +2052,10 @@
     "multiverseid": "461099",
     "imageUrl": "image_data\\461099.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{5}{G}{G}"
+    "manaCost": "{5}{G}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Pollenbright Druid",
@@ -1554,7 +2064,10 @@
     "multiverseid": "461100",
     "imageUrl": "image_data\\461100.jpg",
     "cardType": "Creature \u2014 Elf Druid",
-    "manaCost": "{1}{G}"
+    "manaCost": "{1}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Primordial Wurm",
@@ -1563,7 +2076,10 @@
     "multiverseid": "461101",
     "imageUrl": "image_data\\461101.jpg",
     "cardType": "Creature \u2014 Wurm",
-    "manaCost": "{4}{G}{G}"
+    "manaCost": "{4}{G}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Return to Nature",
@@ -1572,7 +2088,10 @@
     "multiverseid": "461102",
     "imageUrl": "image_data\\461102.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{G}"
+    "manaCost": "{1}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Snarespinner",
@@ -1581,7 +2100,10 @@
     "multiverseid": "461103",
     "imageUrl": "image_data\\461103.jpg",
     "cardType": "Creature \u2014 Spider",
-    "manaCost": "{1}{G}"
+    "manaCost": "{1}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Steady Aim",
@@ -1590,7 +2112,10 @@
     "multiverseid": "461104",
     "imageUrl": "image_data\\461104.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{G}"
+    "manaCost": "{1}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Storm the Citadel",
@@ -1599,7 +2124,10 @@
     "multiverseid": "461105",
     "imageUrl": "image_data\\461105.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{4}{G}"
+    "manaCost": "{4}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Thundering Ceratok",
@@ -1608,7 +2136,10 @@
     "multiverseid": "461106",
     "imageUrl": "image_data\\461106.jpg",
     "cardType": "Creature \u2014 Rhino",
-    "manaCost": "{4}{G}"
+    "manaCost": "{4}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Vivien, Champion of the Wilds",
@@ -1617,7 +2148,10 @@
     "multiverseid": "461107",
     "imageUrl": "image_data\\461107.jpg",
     "cardType": "Legendary Planeswalker \u2014 Vivien",
-    "manaCost": "{2}{G}"
+    "manaCost": "{2}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Vivien's Arkbow",
@@ -1626,7 +2160,10 @@
     "multiverseid": "461108",
     "imageUrl": "image_data\\461108.jpg",
     "cardType": "Legendary Artifact",
-    "manaCost": "{1}{G}"
+    "manaCost": "{1}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Vivien's Grizzly",
@@ -1635,7 +2172,10 @@
     "multiverseid": "461109",
     "imageUrl": "image_data\\461109.jpg",
     "cardType": "Creature \u2014 Bear Spirit",
-    "manaCost": "{2}{G}"
+    "manaCost": "{2}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Wardscale Crocodile",
@@ -1644,7 +2184,10 @@
     "multiverseid": "461110",
     "imageUrl": "image_data\\461110.jpg",
     "cardType": "Creature \u2014 Crocodile",
-    "manaCost": "{4}{G}"
+    "manaCost": "{4}{G}",
+    "colors": [
+      "G"
+    ]
   },
   {
     "name": "Ajani, the Greathearted",
@@ -1653,7 +2196,11 @@
     "multiverseid": "461111",
     "imageUrl": "image_data\\461111.jpg",
     "cardType": "Legendary Planeswalker \u2014 Ajani",
-    "manaCost": "{2}{G}{W}"
+    "manaCost": "{2}{G}{W}",
+    "colors": [
+      "G",
+      "W"
+    ]
   },
   {
     "name": "Angrath's Rampage",
@@ -1662,7 +2209,11 @@
     "multiverseid": "461112",
     "imageUrl": "image_data\\461112.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{B}{R}"
+    "manaCost": "{B}{R}",
+    "colors": [
+      "B",
+      "R"
+    ]
   },
   {
     "name": "Bioessence Hydra",
@@ -1671,7 +2222,11 @@
     "multiverseid": "461113",
     "imageUrl": "image_data\\461113.jpg",
     "cardType": "Creature \u2014 Hydra Mutant",
-    "manaCost": "{3}{G}{U}"
+    "manaCost": "{3}{G}{U}",
+    "colors": [
+      "G",
+      "U"
+    ]
   },
   {
     "name": "Casualties of War",
@@ -1680,7 +2235,11 @@
     "multiverseid": "461114",
     "imageUrl": "image_data\\461114.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{B}{B}{G}{G}"
+    "manaCost": "{2}{B}{B}{G}{G}",
+    "colors": [
+      "B",
+      "G"
+    ]
   },
   {
     "name": "Cruel Celebrant",
@@ -1689,7 +2248,11 @@
     "multiverseid": "461115",
     "imageUrl": "image_data\\461115.jpg",
     "cardType": "Creature \u2014 Vampire",
-    "manaCost": "{W}{B}"
+    "manaCost": "{W}{B}",
+    "colors": [
+      "B",
+      "W"
+    ]
   },
   {
     "name": "Deathsprout",
@@ -1698,7 +2261,11 @@
     "multiverseid": "461116",
     "imageUrl": "image_data\\461116.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{B}{B}{G}"
+    "manaCost": "{1}{B}{B}{G}",
+    "colors": [
+      "B",
+      "G"
+    ]
   },
   {
     "name": "Despark",
@@ -1707,7 +2274,11 @@
     "multiverseid": "461117",
     "imageUrl": "image_data\\461117.jpg",
     "cardType": "Instant",
-    "manaCost": "{W}{B}"
+    "manaCost": "{W}{B}",
+    "colors": [
+      "B",
+      "W"
+    ]
   },
   {
     "name": "Domri, Anarch of Bolas",
@@ -1716,7 +2287,11 @@
     "multiverseid": "461118",
     "imageUrl": "image_data\\461118.jpg",
     "cardType": "Legendary Planeswalker \u2014 Domri",
-    "manaCost": "{1}{R}{G}"
+    "manaCost": "{1}{R}{G}",
+    "colors": [
+      "G",
+      "R"
+    ]
   },
   {
     "name": "Domri's Ambush",
@@ -1725,7 +2300,11 @@
     "multiverseid": "461119",
     "imageUrl": "image_data\\461119.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{R}{G}"
+    "manaCost": "{R}{G}",
+    "colors": [
+      "G",
+      "R"
+    ]
   },
   {
     "name": "Dovin's Veto",
@@ -1734,7 +2313,11 @@
     "multiverseid": "461120",
     "imageUrl": "image_data\\461120.jpg",
     "cardType": "Instant",
-    "manaCost": "{W}{U}"
+    "manaCost": "{W}{U}",
+    "colors": [
+      "U",
+      "W"
+    ]
   },
   {
     "name": "Dreadhorde Butcher",
@@ -1743,7 +2326,11 @@
     "multiverseid": "461121",
     "imageUrl": "image_data\\461121.jpg",
     "cardType": "Creature \u2014 Zombie Warrior",
-    "manaCost": "{B}{R}"
+    "manaCost": "{B}{R}",
+    "colors": [
+      "B",
+      "R"
+    ]
   },
   {
     "name": "Elite Guardmage",
@@ -1752,7 +2339,11 @@
     "multiverseid": "461122",
     "imageUrl": "image_data\\461122.jpg",
     "cardType": "Creature \u2014 Human Wizard",
-    "manaCost": "{2}{W}{U}"
+    "manaCost": "{2}{W}{U}",
+    "colors": [
+      "U",
+      "W"
+    ]
   },
   {
     "name": "Enter the God-Eternals",
@@ -1761,7 +2352,11 @@
     "multiverseid": "461123",
     "imageUrl": "image_data\\461123.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{U}{U}{B}"
+    "manaCost": "{2}{U}{U}{B}",
+    "colors": [
+      "B",
+      "U"
+    ]
   },
   {
     "name": "Feather, the Redeemed",
@@ -1770,7 +2365,11 @@
     "multiverseid": "461124",
     "imageUrl": "image_data\\461124.jpg",
     "cardType": "Legendary Creature \u2014 Angel",
-    "manaCost": "{R}{W}{W}"
+    "manaCost": "{R}{W}{W}",
+    "colors": [
+      "R",
+      "W"
+    ]
   },
   {
     "name": "Gleaming Overseer",
@@ -1779,7 +2378,11 @@
     "multiverseid": "461125",
     "imageUrl": "image_data\\461125.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
-    "manaCost": "{1}{U}{B}"
+    "manaCost": "{1}{U}{B}",
+    "colors": [
+      "B",
+      "U"
+    ]
   },
   {
     "name": "Heartwarming Redemption",
@@ -1788,7 +2391,11 @@
     "multiverseid": "461126",
     "imageUrl": "image_data\\461126.jpg",
     "cardType": "Instant",
-    "manaCost": "{2}{R}{W}"
+    "manaCost": "{2}{R}{W}",
+    "colors": [
+      "R",
+      "W"
+    ]
   },
   {
     "name": "Huatli's Raptor",
@@ -1797,7 +2404,11 @@
     "multiverseid": "461127",
     "imageUrl": "image_data\\461127.jpg",
     "cardType": "Creature \u2014 Dinosaur",
-    "manaCost": "{G}{W}"
+    "manaCost": "{G}{W}",
+    "colors": [
+      "G",
+      "W"
+    ]
   },
   {
     "name": "Invade the City",
@@ -1806,7 +2417,11 @@
     "multiverseid": "461128",
     "imageUrl": "image_data\\461128.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{1}{U}{R}"
+    "manaCost": "{1}{U}{R}",
+    "colors": [
+      "R",
+      "U"
+    ]
   },
   {
     "name": "Leyline Prowler",
@@ -1815,7 +2430,11 @@
     "multiverseid": "461129",
     "imageUrl": "image_data\\461129.jpg",
     "cardType": "Creature \u2014 Nightmare Beast",
-    "manaCost": "{1}{B}{G}"
+    "manaCost": "{1}{B}{G}",
+    "colors": [
+      "B",
+      "G"
+    ]
   },
   {
     "name": "Living Twister",
@@ -1824,7 +2443,11 @@
     "multiverseid": "461130",
     "imageUrl": "image_data\\461130.jpg",
     "cardType": "Creature \u2014 Elemental",
-    "manaCost": "{R}{R}{G}"
+    "manaCost": "{R}{R}{G}",
+    "colors": [
+      "G",
+      "R"
+    ]
   },
   {
     "name": "Mayhem Devil",
@@ -1833,7 +2456,11 @@
     "multiverseid": "461131",
     "imageUrl": "image_data\\461131.jpg",
     "cardType": "Creature \u2014 Devil",
-    "manaCost": "{1}{B}{R}"
+    "manaCost": "{1}{B}{R}",
+    "colors": [
+      "B",
+      "R"
+    ]
   },
   {
     "name": "Merfolk Skydiver",
@@ -1842,7 +2469,11 @@
     "multiverseid": "461132",
     "imageUrl": "image_data\\461132.jpg",
     "cardType": "Creature \u2014 Merfolk Mutant",
-    "manaCost": "{G}{U}"
+    "manaCost": "{G}{U}",
+    "colors": [
+      "G",
+      "U"
+    ]
   },
   {
     "name": "Neoform",
@@ -1851,7 +2482,11 @@
     "multiverseid": "461133",
     "imageUrl": "image_data\\461133.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{G}{U}"
+    "manaCost": "{G}{U}",
+    "colors": [
+      "G",
+      "U"
+    ]
   },
   {
     "name": "Nicol Bolas, Dragon-God",
@@ -1860,7 +2495,12 @@
     "multiverseid": "461134",
     "imageUrl": "image_data\\461134.jpg",
     "cardType": "Legendary Planeswalker \u2014 Bolas",
-    "manaCost": "{U}{B}{B}{B}{R}"
+    "manaCost": "{U}{B}{B}{B}{R}",
+    "colors": [
+      "B",
+      "R",
+      "U"
+    ]
   },
   {
     "name": "Niv-Mizzet Reborn",
@@ -1869,7 +2509,14 @@
     "multiverseid": "461135",
     "imageUrl": "image_data\\461135.jpg",
     "cardType": "Legendary Creature \u2014 Dragon Avatar",
-    "manaCost": "{W}{U}{B}{R}{G}"
+    "manaCost": "{W}{U}{B}{R}{G}",
+    "colors": [
+      "B",
+      "G",
+      "R",
+      "U",
+      "W"
+    ]
   },
   {
     "name": "Oath of Kaya",
@@ -1878,7 +2525,11 @@
     "multiverseid": "461136",
     "imageUrl": "image_data\\461136.jpg",
     "cardType": "Legendary Enchantment",
-    "manaCost": "{1}{W}{B}"
+    "manaCost": "{1}{W}{B}",
+    "colors": [
+      "B",
+      "W"
+    ]
   },
   {
     "name": "Pledge of Unity",
@@ -1887,7 +2538,11 @@
     "multiverseid": "461137",
     "imageUrl": "image_data\\461137.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{G}{W}"
+    "manaCost": "{1}{G}{W}",
+    "colors": [
+      "G",
+      "W"
+    ]
   },
   {
     "name": "Ral, Storm Conduit",
@@ -1896,7 +2551,11 @@
     "multiverseid": "461138",
     "imageUrl": "image_data\\461138.jpg",
     "cardType": "Legendary Planeswalker \u2014 Ral",
-    "manaCost": "{2}{U}{R}"
+    "manaCost": "{2}{U}{R}",
+    "colors": [
+      "R",
+      "U"
+    ]
   },
   {
     "name": "Ral's Outburst",
@@ -1905,7 +2564,11 @@
     "multiverseid": "461139",
     "imageUrl": "image_data\\461139.jpg",
     "cardType": "Instant",
-    "manaCost": "{2}{U}{R}"
+    "manaCost": "{2}{U}{R}",
+    "colors": [
+      "R",
+      "U"
+    ]
   },
   {
     "name": "Roalesk, Apex Hybrid",
@@ -1914,7 +2577,11 @@
     "multiverseid": "461140",
     "imageUrl": "image_data\\461140.jpg",
     "cardType": "Legendary Creature \u2014 Human Mutant",
-    "manaCost": "{2}{G}{G}{U}"
+    "manaCost": "{2}{G}{G}{U}",
+    "colors": [
+      "G",
+      "U"
+    ]
   },
   {
     "name": "Role Reversal",
@@ -1923,7 +2590,11 @@
     "multiverseid": "461141",
     "imageUrl": "image_data\\461141.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{U}{U}{R}"
+    "manaCost": "{U}{U}{R}",
+    "colors": [
+      "R",
+      "U"
+    ]
   },
   {
     "name": "Rubblebelt Rioters",
@@ -1932,7 +2603,11 @@
     "multiverseid": "461142",
     "imageUrl": "image_data\\461142.jpg",
     "cardType": "Creature \u2014 Human Berserker",
-    "manaCost": "{1}{R}{G}"
+    "manaCost": "{1}{R}{G}",
+    "colors": [
+      "G",
+      "R"
+    ]
   },
   {
     "name": "Solar Blaze",
@@ -1941,7 +2616,11 @@
     "multiverseid": "461143",
     "imageUrl": "image_data\\461143.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{R}{W}"
+    "manaCost": "{2}{R}{W}",
+    "colors": [
+      "R",
+      "W"
+    ]
   },
   {
     "name": "Sorin, Vengeful Bloodlord",
@@ -1950,7 +2629,11 @@
     "multiverseid": "461144",
     "imageUrl": "image_data\\461144.jpg",
     "cardType": "Legendary Planeswalker \u2014 Sorin",
-    "manaCost": "{2}{W}{B}"
+    "manaCost": "{2}{W}{B}",
+    "colors": [
+      "B",
+      "W"
+    ]
   },
   {
     "name": "Soul Diviner",
@@ -1959,7 +2642,11 @@
     "multiverseid": "461145",
     "imageUrl": "image_data\\461145.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
-    "manaCost": "{U}{B}"
+    "manaCost": "{U}{B}",
+    "colors": [
+      "B",
+      "U"
+    ]
   },
   {
     "name": "Storrev, Devkarin Lich",
@@ -1968,7 +2655,11 @@
     "multiverseid": "461146",
     "imageUrl": "image_data\\461146.jpg",
     "cardType": "Legendary Creature \u2014 Zombie Elf Wizard",
-    "manaCost": "{1}{B}{B}{G}"
+    "manaCost": "{1}{B}{B}{G}",
+    "colors": [
+      "B",
+      "G"
+    ]
   },
   {
     "name": "Tamiyo, Collector of Tales",
@@ -1977,7 +2668,11 @@
     "multiverseid": "461147",
     "imageUrl": "image_data\\461147.jpg",
     "cardType": "Legendary Planeswalker \u2014 Tamiyo",
-    "manaCost": "{2}{G}{U}"
+    "manaCost": "{2}{G}{U}",
+    "colors": [
+      "G",
+      "U"
+    ]
   },
   {
     "name": "Teferi, Time Raveler",
@@ -1986,7 +2681,11 @@
     "multiverseid": "461148",
     "imageUrl": "image_data\\461148.jpg",
     "cardType": "Legendary Planeswalker \u2014 Teferi",
-    "manaCost": "{1}{W}{U}"
+    "manaCost": "{1}{W}{U}",
+    "colors": [
+      "U",
+      "W"
+    ]
   },
   {
     "name": "Tenth District Legionnaire",
@@ -1995,7 +2694,11 @@
     "multiverseid": "461149",
     "imageUrl": "image_data\\461149.jpg",
     "cardType": "Creature \u2014 Human Soldier",
-    "manaCost": "{R}{W}"
+    "manaCost": "{R}{W}",
+    "colors": [
+      "R",
+      "W"
+    ]
   },
   {
     "name": "Time Wipe",
@@ -2004,7 +2707,11 @@
     "multiverseid": "461150",
     "imageUrl": "image_data\\461150.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{W}{W}{U}"
+    "manaCost": "{2}{W}{W}{U}",
+    "colors": [
+      "U",
+      "W"
+    ]
   },
   {
     "name": "Tolsimir, Friend to Wolves",
@@ -2013,7 +2720,11 @@
     "multiverseid": "461151",
     "imageUrl": "image_data\\461151.jpg",
     "cardType": "Legendary Creature \u2014 Elf Scout",
-    "manaCost": "{2}{G}{G}{W}"
+    "manaCost": "{2}{G}{G}{W}",
+    "colors": [
+      "G",
+      "W"
+    ]
   },
   {
     "name": "Tyrant's Scorn",
@@ -2022,7 +2733,11 @@
     "multiverseid": "461152",
     "imageUrl": "image_data\\461152.jpg",
     "cardType": "Instant",
-    "manaCost": "{U}{B}"
+    "manaCost": "{U}{B}",
+    "colors": [
+      "B",
+      "U"
+    ]
   },
   {
     "name": "Widespread Brutality",
@@ -2031,7 +2746,11 @@
     "multiverseid": "461153",
     "imageUrl": "image_data\\461153.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{1}{B}{R}{R}"
+    "manaCost": "{1}{B}{R}{R}",
+    "colors": [
+      "B",
+      "R"
+    ]
   },
   {
     "name": "Angrath, Captain of Chaos",
@@ -2040,7 +2759,11 @@
     "multiverseid": "461154",
     "imageUrl": "image_data\\461154.jpg",
     "cardType": "Legendary Planeswalker \u2014 Angrath",
-    "manaCost": "{2}{B/R}{B/R}"
+    "manaCost": "{2}{B/R}{B/R}",
+    "colors": [
+      "B",
+      "R"
+    ]
   },
   {
     "name": "Ashiok, Dream Render",
@@ -2049,7 +2772,11 @@
     "multiverseid": "461155",
     "imageUrl": "image_data\\461155.jpg",
     "cardType": "Legendary Planeswalker \u2014 Ashiok",
-    "manaCost": "{1}{U/B}{U/B}"
+    "manaCost": "{1}{U/B}{U/B}",
+    "colors": [
+      "B",
+      "U"
+    ]
   },
   {
     "name": "Dovin, Hand of Control",
@@ -2058,7 +2785,11 @@
     "multiverseid": "461156",
     "imageUrl": "image_data\\461156.jpg",
     "cardType": "Legendary Planeswalker \u2014 Dovin",
-    "manaCost": "{2}{W/U}"
+    "manaCost": "{2}{W/U}",
+    "colors": [
+      "U",
+      "W"
+    ]
   },
   {
     "name": "Huatli, the Sun's Heart",
@@ -2067,7 +2798,11 @@
     "multiverseid": "461157",
     "imageUrl": "image_data\\461157.jpg",
     "cardType": "Legendary Planeswalker \u2014 Huatli",
-    "manaCost": "{2}{G/W}"
+    "manaCost": "{2}{G/W}",
+    "colors": [
+      "G",
+      "W"
+    ]
   },
   {
     "name": "Kaya, Bane of the Dead",
@@ -2076,7 +2811,11 @@
     "multiverseid": "461158",
     "imageUrl": "image_data\\461158.jpg",
     "cardType": "Legendary Planeswalker \u2014 Kaya",
-    "manaCost": "{3}{W/B}{W/B}{W/B}"
+    "manaCost": "{3}{W/B}{W/B}{W/B}",
+    "colors": [
+      "B",
+      "W"
+    ]
   },
   {
     "name": "Kiora, Behemoth Beckoner",
@@ -2085,7 +2824,11 @@
     "multiverseid": "461159",
     "imageUrl": "image_data\\461159.jpg",
     "cardType": "Legendary Planeswalker \u2014 Kiora",
-    "manaCost": "{2}{G/U}"
+    "manaCost": "{2}{G/U}",
+    "colors": [
+      "G",
+      "U"
+    ]
   },
   {
     "name": "Nahiri, Storm of Stone",
@@ -2094,7 +2837,11 @@
     "multiverseid": "461160",
     "imageUrl": "image_data\\461160.jpg",
     "cardType": "Legendary Planeswalker \u2014 Nahiri",
-    "manaCost": "{2}{R/W}{R/W}"
+    "manaCost": "{2}{R/W}{R/W}",
+    "colors": [
+      "R",
+      "W"
+    ]
   },
   {
     "name": "Saheeli, Sublime Artificer",
@@ -2103,7 +2850,11 @@
     "multiverseid": "461161",
     "imageUrl": "image_data\\461161.jpg",
     "cardType": "Legendary Planeswalker \u2014 Saheeli",
-    "manaCost": "{1}{U/R}{U/R}"
+    "manaCost": "{1}{U/R}{U/R}",
+    "colors": [
+      "R",
+      "U"
+    ]
   },
   {
     "name": "Samut, Tyrant Smasher",
@@ -2112,7 +2863,11 @@
     "multiverseid": "461162",
     "imageUrl": "image_data\\461162.jpg",
     "cardType": "Legendary Planeswalker \u2014 Samut",
-    "manaCost": "{2}{R/G}{R/G}"
+    "manaCost": "{2}{R/G}{R/G}",
+    "colors": [
+      "G",
+      "R"
+    ]
   },
   {
     "name": "Vraska, Swarm's Eminence",
@@ -2121,7 +2876,11 @@
     "multiverseid": "461163",
     "imageUrl": "image_data\\461163.jpg",
     "cardType": "Legendary Planeswalker \u2014 Vraska",
-    "manaCost": "{2}{B/G}{B/G}"
+    "manaCost": "{2}{B/G}{B/G}",
+    "colors": [
+      "B",
+      "G"
+    ]
   },
   {
     "name": "Firemind Vessel",
@@ -2130,7 +2889,8 @@
     "multiverseid": "461164",
     "imageUrl": "image_data\\461164.jpg",
     "cardType": "Artifact",
-    "manaCost": "{4}"
+    "manaCost": "{4}",
+    "colors": ""
   },
   {
     "name": "God-Pharaoh's Statue",
@@ -2139,7 +2899,8 @@
     "multiverseid": "461165",
     "imageUrl": "image_data\\461165.jpg",
     "cardType": "Legendary Artifact",
-    "manaCost": "{6}"
+    "manaCost": "{6}",
+    "colors": ""
   },
   {
     "name": "Guild Globe",
@@ -2148,7 +2909,8 @@
     "multiverseid": "461166",
     "imageUrl": "image_data\\461166.jpg",
     "cardType": "Artifact",
-    "manaCost": "{2}"
+    "manaCost": "{2}",
+    "colors": ""
   },
   {
     "name": "Iron Bully",
@@ -2157,7 +2919,8 @@
     "multiverseid": "461167",
     "imageUrl": "image_data\\461167.jpg",
     "cardType": "Artifact Creature \u2014 Golem",
-    "manaCost": "{3}"
+    "manaCost": "{3}",
+    "colors": ""
   },
   {
     "name": "Mana Geode",
@@ -2166,7 +2929,8 @@
     "multiverseid": "461168",
     "imageUrl": "image_data\\461168.jpg",
     "cardType": "Artifact",
-    "manaCost": "{3}"
+    "manaCost": "{3}",
+    "colors": ""
   },
   {
     "name": "Prismite",
@@ -2175,7 +2939,8 @@
     "multiverseid": "461169",
     "imageUrl": "image_data\\461169.jpg",
     "cardType": "Artifact Creature \u2014 Golem",
-    "manaCost": "{2}"
+    "manaCost": "{2}",
+    "colors": ""
   },
   {
     "name": "Saheeli's Silverwing",
@@ -2184,7 +2949,8 @@
     "multiverseid": "461170",
     "imageUrl": "image_data\\461170.jpg",
     "cardType": "Artifact Creature \u2014 Drake",
-    "manaCost": "{4}"
+    "manaCost": "{4}",
+    "colors": ""
   },
   {
     "name": "Blast Zone",
@@ -2193,7 +2959,8 @@
     "multiverseid": "461171",
     "imageUrl": "image_data\\461171.jpg",
     "cardType": "Land",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Emergence Zone",
@@ -2202,7 +2969,8 @@
     "multiverseid": "461172",
     "imageUrl": "image_data\\461172.jpg",
     "cardType": "Land",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Gateway Plaza",
@@ -2211,7 +2979,8 @@
     "multiverseid": "461173",
     "imageUrl": "image_data\\461173.jpg",
     "cardType": "Land \u2014 Gate",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Interplanar Beacon",
@@ -2220,7 +2989,8 @@
     "multiverseid": "461174",
     "imageUrl": "image_data\\461174.jpg",
     "cardType": "Land",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Karn's Bastion",
@@ -2229,7 +2999,8 @@
     "multiverseid": "461175",
     "imageUrl": "image_data\\461175.jpg",
     "cardType": "Land",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Mobilized District",
@@ -2238,7 +3009,8 @@
     "multiverseid": "461176",
     "imageUrl": "image_data\\461176.jpg",
     "cardType": "Land",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Plains",
@@ -2247,7 +3019,8 @@
     "multiverseid": "461177",
     "imageUrl": "image_data\\461177.jpg",
     "cardType": "Basic Land \u2014 Plains",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Plains",
@@ -2256,7 +3029,8 @@
     "multiverseid": "461178",
     "imageUrl": "image_data\\461178.jpg",
     "cardType": "Basic Land \u2014 Plains",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Plains",
@@ -2265,7 +3039,8 @@
     "multiverseid": "461179",
     "imageUrl": "image_data\\461179.jpg",
     "cardType": "Basic Land \u2014 Plains",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Island",
@@ -2274,7 +3049,8 @@
     "multiverseid": "461180",
     "imageUrl": "image_data\\461180.jpg",
     "cardType": "Basic Land \u2014 Island",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Island",
@@ -2283,7 +3059,8 @@
     "multiverseid": "461181",
     "imageUrl": "image_data\\461181.jpg",
     "cardType": "Basic Land \u2014 Island",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Island",
@@ -2292,7 +3069,8 @@
     "multiverseid": "461182",
     "imageUrl": "image_data\\461182.jpg",
     "cardType": "Basic Land \u2014 Island",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Swamp",
@@ -2301,7 +3079,8 @@
     "multiverseid": "461183",
     "imageUrl": "image_data\\461183.jpg",
     "cardType": "Basic Land \u2014 Swamp",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Swamp",
@@ -2310,7 +3089,8 @@
     "multiverseid": "461184",
     "imageUrl": "image_data\\461184.jpg",
     "cardType": "Basic Land \u2014 Swamp",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Swamp",
@@ -2319,7 +3099,8 @@
     "multiverseid": "461185",
     "imageUrl": "image_data\\461185.jpg",
     "cardType": "Basic Land \u2014 Swamp",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Mountain",
@@ -2328,7 +3109,8 @@
     "multiverseid": "461186",
     "imageUrl": "image_data\\461186.jpg",
     "cardType": "Basic Land \u2014 Mountain",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Mountain",
@@ -2337,7 +3119,8 @@
     "multiverseid": "461187",
     "imageUrl": "image_data\\461187.jpg",
     "cardType": "Basic Land \u2014 Mountain",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Mountain",
@@ -2346,7 +3129,8 @@
     "multiverseid": "461188",
     "imageUrl": "image_data\\461188.jpg",
     "cardType": "Basic Land \u2014 Mountain",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Forest",
@@ -2355,7 +3139,8 @@
     "multiverseid": "461189",
     "imageUrl": "image_data\\461189.jpg",
     "cardType": "Basic Land \u2014 Forest",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Forest",
@@ -2364,7 +3149,8 @@
     "multiverseid": "461190",
     "imageUrl": "image_data\\461190.jpg",
     "cardType": "Basic Land \u2014 Forest",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Forest",
@@ -2373,7 +3159,8 @@
     "multiverseid": "461191",
     "imageUrl": "image_data\\461191.jpg",
     "cardType": "Basic Land \u2014 Forest",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Gideon, the Oathsworn",
@@ -2382,7 +3169,10 @@
     "multiverseid": "463832",
     "imageUrl": "image_data\\463832.jpg",
     "cardType": "Legendary Planeswalker \u2014 Gideon",
-    "manaCost": "{4}{W}{W}"
+    "manaCost": "{4}{W}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Desperate Lunge",
@@ -2391,7 +3181,10 @@
     "multiverseid": "463833",
     "imageUrl": "image_data\\463833.jpg",
     "cardType": "Instant",
-    "manaCost": "{1}{W}"
+    "manaCost": "{1}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Gideon's Battle Cry",
@@ -2400,7 +3193,10 @@
     "multiverseid": "463834",
     "imageUrl": "image_data\\463834.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{2}{W}{W}"
+    "manaCost": "{2}{W}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Gideon's Company",
@@ -2409,7 +3205,10 @@
     "multiverseid": "463835",
     "imageUrl": "image_data\\463835.jpg",
     "cardType": "Creature \u2014 Human Soldier",
-    "manaCost": "{3}{W}"
+    "manaCost": "{3}{W}",
+    "colors": [
+      "W"
+    ]
   },
   {
     "name": "Orzhov Guildgate",
@@ -2418,7 +3217,8 @@
     "multiverseid": "463836",
     "imageUrl": "image_data\\463836.jpg",
     "cardType": "Land \u2014 Gate",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Jace, Arcane Strategist",
@@ -2427,7 +3227,10 @@
     "multiverseid": "463837",
     "imageUrl": "image_data\\463837.jpg",
     "cardType": "Legendary Planeswalker \u2014 Jace",
-    "manaCost": "{4}{U}{U}"
+    "manaCost": "{4}{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Guildpact Informant",
@@ -2436,7 +3239,10 @@
     "multiverseid": "463838",
     "imageUrl": "image_data\\463838.jpg",
     "cardType": "Creature \u2014 Faerie Rogue",
-    "manaCost": "{2}{U}"
+    "manaCost": "{2}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Jace's Projection",
@@ -2445,7 +3251,10 @@
     "multiverseid": "463839",
     "imageUrl": "image_data\\463839.jpg",
     "cardType": "Creature \u2014 Wizard Illusion",
-    "manaCost": "{2}{U}{U}"
+    "manaCost": "{2}{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Jace's Ruse",
@@ -2454,7 +3263,10 @@
     "multiverseid": "463840",
     "imageUrl": "image_data\\463840.jpg",
     "cardType": "Sorcery",
-    "manaCost": "{3}{U}{U}"
+    "manaCost": "{3}{U}{U}",
+    "colors": [
+      "U"
+    ]
   },
   {
     "name": "Simic Guildgate",
@@ -2463,7 +3275,8 @@
     "multiverseid": "463841",
     "imageUrl": "image_data\\463841.jpg",
     "cardType": "Land \u2014 Gate",
-    "manaCost": ""
+    "manaCost": "",
+    "colors": ""
   },
   {
     "name": "Tezzeret, Master of the Bridge",
@@ -2472,6 +3285,10 @@
     "multiverseid": "463842",
     "imageUrl": "image_data\\463842.jpg",
     "cardType": "Legendary Planeswalker \u2014 Tezzeret",
-    "manaCost": "{4}{U}{B}"
+    "manaCost": "{4}{U}{B}",
+    "colors": [
+      "B",
+      "U"
+    ]
   }
 ]

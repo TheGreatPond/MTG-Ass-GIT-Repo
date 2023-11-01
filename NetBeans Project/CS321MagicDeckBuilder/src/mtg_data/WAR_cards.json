@@ -7,7 +7,7 @@
     "imageUrl": "image_data\\460928.jpg",
     "cardType": "Legendary Planeswalker \u2014 Karn",
     "manaCost": "{4}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Ugin, the Ineffable",
@@ -17,7 +17,7 @@
     "imageUrl": "image_data\\460929.jpg",
     "cardType": "Legendary Planeswalker \u2014 Ugin",
     "manaCost": "{6}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Ugin's Conjurant",
@@ -27,7 +27,7 @@
     "imageUrl": "image_data\\460930.jpg",
     "cardType": "Creature \u2014 Spirit Monk",
     "manaCost": "{X}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Ajani's Pridemate",
@@ -37,7 +37,7 @@
     "imageUrl": "image_data\\460931.jpg",
     "cardType": "Creature \u2014 Cat Soldier",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -49,7 +49,7 @@
     "imageUrl": "image_data\\460932.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -61,7 +61,7 @@
     "imageUrl": "image_data\\460933.jpg",
     "cardType": "Sorcery",
     "manaCost": "{4}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -73,7 +73,7 @@
     "imageUrl": "image_data\\460934.jpg",
     "cardType": "Creature \u2014 Giant Soldier",
     "manaCost": "{5}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -85,7 +85,7 @@
     "imageUrl": "image_data\\460935.jpg",
     "cardType": "Creature \u2014 Cat",
     "manaCost": "{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -97,7 +97,7 @@
     "imageUrl": "image_data\\460936.jpg",
     "cardType": "Instant",
     "manaCost": "{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -109,7 +109,7 @@
     "imageUrl": "image_data\\460937.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -121,7 +121,7 @@
     "imageUrl": "image_data\\460938.jpg",
     "cardType": "Creature \u2014 Griffin",
     "manaCost": "{4}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -133,7 +133,7 @@
     "imageUrl": "image_data\\460939.jpg",
     "cardType": "Sorcery",
     "manaCost": "{X}{W}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -145,7 +145,7 @@
     "imageUrl": "image_data\\460940.jpg",
     "cardType": "Legendary Planeswalker \u2014 Gideon",
     "manaCost": "{1}{W}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -157,7 +157,7 @@
     "imageUrl": "image_data\\460941.jpg",
     "cardType": "Instant",
     "manaCost": "{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -169,7 +169,7 @@
     "imageUrl": "image_data\\460942.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -181,7 +181,7 @@
     "imageUrl": "image_data\\460943.jpg",
     "cardType": "Legendary Creature \u2014 Zombie God",
     "manaCost": "{3}{W}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -193,7 +193,7 @@
     "imageUrl": "image_data\\460944.jpg",
     "cardType": "Creature \u2014 Spirit",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -205,7 +205,7 @@
     "imageUrl": "image_data\\460945.jpg",
     "cardType": "Instant",
     "manaCost": "{4}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -217,7 +217,7 @@
     "imageUrl": "image_data\\460946.jpg",
     "cardType": "Creature \u2014 Beast",
     "manaCost": "{3}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -229,7 +229,7 @@
     "imageUrl": "image_data\\460947.jpg",
     "cardType": "Creature \u2014 Human Soldier",
     "manaCost": "{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -241,7 +241,7 @@
     "imageUrl": "image_data\\460948.jpg",
     "cardType": "Creature \u2014 Elephant Soldier",
     "manaCost": "{3}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -253,7 +253,7 @@
     "imageUrl": "image_data\\460949.jpg",
     "cardType": "Creature \u2014 Human Soldier",
     "manaCost": "{2}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -265,7 +265,7 @@
     "imageUrl": "image_data\\460950.jpg",
     "cardType": "Creature \u2014 Human Soldier",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -277,7 +277,7 @@
     "imageUrl": "image_data\\460951.jpg",
     "cardType": "Legendary Artifact \u2014 Vehicle",
     "manaCost": "{6}{W}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -289,7 +289,7 @@
     "imageUrl": "image_data\\460952.jpg",
     "cardType": "Creature \u2014 Cat",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -301,7 +301,7 @@
     "imageUrl": "image_data\\460953.jpg",
     "cardType": "Enchantment",
     "manaCost": "{2}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -313,7 +313,7 @@
     "imageUrl": "image_data\\460954.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -325,7 +325,7 @@
     "imageUrl": "image_data\\460955.jpg",
     "cardType": "Sorcery",
     "manaCost": "{3}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -337,7 +337,7 @@
     "imageUrl": "image_data\\460956.jpg",
     "cardType": "Creature \u2014 Human",
     "manaCost": "{2}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -349,7 +349,7 @@
     "imageUrl": "image_data\\460957.jpg",
     "cardType": "Sorcery",
     "manaCost": "{3}{W}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -361,7 +361,7 @@
     "imageUrl": "image_data\\460958.jpg",
     "cardType": "Creature \u2014 Angel",
     "manaCost": "{5}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -373,7 +373,7 @@
     "imageUrl": "image_data\\460959.jpg",
     "cardType": "Legendary Planeswalker \u2014 Teyo",
     "manaCost": "{2}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -385,7 +385,7 @@
     "imageUrl": "image_data\\460960.jpg",
     "cardType": "Creature \u2014 Illusion",
     "manaCost": "{2}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -397,7 +397,7 @@
     "imageUrl": "image_data\\460961.jpg",
     "cardType": "Legendary Creature \u2014 Human Advisor",
     "manaCost": "{W}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -409,7 +409,7 @@
     "imageUrl": "image_data\\460962.jpg",
     "cardType": "Instant",
     "manaCost": "{2}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -421,7 +421,7 @@
     "imageUrl": "image_data\\460963.jpg",
     "cardType": "Creature \u2014 Pegasus",
     "manaCost": "{2}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -433,7 +433,7 @@
     "imageUrl": "image_data\\460964.jpg",
     "cardType": "Legendary Planeswalker",
     "manaCost": "{3}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -445,7 +445,7 @@
     "imageUrl": "image_data\\460965.jpg",
     "cardType": "Sorcery",
     "manaCost": "{4}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -457,7 +457,7 @@
     "imageUrl": "image_data\\460966.jpg",
     "cardType": "Creature \u2014 Bird",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -469,7 +469,7 @@
     "imageUrl": "image_data\\460967.jpg",
     "cardType": "Creature \u2014 Nightmare",
     "manaCost": "{4}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -481,7 +481,7 @@
     "imageUrl": "image_data\\460968.jpg",
     "cardType": "Creature \u2014 Merfolk Wizard",
     "manaCost": "{1}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -493,7 +493,7 @@
     "imageUrl": "image_data\\460969.jpg",
     "cardType": "Creature \u2014 Zombie Bird Warrior",
     "manaCost": "{2}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -505,7 +505,7 @@
     "imageUrl": "image_data\\460970.jpg",
     "cardType": "Sorcery",
     "manaCost": "{3}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -517,7 +517,7 @@
     "imageUrl": "image_data\\460971.jpg",
     "cardType": "Sorcery",
     "manaCost": "{1}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -529,7 +529,7 @@
     "imageUrl": "image_data\\460972.jpg",
     "cardType": "Instant",
     "manaCost": "{4}{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -541,7 +541,7 @@
     "imageUrl": "image_data\\460973.jpg",
     "cardType": "Sorcery",
     "manaCost": "{1}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -553,7 +553,7 @@
     "imageUrl": "image_data\\460974.jpg",
     "cardType": "Instant",
     "manaCost": "{3}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -565,7 +565,7 @@
     "imageUrl": "image_data\\460975.jpg",
     "cardType": "Creature \u2014 Human Wizard",
     "manaCost": "{1}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -577,7 +577,7 @@
     "imageUrl": "image_data\\460976.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
     "manaCost": "{4}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -589,7 +589,7 @@
     "imageUrl": "image_data\\460977.jpg",
     "cardType": "Legendary Creature \u2014 Homunculus",
     "manaCost": "{1}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -601,7 +601,7 @@
     "imageUrl": "image_data\\460978.jpg",
     "cardType": "Sorcery",
     "manaCost": "{X}{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -613,7 +613,7 @@
     "imageUrl": "image_data\\460979.jpg",
     "cardType": "Creature \u2014 Human Wizard",
     "manaCost": "{2}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -625,7 +625,7 @@
     "imageUrl": "image_data\\460980.jpg",
     "cardType": "Legendary Creature \u2014 Zombie God",
     "manaCost": "{2}{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -637,7 +637,7 @@
     "imageUrl": "image_data\\460981.jpg",
     "cardType": "Legendary Planeswalker \u2014 Jace",
     "manaCost": "{1}{U}{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -649,7 +649,7 @@
     "imageUrl": "image_data\\460982.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -661,7 +661,7 @@
     "imageUrl": "image_data\\460983.jpg",
     "cardType": "Legendary Planeswalker \u2014 Kasmina",
     "manaCost": "{3}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -673,7 +673,7 @@
     "imageUrl": "image_data\\460984.jpg",
     "cardType": "Enchantment \u2014 Aura",
     "manaCost": "{1}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -685,7 +685,7 @@
     "imageUrl": "image_data\\460985.jpg",
     "cardType": "Creature \u2014 Leviathan",
     "manaCost": "{5}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -697,7 +697,7 @@
     "imageUrl": "image_data\\460986.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -709,7 +709,7 @@
     "imageUrl": "image_data\\460987.jpg",
     "cardType": "Creature \u2014 Zombie Naga",
     "manaCost": "{2}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -721,7 +721,7 @@
     "imageUrl": "image_data\\460988.jpg",
     "cardType": "Legendary Planeswalker \u2014 Narset",
     "manaCost": "{1}{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -733,7 +733,7 @@
     "imageUrl": "image_data\\460989.jpg",
     "cardType": "Instant",
     "manaCost": "{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -745,7 +745,7 @@
     "imageUrl": "image_data\\460990.jpg",
     "cardType": "Instant",
     "manaCost": "{2}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -757,7 +757,7 @@
     "imageUrl": "image_data\\460991.jpg",
     "cardType": "Sorcery",
     "manaCost": "{3}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -769,7 +769,7 @@
     "imageUrl": "image_data\\460992.jpg",
     "cardType": "Creature \u2014 Sphinx",
     "manaCost": "{2}{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -781,7 +781,7 @@
     "imageUrl": "image_data\\460993.jpg",
     "cardType": "Artifact \u2014 Vehicle",
     "manaCost": "{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -793,7 +793,7 @@
     "imageUrl": "image_data\\460994.jpg",
     "cardType": "Creature \u2014 Bird",
     "manaCost": "{1}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -805,7 +805,7 @@
     "imageUrl": "image_data\\460995.jpg",
     "cardType": "Creature \u2014 Illusion",
     "manaCost": "{3}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -817,7 +817,7 @@
     "imageUrl": "image_data\\460996.jpg",
     "cardType": "Creature \u2014 Weird",
     "manaCost": "{2}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -829,7 +829,7 @@
     "imageUrl": "image_data\\460997.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -841,7 +841,7 @@
     "imageUrl": "image_data\\460998.jpg",
     "cardType": "Sorcery",
     "manaCost": "{3}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -853,7 +853,7 @@
     "imageUrl": "image_data\\460999.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -865,7 +865,7 @@
     "imageUrl": "image_data\\461000.jpg",
     "cardType": "Creature \u2014 Elemental Drake",
     "manaCost": "{3}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -877,7 +877,7 @@
     "imageUrl": "image_data\\461001.jpg",
     "cardType": "Instant",
     "manaCost": "{4}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -889,7 +889,7 @@
     "imageUrl": "image_data\\461002.jpg",
     "cardType": "Creature \u2014 Wall",
     "manaCost": "{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -901,7 +901,7 @@
     "imageUrl": "image_data\\461003.jpg",
     "cardType": "Sorcery",
     "manaCost": "{1}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -913,7 +913,7 @@
     "imageUrl": "image_data\\461004.jpg",
     "cardType": "Creature \u2014 Nightmare Dog",
     "manaCost": "{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -925,7 +925,7 @@
     "imageUrl": "image_data\\461005.jpg",
     "cardType": "Sorcery",
     "manaCost": "{1}{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -937,7 +937,7 @@
     "imageUrl": "image_data\\461006.jpg",
     "cardType": "Legendary Artifact",
     "manaCost": "{3}{B}{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -949,7 +949,7 @@
     "imageUrl": "image_data\\461007.jpg",
     "cardType": "Sorcery",
     "manaCost": "{4}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -961,7 +961,7 @@
     "imageUrl": "image_data\\461008.jpg",
     "cardType": "Creature \u2014 Human Knight",
     "manaCost": "{3}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -973,7 +973,7 @@
     "imageUrl": "image_data\\461009.jpg",
     "cardType": "Sorcery",
     "manaCost": "{4}{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -985,7 +985,7 @@
     "imageUrl": "image_data\\461010.jpg",
     "cardType": "Legendary Planeswalker \u2014 Davriel",
     "manaCost": "{2}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -997,7 +997,7 @@
     "imageUrl": "image_data\\461011.jpg",
     "cardType": "Sorcery",
     "manaCost": "{3}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1009,7 +1009,7 @@
     "imageUrl": "image_data\\461012.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1021,7 +1021,7 @@
     "imageUrl": "image_data\\461013.jpg",
     "cardType": "Enchantment",
     "manaCost": "{1}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1033,7 +1033,7 @@
     "imageUrl": "image_data\\461014.jpg",
     "cardType": "Creature \u2014 Zombie Cat",
     "manaCost": "{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1045,7 +1045,7 @@
     "imageUrl": "image_data\\461015.jpg",
     "cardType": "Creature \u2014 Human Rogue",
     "manaCost": "{1}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1057,7 +1057,7 @@
     "imageUrl": "image_data\\461016.jpg",
     "cardType": "Sorcery",
     "manaCost": "{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1069,7 +1069,7 @@
     "imageUrl": "image_data\\461017.jpg",
     "cardType": "Creature \u2014 Zombie",
     "manaCost": "{1}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1081,7 +1081,7 @@
     "imageUrl": "image_data\\461018.jpg",
     "cardType": "Sorcery",
     "manaCost": "{X}{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1093,7 +1093,7 @@
     "imageUrl": "image_data\\461019.jpg",
     "cardType": "Legendary Creature \u2014 Zombie God",
     "manaCost": "{3}{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1105,7 +1105,7 @@
     "imageUrl": "image_data\\461020.jpg",
     "cardType": "Creature \u2014 Zombie Warrior",
     "manaCost": "{3}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1117,7 +1117,7 @@
     "imageUrl": "image_data\\461021.jpg",
     "cardType": "Enchantment \u2014 Aura",
     "manaCost": "{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1129,7 +1129,7 @@
     "imageUrl": "image_data\\461022.jpg",
     "cardType": "Creature \u2014 Zombie Hippo",
     "manaCost": "{4}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1141,7 +1141,7 @@
     "imageUrl": "image_data\\461023.jpg",
     "cardType": "Creature \u2014 Zombie Beast",
     "manaCost": "{1}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1153,7 +1153,7 @@
     "imageUrl": "image_data\\461024.jpg",
     "cardType": "Legendary Planeswalker \u2014 Liliana",
     "manaCost": "{4}{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1165,7 +1165,7 @@
     "imageUrl": "image_data\\461025.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1177,7 +1177,7 @@
     "imageUrl": "image_data\\461026.jpg",
     "cardType": "Legendary Creature \u2014 Human Assassin",
     "manaCost": "{3}{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1189,7 +1189,7 @@
     "imageUrl": "image_data\\461027.jpg",
     "cardType": "Legendary Planeswalker \u2014 Nixilis",
     "manaCost": "{3}{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1201,7 +1201,7 @@
     "imageUrl": "image_data\\461028.jpg",
     "cardType": "Instant",
     "manaCost": "{2}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1213,7 +1213,7 @@
     "imageUrl": "image_data\\461029.jpg",
     "cardType": "Sorcery",
     "manaCost": "{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1225,7 +1225,7 @@
     "imageUrl": "image_data\\461030.jpg",
     "cardType": "Creature \u2014 Zombie Bird Warrior",
     "manaCost": "{2}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1237,7 +1237,7 @@
     "imageUrl": "image_data\\461031.jpg",
     "cardType": "Instant",
     "manaCost": "{B}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1249,7 +1249,7 @@
     "imageUrl": "image_data\\461032.jpg",
     "cardType": "Sorcery",
     "manaCost": "{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1261,7 +1261,7 @@
     "imageUrl": "image_data\\461033.jpg",
     "cardType": "Creature \u2014 Zombie",
     "manaCost": "{2}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1273,7 +1273,7 @@
     "imageUrl": "image_data\\461034.jpg",
     "cardType": "Creature \u2014 Giant Warrior",
     "manaCost": "{5}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1285,7 +1285,7 @@
     "imageUrl": "image_data\\461035.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1297,7 +1297,7 @@
     "imageUrl": "image_data\\461036.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1309,7 +1309,7 @@
     "imageUrl": "image_data\\461037.jpg",
     "cardType": "Creature \u2014 Vampire",
     "manaCost": "{1}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1321,7 +1321,7 @@
     "imageUrl": "image_data\\461038.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
     "manaCost": "{2}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1333,7 +1333,7 @@
     "imageUrl": "image_data\\461039.jpg",
     "cardType": "Creature \u2014 Gorgon Assassin",
     "manaCost": "{2}{B}",
-    "colorIdentity": [
+    "colors": [
       "B"
     ]
   },
@@ -1345,7 +1345,7 @@
     "imageUrl": "image_data\\461040.jpg",
     "cardType": "Creature \u2014 Zombie Minotaur Warrior",
     "manaCost": "{2}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1357,7 +1357,7 @@
     "imageUrl": "image_data\\461041.jpg",
     "cardType": "Instant",
     "manaCost": "{2}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1369,7 +1369,7 @@
     "imageUrl": "image_data\\461042.jpg",
     "cardType": "Instant",
     "manaCost": "{3}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1381,7 +1381,7 @@
     "imageUrl": "image_data\\461043.jpg",
     "cardType": "Sorcery",
     "manaCost": "{4}{R}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1393,7 +1393,7 @@
     "imageUrl": "image_data\\461044.jpg",
     "cardType": "Creature \u2014 Human Wizard",
     "manaCost": "{1}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1405,7 +1405,7 @@
     "imageUrl": "image_data\\461045.jpg",
     "cardType": "Creature \u2014 Cyclops Warrior",
     "manaCost": "{4}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1417,7 +1417,7 @@
     "imageUrl": "image_data\\461046.jpg",
     "cardType": "Legendary Planeswalker \u2014 Chandra",
     "manaCost": "{2}{R}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1429,7 +1429,7 @@
     "imageUrl": "image_data\\461047.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1441,7 +1441,7 @@
     "imageUrl": "image_data\\461048.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1453,7 +1453,7 @@
     "imageUrl": "image_data\\461049.jpg",
     "cardType": "Creature \u2014 Cyclops Wizard",
     "manaCost": "{4}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1465,7 +1465,7 @@
     "imageUrl": "image_data\\461050.jpg",
     "cardType": "Sorcery",
     "manaCost": "{3}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1477,7 +1477,7 @@
     "imageUrl": "image_data\\461051.jpg",
     "cardType": "Creature \u2014 Hellion",
     "manaCost": "{2}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1489,7 +1489,7 @@
     "imageUrl": "image_data\\461052.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
     "manaCost": "{1}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1501,7 +1501,7 @@
     "imageUrl": "image_data\\461053.jpg",
     "cardType": "Creature \u2014 Zombie Jackal Warrior",
     "manaCost": "{3}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1513,7 +1513,7 @@
     "imageUrl": "image_data\\461054.jpg",
     "cardType": "Sorcery",
     "manaCost": "{X}{R}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1525,7 +1525,7 @@
     "imageUrl": "image_data\\461055.jpg",
     "cardType": "Creature \u2014 Goblin Warrior",
     "manaCost": "{1}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1537,7 +1537,7 @@
     "imageUrl": "image_data\\461056.jpg",
     "cardType": "Creature \u2014 Goblin Warrior",
     "manaCost": "{3}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1549,7 +1549,7 @@
     "imageUrl": "image_data\\461057.jpg",
     "cardType": "Creature \u2014 Zombie Warrior",
     "manaCost": "{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1561,7 +1561,7 @@
     "imageUrl": "image_data\\461058.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1573,7 +1573,7 @@
     "imageUrl": "image_data\\461059.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1585,7 +1585,7 @@
     "imageUrl": "image_data\\461060.jpg",
     "cardType": "Legendary Creature \u2014 Boar God",
     "manaCost": "{3}{R}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1597,7 +1597,7 @@
     "imageUrl": "image_data\\461061.jpg",
     "cardType": "Creature \u2014 Zombie Manticore",
     "manaCost": "{5}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1609,7 +1609,7 @@
     "imageUrl": "image_data\\461062.jpg",
     "cardType": "Legendary Planeswalker \u2014 Jaya",
     "manaCost": "{4}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1621,7 +1621,7 @@
     "imageUrl": "image_data\\461063.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1633,7 +1633,7 @@
     "imageUrl": "image_data\\461064.jpg",
     "cardType": "Legendary Creature \u2014 Goblin",
     "manaCost": "{2}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1645,7 +1645,7 @@
     "imageUrl": "image_data\\461065.jpg",
     "cardType": "Artifact \u2014 Vehicle",
     "manaCost": "{1}{R}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1657,7 +1657,7 @@
     "imageUrl": "image_data\\461066.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1669,7 +1669,7 @@
     "imageUrl": "image_data\\461067.jpg",
     "cardType": "Legendary Creature \u2014 Zombie Minotaur Warrior",
     "manaCost": "{2}{R}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1681,7 +1681,7 @@
     "imageUrl": "image_data\\461068.jpg",
     "cardType": "Creature \u2014 Beast",
     "manaCost": "{2}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1693,7 +1693,7 @@
     "imageUrl": "image_data\\461069.jpg",
     "cardType": "Instant",
     "manaCost": "{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1705,7 +1705,7 @@
     "imageUrl": "image_data\\461070.jpg",
     "cardType": "Legendary Planeswalker \u2014 Sarkhan",
     "manaCost": "{3}{R}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1717,7 +1717,7 @@
     "imageUrl": "image_data\\461071.jpg",
     "cardType": "Instant",
     "manaCost": "{4}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1729,7 +1729,7 @@
     "imageUrl": "image_data\\461072.jpg",
     "cardType": "Creature \u2014 Weird",
     "manaCost": "{2}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1741,7 +1741,7 @@
     "imageUrl": "image_data\\461073.jpg",
     "cardType": "Legendary Planeswalker \u2014 Tibalt",
     "manaCost": "{2}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1753,7 +1753,7 @@
     "imageUrl": "image_data\\461074.jpg",
     "cardType": "Creature \u2014 Devil",
     "manaCost": "{1}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1765,7 +1765,7 @@
     "imageUrl": "image_data\\461075.jpg",
     "cardType": "Creature \u2014 Ogre Warrior",
     "manaCost": "{3}{R}",
-    "colorIdentity": [
+    "colors": [
       "R"
     ]
   },
@@ -1777,7 +1777,7 @@
     "imageUrl": "image_data\\461076.jpg",
     "cardType": "Creature \u2014 Beast",
     "manaCost": "{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1789,7 +1789,7 @@
     "imageUrl": "image_data\\461077.jpg",
     "cardType": "Legendary Planeswalker \u2014 Arlinn",
     "manaCost": "{4}{G}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1801,7 +1801,7 @@
     "imageUrl": "image_data\\461078.jpg",
     "cardType": "Creature \u2014 Wolf",
     "manaCost": "{2}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1813,7 +1813,7 @@
     "imageUrl": "image_data\\461079.jpg",
     "cardType": "Instant",
     "manaCost": "{3}{G}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1825,7 +1825,7 @@
     "imageUrl": "image_data\\461080.jpg",
     "cardType": "Instant",
     "manaCost": "{2}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1837,7 +1837,7 @@
     "imageUrl": "image_data\\461081.jpg",
     "cardType": "Creature \u2014 Plant Elemental",
     "manaCost": "{3}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1849,7 +1849,7 @@
     "imageUrl": "image_data\\461082.jpg",
     "cardType": "Sorcery",
     "manaCost": "{1}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1861,7 +1861,7 @@
     "imageUrl": "image_data\\461083.jpg",
     "cardType": "Creature \u2014 Centaur Druid",
     "manaCost": "{3}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1873,7 +1873,7 @@
     "imageUrl": "image_data\\461084.jpg",
     "cardType": "Creature \u2014 Troll",
     "manaCost": "{4}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1885,7 +1885,7 @@
     "imageUrl": "image_data\\461085.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1897,7 +1897,7 @@
     "imageUrl": "image_data\\461086.jpg",
     "cardType": "Creature \u2014 Elf Druid",
     "manaCost": "{2}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1909,7 +1909,7 @@
     "imageUrl": "image_data\\461087.jpg",
     "cardType": "Sorcery",
     "manaCost": "{X}{G}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1921,7 +1921,7 @@
     "imageUrl": "image_data\\461088.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1933,7 +1933,7 @@
     "imageUrl": "image_data\\461089.jpg",
     "cardType": "Instant",
     "manaCost": "{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1945,7 +1945,7 @@
     "imageUrl": "image_data\\461090.jpg",
     "cardType": "Legendary Creature \u2014 Zombie God",
     "manaCost": "{3}{G}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1957,7 +1957,7 @@
     "imageUrl": "image_data\\461091.jpg",
     "cardType": "Legendary Planeswalker \u2014 Yanggu",
     "manaCost": "{2}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1969,7 +1969,7 @@
     "imageUrl": "image_data\\461092.jpg",
     "cardType": "Creature \u2014 Insect Assassin",
     "manaCost": "{2}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1981,7 +1981,7 @@
     "imageUrl": "image_data\\461093.jpg",
     "cardType": "Creature \u2014 Human Warrior",
     "manaCost": "{1}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -1993,7 +1993,7 @@
     "imageUrl": "image_data\\461094.jpg",
     "cardType": "Legendary Creature \u2014 Dog",
     "manaCost": "{3}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2005,7 +2005,7 @@
     "imageUrl": "image_data\\461095.jpg",
     "cardType": "Enchantment \u2014 Aura",
     "manaCost": "{2}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2017,7 +2017,7 @@
     "imageUrl": "image_data\\461096.jpg",
     "cardType": "Legendary Planeswalker \u2014 Nissa",
     "manaCost": "{3}{G}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2029,7 +2029,7 @@
     "imageUrl": "image_data\\461097.jpg",
     "cardType": "Sorcery",
     "manaCost": "{G}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2041,7 +2041,7 @@
     "imageUrl": "image_data\\461098.jpg",
     "cardType": "Creature \u2014 Elf Druid",
     "manaCost": "{1}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2053,7 +2053,7 @@
     "imageUrl": "image_data\\461099.jpg",
     "cardType": "Sorcery",
     "manaCost": "{5}{G}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2065,7 +2065,7 @@
     "imageUrl": "image_data\\461100.jpg",
     "cardType": "Creature \u2014 Elf Druid",
     "manaCost": "{1}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2077,7 +2077,7 @@
     "imageUrl": "image_data\\461101.jpg",
     "cardType": "Creature \u2014 Wurm",
     "manaCost": "{4}{G}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2089,7 +2089,7 @@
     "imageUrl": "image_data\\461102.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2101,7 +2101,7 @@
     "imageUrl": "image_data\\461103.jpg",
     "cardType": "Creature \u2014 Spider",
     "manaCost": "{1}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2113,7 +2113,7 @@
     "imageUrl": "image_data\\461104.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2125,7 +2125,7 @@
     "imageUrl": "image_data\\461105.jpg",
     "cardType": "Sorcery",
     "manaCost": "{4}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2137,7 +2137,7 @@
     "imageUrl": "image_data\\461106.jpg",
     "cardType": "Creature \u2014 Rhino",
     "manaCost": "{4}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2149,7 +2149,7 @@
     "imageUrl": "image_data\\461107.jpg",
     "cardType": "Legendary Planeswalker \u2014 Vivien",
     "manaCost": "{2}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2161,7 +2161,7 @@
     "imageUrl": "image_data\\461108.jpg",
     "cardType": "Legendary Artifact",
     "manaCost": "{1}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2173,7 +2173,7 @@
     "imageUrl": "image_data\\461109.jpg",
     "cardType": "Creature \u2014 Bear Spirit",
     "manaCost": "{2}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2185,7 +2185,7 @@
     "imageUrl": "image_data\\461110.jpg",
     "cardType": "Creature \u2014 Crocodile",
     "manaCost": "{4}{G}",
-    "colorIdentity": [
+    "colors": [
       "G"
     ]
   },
@@ -2197,7 +2197,7 @@
     "imageUrl": "image_data\\461111.jpg",
     "cardType": "Legendary Planeswalker \u2014 Ajani",
     "manaCost": "{2}{G}{W}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "W"
     ]
@@ -2210,7 +2210,7 @@
     "imageUrl": "image_data\\461112.jpg",
     "cardType": "Sorcery",
     "manaCost": "{B}{R}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "R"
     ]
@@ -2223,7 +2223,7 @@
     "imageUrl": "image_data\\461113.jpg",
     "cardType": "Creature \u2014 Hydra Mutant",
     "manaCost": "{3}{G}{U}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "U"
     ]
@@ -2236,7 +2236,7 @@
     "imageUrl": "image_data\\461114.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{B}{B}{G}{G}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "G"
     ]
@@ -2249,7 +2249,7 @@
     "imageUrl": "image_data\\461115.jpg",
     "cardType": "Creature \u2014 Vampire",
     "manaCost": "{W}{B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "W"
     ]
@@ -2262,7 +2262,7 @@
     "imageUrl": "image_data\\461116.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{B}{B}{G}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "G"
     ]
@@ -2275,7 +2275,7 @@
     "imageUrl": "image_data\\461117.jpg",
     "cardType": "Instant",
     "manaCost": "{W}{B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "W"
     ]
@@ -2288,7 +2288,7 @@
     "imageUrl": "image_data\\461118.jpg",
     "cardType": "Legendary Planeswalker \u2014 Domri",
     "manaCost": "{1}{R}{G}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "R"
     ]
@@ -2301,7 +2301,7 @@
     "imageUrl": "image_data\\461119.jpg",
     "cardType": "Sorcery",
     "manaCost": "{R}{G}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "R"
     ]
@@ -2314,7 +2314,7 @@
     "imageUrl": "image_data\\461120.jpg",
     "cardType": "Instant",
     "manaCost": "{W}{U}",
-    "colorIdentity": [
+    "colors": [
       "U",
       "W"
     ]
@@ -2327,7 +2327,7 @@
     "imageUrl": "image_data\\461121.jpg",
     "cardType": "Creature \u2014 Zombie Warrior",
     "manaCost": "{B}{R}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "R"
     ]
@@ -2340,7 +2340,7 @@
     "imageUrl": "image_data\\461122.jpg",
     "cardType": "Creature \u2014 Human Wizard",
     "manaCost": "{2}{W}{U}",
-    "colorIdentity": [
+    "colors": [
       "U",
       "W"
     ]
@@ -2353,7 +2353,7 @@
     "imageUrl": "image_data\\461123.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{U}{U}{B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "U"
     ]
@@ -2366,7 +2366,7 @@
     "imageUrl": "image_data\\461124.jpg",
     "cardType": "Legendary Creature \u2014 Angel",
     "manaCost": "{R}{W}{W}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "W"
     ]
@@ -2379,7 +2379,7 @@
     "imageUrl": "image_data\\461125.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
     "manaCost": "{1}{U}{B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "U"
     ]
@@ -2392,7 +2392,7 @@
     "imageUrl": "image_data\\461126.jpg",
     "cardType": "Instant",
     "manaCost": "{2}{R}{W}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "W"
     ]
@@ -2405,7 +2405,7 @@
     "imageUrl": "image_data\\461127.jpg",
     "cardType": "Creature \u2014 Dinosaur",
     "manaCost": "{G}{W}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "W"
     ]
@@ -2418,7 +2418,7 @@
     "imageUrl": "image_data\\461128.jpg",
     "cardType": "Sorcery",
     "manaCost": "{1}{U}{R}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "U"
     ]
@@ -2431,7 +2431,7 @@
     "imageUrl": "image_data\\461129.jpg",
     "cardType": "Creature \u2014 Nightmare Beast",
     "manaCost": "{1}{B}{G}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "G"
     ]
@@ -2444,7 +2444,7 @@
     "imageUrl": "image_data\\461130.jpg",
     "cardType": "Creature \u2014 Elemental",
     "manaCost": "{R}{R}{G}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "R"
     ]
@@ -2457,7 +2457,7 @@
     "imageUrl": "image_data\\461131.jpg",
     "cardType": "Creature \u2014 Devil",
     "manaCost": "{1}{B}{R}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "R"
     ]
@@ -2470,7 +2470,7 @@
     "imageUrl": "image_data\\461132.jpg",
     "cardType": "Creature \u2014 Merfolk Mutant",
     "manaCost": "{G}{U}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "U"
     ]
@@ -2483,7 +2483,7 @@
     "imageUrl": "image_data\\461133.jpg",
     "cardType": "Sorcery",
     "manaCost": "{G}{U}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "U"
     ]
@@ -2496,7 +2496,7 @@
     "imageUrl": "image_data\\461134.jpg",
     "cardType": "Legendary Planeswalker \u2014 Bolas",
     "manaCost": "{U}{B}{B}{B}{R}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "R",
       "U"
@@ -2510,7 +2510,7 @@
     "imageUrl": "image_data\\461135.jpg",
     "cardType": "Legendary Creature \u2014 Dragon Avatar",
     "manaCost": "{W}{U}{B}{R}{G}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "G",
       "R",
@@ -2526,7 +2526,7 @@
     "imageUrl": "image_data\\461136.jpg",
     "cardType": "Legendary Enchantment",
     "manaCost": "{1}{W}{B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "W"
     ]
@@ -2539,7 +2539,7 @@
     "imageUrl": "image_data\\461137.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{G}{W}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "W"
     ]
@@ -2552,7 +2552,7 @@
     "imageUrl": "image_data\\461138.jpg",
     "cardType": "Legendary Planeswalker \u2014 Ral",
     "manaCost": "{2}{U}{R}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "U"
     ]
@@ -2565,7 +2565,7 @@
     "imageUrl": "image_data\\461139.jpg",
     "cardType": "Instant",
     "manaCost": "{2}{U}{R}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "U"
     ]
@@ -2578,7 +2578,7 @@
     "imageUrl": "image_data\\461140.jpg",
     "cardType": "Legendary Creature \u2014 Human Mutant",
     "manaCost": "{2}{G}{G}{U}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "U"
     ]
@@ -2591,7 +2591,7 @@
     "imageUrl": "image_data\\461141.jpg",
     "cardType": "Sorcery",
     "manaCost": "{U}{U}{R}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "U"
     ]
@@ -2604,7 +2604,7 @@
     "imageUrl": "image_data\\461142.jpg",
     "cardType": "Creature \u2014 Human Berserker",
     "manaCost": "{1}{R}{G}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "R"
     ]
@@ -2617,7 +2617,7 @@
     "imageUrl": "image_data\\461143.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{R}{W}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "W"
     ]
@@ -2630,7 +2630,7 @@
     "imageUrl": "image_data\\461144.jpg",
     "cardType": "Legendary Planeswalker \u2014 Sorin",
     "manaCost": "{2}{W}{B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "W"
     ]
@@ -2643,7 +2643,7 @@
     "imageUrl": "image_data\\461145.jpg",
     "cardType": "Creature \u2014 Zombie Wizard",
     "manaCost": "{U}{B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "U"
     ]
@@ -2656,7 +2656,7 @@
     "imageUrl": "image_data\\461146.jpg",
     "cardType": "Legendary Creature \u2014 Zombie Elf Wizard",
     "manaCost": "{1}{B}{B}{G}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "G"
     ]
@@ -2669,7 +2669,7 @@
     "imageUrl": "image_data\\461147.jpg",
     "cardType": "Legendary Planeswalker \u2014 Tamiyo",
     "manaCost": "{2}{G}{U}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "U"
     ]
@@ -2682,7 +2682,7 @@
     "imageUrl": "image_data\\461148.jpg",
     "cardType": "Legendary Planeswalker \u2014 Teferi",
     "manaCost": "{1}{W}{U}",
-    "colorIdentity": [
+    "colors": [
       "U",
       "W"
     ]
@@ -2695,7 +2695,7 @@
     "imageUrl": "image_data\\461149.jpg",
     "cardType": "Creature \u2014 Human Soldier",
     "manaCost": "{R}{W}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "W"
     ]
@@ -2708,7 +2708,7 @@
     "imageUrl": "image_data\\461150.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{W}{W}{U}",
-    "colorIdentity": [
+    "colors": [
       "U",
       "W"
     ]
@@ -2721,7 +2721,7 @@
     "imageUrl": "image_data\\461151.jpg",
     "cardType": "Legendary Creature \u2014 Elf Scout",
     "manaCost": "{2}{G}{G}{W}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "W"
     ]
@@ -2734,7 +2734,7 @@
     "imageUrl": "image_data\\461152.jpg",
     "cardType": "Instant",
     "manaCost": "{U}{B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "U"
     ]
@@ -2747,7 +2747,7 @@
     "imageUrl": "image_data\\461153.jpg",
     "cardType": "Sorcery",
     "manaCost": "{1}{B}{R}{R}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "R"
     ]
@@ -2760,7 +2760,7 @@
     "imageUrl": "image_data\\461154.jpg",
     "cardType": "Legendary Planeswalker \u2014 Angrath",
     "manaCost": "{2}{B/R}{B/R}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "R"
     ]
@@ -2773,7 +2773,7 @@
     "imageUrl": "image_data\\461155.jpg",
     "cardType": "Legendary Planeswalker \u2014 Ashiok",
     "manaCost": "{1}{U/B}{U/B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "U"
     ]
@@ -2786,7 +2786,7 @@
     "imageUrl": "image_data\\461156.jpg",
     "cardType": "Legendary Planeswalker \u2014 Dovin",
     "manaCost": "{2}{W/U}",
-    "colorIdentity": [
+    "colors": [
       "U",
       "W"
     ]
@@ -2799,7 +2799,7 @@
     "imageUrl": "image_data\\461157.jpg",
     "cardType": "Legendary Planeswalker \u2014 Huatli",
     "manaCost": "{2}{G/W}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "W"
     ]
@@ -2812,7 +2812,7 @@
     "imageUrl": "image_data\\461158.jpg",
     "cardType": "Legendary Planeswalker \u2014 Kaya",
     "manaCost": "{3}{W/B}{W/B}{W/B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "W"
     ]
@@ -2825,7 +2825,7 @@
     "imageUrl": "image_data\\461159.jpg",
     "cardType": "Legendary Planeswalker \u2014 Kiora",
     "manaCost": "{2}{G/U}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "U"
     ]
@@ -2838,7 +2838,7 @@
     "imageUrl": "image_data\\461160.jpg",
     "cardType": "Legendary Planeswalker \u2014 Nahiri",
     "manaCost": "{2}{R/W}{R/W}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "W"
     ]
@@ -2851,7 +2851,7 @@
     "imageUrl": "image_data\\461161.jpg",
     "cardType": "Legendary Planeswalker \u2014 Saheeli",
     "manaCost": "{1}{U/R}{U/R}",
-    "colorIdentity": [
+    "colors": [
       "R",
       "U"
     ]
@@ -2864,7 +2864,7 @@
     "imageUrl": "image_data\\461162.jpg",
     "cardType": "Legendary Planeswalker \u2014 Samut",
     "manaCost": "{2}{R/G}{R/G}",
-    "colorIdentity": [
+    "colors": [
       "G",
       "R"
     ]
@@ -2877,7 +2877,7 @@
     "imageUrl": "image_data\\461163.jpg",
     "cardType": "Legendary Planeswalker \u2014 Vraska",
     "manaCost": "{2}{B/G}{B/G}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "G"
     ]
@@ -2890,7 +2890,7 @@
     "imageUrl": "image_data\\461164.jpg",
     "cardType": "Artifact",
     "manaCost": "{4}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "God-Pharaoh's Statue",
@@ -2900,7 +2900,7 @@
     "imageUrl": "image_data\\461165.jpg",
     "cardType": "Legendary Artifact",
     "manaCost": "{6}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Guild Globe",
@@ -2910,7 +2910,7 @@
     "imageUrl": "image_data\\461166.jpg",
     "cardType": "Artifact",
     "manaCost": "{2}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Iron Bully",
@@ -2920,7 +2920,7 @@
     "imageUrl": "image_data\\461167.jpg",
     "cardType": "Artifact Creature \u2014 Golem",
     "manaCost": "{3}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Mana Geode",
@@ -2930,7 +2930,7 @@
     "imageUrl": "image_data\\461168.jpg",
     "cardType": "Artifact",
     "manaCost": "{3}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Prismite",
@@ -2940,7 +2940,7 @@
     "imageUrl": "image_data\\461169.jpg",
     "cardType": "Artifact Creature \u2014 Golem",
     "manaCost": "{2}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Saheeli's Silverwing",
@@ -2950,7 +2950,7 @@
     "imageUrl": "image_data\\461170.jpg",
     "cardType": "Artifact Creature \u2014 Drake",
     "manaCost": "{4}",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Blast Zone",
@@ -2960,7 +2960,7 @@
     "imageUrl": "image_data\\461171.jpg",
     "cardType": "Land",
     "manaCost": "",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Emergence Zone",
@@ -2970,7 +2970,7 @@
     "imageUrl": "image_data\\461172.jpg",
     "cardType": "Land",
     "manaCost": "",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Gateway Plaza",
@@ -2980,7 +2980,7 @@
     "imageUrl": "image_data\\461173.jpg",
     "cardType": "Land \u2014 Gate",
     "manaCost": "",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Interplanar Beacon",
@@ -2990,7 +2990,7 @@
     "imageUrl": "image_data\\461174.jpg",
     "cardType": "Land",
     "manaCost": "",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Karn's Bastion",
@@ -3000,7 +3000,7 @@
     "imageUrl": "image_data\\461175.jpg",
     "cardType": "Land",
     "manaCost": "",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Mobilized District",
@@ -3010,7 +3010,7 @@
     "imageUrl": "image_data\\461176.jpg",
     "cardType": "Land",
     "manaCost": "",
-    "colorIdentity": ""
+    "colors": ""
   },
   {
     "name": "Plains",
@@ -3020,9 +3020,7 @@
     "imageUrl": "image_data\\461177.jpg",
     "cardType": "Basic Land \u2014 Plains",
     "manaCost": "",
-    "colorIdentity": [
-      "W"
-    ]
+    "colors": ""
   },
   {
     "name": "Plains",
@@ -3032,9 +3030,7 @@
     "imageUrl": "image_data\\461178.jpg",
     "cardType": "Basic Land \u2014 Plains",
     "manaCost": "",
-    "colorIdentity": [
-      "W"
-    ]
+    "colors": ""
   },
   {
     "name": "Plains",
@@ -3044,9 +3040,7 @@
     "imageUrl": "image_data\\461179.jpg",
     "cardType": "Basic Land \u2014 Plains",
     "manaCost": "",
-    "colorIdentity": [
-      "W"
-    ]
+    "colors": ""
   },
   {
     "name": "Island",
@@ -3056,9 +3050,7 @@
     "imageUrl": "image_data\\461180.jpg",
     "cardType": "Basic Land \u2014 Island",
     "manaCost": "",
-    "colorIdentity": [
-      "U"
-    ]
+    "colors": ""
   },
   {
     "name": "Island",
@@ -3068,9 +3060,7 @@
     "imageUrl": "image_data\\461181.jpg",
     "cardType": "Basic Land \u2014 Island",
     "manaCost": "",
-    "colorIdentity": [
-      "U"
-    ]
+    "colors": ""
   },
   {
     "name": "Island",
@@ -3080,9 +3070,7 @@
     "imageUrl": "image_data\\461182.jpg",
     "cardType": "Basic Land \u2014 Island",
     "manaCost": "",
-    "colorIdentity": [
-      "U"
-    ]
+    "colors": ""
   },
   {
     "name": "Swamp",
@@ -3092,9 +3080,7 @@
     "imageUrl": "image_data\\461183.jpg",
     "cardType": "Basic Land \u2014 Swamp",
     "manaCost": "",
-    "colorIdentity": [
-      "B"
-    ]
+    "colors": ""
   },
   {
     "name": "Swamp",
@@ -3104,9 +3090,7 @@
     "imageUrl": "image_data\\461184.jpg",
     "cardType": "Basic Land \u2014 Swamp",
     "manaCost": "",
-    "colorIdentity": [
-      "B"
-    ]
+    "colors": ""
   },
   {
     "name": "Swamp",
@@ -3116,9 +3100,7 @@
     "imageUrl": "image_data\\461185.jpg",
     "cardType": "Basic Land \u2014 Swamp",
     "manaCost": "",
-    "colorIdentity": [
-      "B"
-    ]
+    "colors": ""
   },
   {
     "name": "Mountain",
@@ -3128,9 +3110,7 @@
     "imageUrl": "image_data\\461186.jpg",
     "cardType": "Basic Land \u2014 Mountain",
     "manaCost": "",
-    "colorIdentity": [
-      "R"
-    ]
+    "colors": ""
   },
   {
     "name": "Mountain",
@@ -3140,9 +3120,7 @@
     "imageUrl": "image_data\\461187.jpg",
     "cardType": "Basic Land \u2014 Mountain",
     "manaCost": "",
-    "colorIdentity": [
-      "R"
-    ]
+    "colors": ""
   },
   {
     "name": "Mountain",
@@ -3152,9 +3130,7 @@
     "imageUrl": "image_data\\461188.jpg",
     "cardType": "Basic Land \u2014 Mountain",
     "manaCost": "",
-    "colorIdentity": [
-      "R"
-    ]
+    "colors": ""
   },
   {
     "name": "Forest",
@@ -3164,9 +3140,7 @@
     "imageUrl": "image_data\\461189.jpg",
     "cardType": "Basic Land \u2014 Forest",
     "manaCost": "",
-    "colorIdentity": [
-      "G"
-    ]
+    "colors": ""
   },
   {
     "name": "Forest",
@@ -3176,9 +3150,7 @@
     "imageUrl": "image_data\\461190.jpg",
     "cardType": "Basic Land \u2014 Forest",
     "manaCost": "",
-    "colorIdentity": [
-      "G"
-    ]
+    "colors": ""
   },
   {
     "name": "Forest",
@@ -3188,9 +3160,7 @@
     "imageUrl": "image_data\\461191.jpg",
     "cardType": "Basic Land \u2014 Forest",
     "manaCost": "",
-    "colorIdentity": [
-      "G"
-    ]
+    "colors": ""
   },
   {
     "name": "Gideon, the Oathsworn",
@@ -3200,7 +3170,7 @@
     "imageUrl": "image_data\\463832.jpg",
     "cardType": "Legendary Planeswalker \u2014 Gideon",
     "manaCost": "{4}{W}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -3212,7 +3182,7 @@
     "imageUrl": "image_data\\463833.jpg",
     "cardType": "Instant",
     "manaCost": "{1}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -3224,7 +3194,7 @@
     "imageUrl": "image_data\\463834.jpg",
     "cardType": "Sorcery",
     "manaCost": "{2}{W}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -3236,7 +3206,7 @@
     "imageUrl": "image_data\\463835.jpg",
     "cardType": "Creature \u2014 Human Soldier",
     "manaCost": "{3}{W}",
-    "colorIdentity": [
+    "colors": [
       "W"
     ]
   },
@@ -3248,10 +3218,7 @@
     "imageUrl": "image_data\\463836.jpg",
     "cardType": "Land \u2014 Gate",
     "manaCost": "",
-    "colorIdentity": [
-      "B",
-      "W"
-    ]
+    "colors": ""
   },
   {
     "name": "Jace, Arcane Strategist",
@@ -3261,7 +3228,7 @@
     "imageUrl": "image_data\\463837.jpg",
     "cardType": "Legendary Planeswalker \u2014 Jace",
     "manaCost": "{4}{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -3273,7 +3240,7 @@
     "imageUrl": "image_data\\463838.jpg",
     "cardType": "Creature \u2014 Faerie Rogue",
     "manaCost": "{2}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -3285,7 +3252,7 @@
     "imageUrl": "image_data\\463839.jpg",
     "cardType": "Creature \u2014 Wizard Illusion",
     "manaCost": "{2}{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -3297,7 +3264,7 @@
     "imageUrl": "image_data\\463840.jpg",
     "cardType": "Sorcery",
     "manaCost": "{3}{U}{U}",
-    "colorIdentity": [
+    "colors": [
       "U"
     ]
   },
@@ -3309,10 +3276,7 @@
     "imageUrl": "image_data\\463841.jpg",
     "cardType": "Land \u2014 Gate",
     "manaCost": "",
-    "colorIdentity": [
-      "G",
-      "U"
-    ]
+    "colors": ""
   },
   {
     "name": "Tezzeret, Master of the Bridge",
@@ -3322,7 +3286,7 @@
     "imageUrl": "image_data\\463842.jpg",
     "cardType": "Legendary Planeswalker \u2014 Tezzeret",
     "manaCost": "{4}{U}{B}",
-    "colorIdentity": [
+    "colors": [
       "B",
       "U"
     ]
