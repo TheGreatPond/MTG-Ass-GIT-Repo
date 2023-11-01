@@ -28,6 +28,7 @@ import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 
 public class App extends Application {
@@ -383,20 +384,56 @@ public class App extends Application {
             updatedDeck = selectedDeck;
         }
 
-        // Create a ListView to display the list of cards with '+' and '-' buttons
-        ListView<HBox> cardListView = new ListView<>();
-        cardListView.setPrefHeight(600);
+        // Creates a grid for the cards
+        GridPane cardGrid = new GridPane();
+        cardGrid.setHgap(10);
+        cardGrid.setVgap(10);
+        cardGrid.setAlignment(Pos.CENTER);
+        
+        ScrollPane scrollPane = new ScrollPane(cardGrid); // Wrap the cardGrid inside the ScrollPane
+        scrollPane.setFitToWidth(true); // This makes the ScrollPane expand horizontally with the cardGrid
+
+        AnchorPane anchorPane = new AnchorPane();
+        anchorPane.getChildren().add(scrollPane); // Add ScrollPane to the AnchorPane instead of cardGrid
+
+        
+        // Adjust the card grid positioning based on the window size
+        deckEditStage.widthProperty().addListener((obs, oldVal, newVal) -> {
+            // 10% of the window width for left and right margins
+            double horizontalMargin = newVal.doubleValue() * 0.01;
+            double width = newVal.doubleValue() * 0.80; // 80% of the total width
+            scrollPane.setPrefWidth(width);
+            AnchorPane.setLeftAnchor(scrollPane, horizontalMargin);
+            AnchorPane.setRightAnchor(scrollPane, horizontalMargin);
+        });
+
+        deckEditStage.heightProperty().addListener((obs, oldVal, newVal) -> {
+            // 10% of the window height for top margin and 20% for bottom margin
+            double topMargin = newVal.doubleValue() * 0.01;
+            double bottomMargin = newVal.doubleValue() * 0.20;
+            double height = newVal.doubleValue() - (topMargin + bottomMargin);
+            scrollPane.setPrefHeight(height);
+            AnchorPane.setTopAnchor(scrollPane, topMargin);
+            AnchorPane.setBottomAnchor(scrollPane, bottomMargin);
+        });
+        
+        //keeps track of rows and colums for the grid logic
+        int col = 0;
+        int row = 0;
 
         for (Card card : allCards) {
-            HBox cardBox = new HBox(10);
-            cardBox.setAlignment(Pos.CENTER_LEFT);
+            VBox cardVBox = new VBox(5); // Vertical box for each card and its details
+            cardVBox.setAlignment(Pos.CENTER);
 
             // Assuming Card has a method getImagePath() that returns path to card's image
             Image cardImage = new Image("file:" + card.getImageFile());
             ImageView cardImageView = new ImageView(cardImage);
             cardImageView.setFitHeight(100);
             cardImageView.setFitWidth(70);
-
+            
+            HBox cardInfoHBox = new HBox(10); // Horizontal box for card name, plus and minus buttons
+            cardInfoHBox.setAlignment(Pos.CENTER);
+            
             Label cardLabel = new Label(card.getName());
             Button plusButton = new Button("+");
             Button minusButton = new Button("-");
@@ -408,22 +445,31 @@ public class App extends Application {
 
             Label quantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
 
-        plusButton.setOnAction(e -> {
-            cardWithQuantity.incrementQuantity();
-            quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
-            updateCardInDeck(updatedDeckHolder[0], cardWithQuantity); // Use updatedDeckHolder[0]
-        });
-
-        minusButton.setOnAction(e -> {
-            if (cardWithQuantity.getQuantity() > 0) {
-                cardWithQuantity.decrementQuantity();
+            plusButton.setOnAction(e -> {
+                cardWithQuantity.incrementQuantity();
                 quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
                 updateCardInDeck(updatedDeckHolder[0], cardWithQuantity); // Use updatedDeckHolder[0]
-            }
-        });
+            });
 
-            cardBox.getChildren().addAll(cardImageView, cardLabel, plusButton, minusButton, quantityLabel);
-            cardListView.getItems().add(cardBox);
+            minusButton.setOnAction(e -> {
+                if (cardWithQuantity.getQuantity() > 0) {
+                    cardWithQuantity.decrementQuantity();
+                    quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
+                    updateCardInDeck(updatedDeckHolder[0], cardWithQuantity); // Use updatedDeckHolder[0]
+                }
+            });
+
+            cardInfoHBox.getChildren().addAll(minusButton, cardLabel, plusButton);
+            cardVBox.getChildren().addAll(cardImageView, cardInfoHBox, quantityLabel);
+            
+            cardGrid.add(cardVBox, col, row); // Add to grid
+            
+
+            col++;
+            if (col > 4) { // If more than 5 columns, go to the next row
+                col = 0;
+                row++;
+            }
         }
 
         Button saveDeckButton = new Button("Save Deck");
@@ -463,8 +509,8 @@ public class App extends Application {
             });
 
 
-        layout.getChildren().addAll(cardListView, saveDeckButton);
-        Scene deckEditScene = new Scene(layout, 500, 400);
+        layout.getChildren().addAll(anchorPane, saveDeckButton);
+        Scene deckEditScene = new Scene(layout, 1280, 900);
         deckEditStage.setScene(deckEditScene);
         deckEditStage.show();
     }
@@ -490,14 +536,14 @@ public class App extends Application {
             // Create a VBox to hold card information and picture
             VBox cardViewerLayout = new VBox(10);
             cardViewerLayout.setAlignment(Pos.CENTER);
-            cardViewerScene = new Scene(cardViewerLayout, 600, 400);
+            cardViewerScene = new Scene(cardViewerLayout, 1280, 720);
 
             // Load card data from WAR_cards.json
             List<Card> cards = CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"); // Replace with your logic
 
             // Create a ListView to display the list of cards
             ListView<String> cardListView = new ListView<>();
-            cardListView.setPrefHeight(300);
+            cardListView.prefHeightProperty().bind(cardViewerScene.heightProperty().multiply(0.9));
 
             // Populate the cardListView with card names
             for (Card card : cards) {
@@ -508,8 +554,8 @@ public class App extends Application {
             TextArea cardInfoTextArea = new TextArea();
             cardInfoTextArea.setEditable(false);
             cardInfoTextArea.setWrapText(true);
-            cardInfoTextArea.setPrefWidth(300);
-            cardInfoTextArea.setPrefHeight(300);
+            cardInfoTextArea.prefWidthProperty().bind(cardViewerScene.widthProperty().multiply(0.9));
+            cardInfoTextArea.prefHeightProperty().bind(cardViewerScene.heightProperty().multiply(0.9));
 
             // Create an ImageView to display the card image
             ImageView imageView = new ImageView();
