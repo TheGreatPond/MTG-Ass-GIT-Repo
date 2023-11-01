@@ -191,12 +191,25 @@ private void showDecklistWindow() {
     deleteDeckButton.setOnAction(e -> {
         String selectedDeckName = deckListView.getSelectionModel().getSelectedItem();
         if (selectedDeckName != null && !selectedDeckName.equals("No decks available")) {
-            Deck toRemove = deckLoader.getDeckByName(selectedDeckName);
-            if (toRemove != null) {
-                deckLoader.deleteDeck(toRemove); // Delete using DeckLoader
-                deckListView.getItems().remove(selectedDeckName);
-                populateDeckListView(deckListView);
-                
+                // Create an alert with confirmation type
+            Alert confirmationAlert = new Alert(Alert.AlertType.CONFIRMATION);
+            confirmationAlert.setTitle("Confirm Deletion");
+            confirmationAlert.setHeaderText(null);
+            confirmationAlert.setContentText("Are you sure you want to delete this deck?");
+
+            // Customize the button text
+            ButtonType yesButton = new ButtonType("Yes");
+            ButtonType noButton = new ButtonType("No");
+            confirmationAlert.getButtonTypes().setAll(yesButton, noButton);
+
+            Optional<ButtonType> result = confirmationAlert.showAndWait();
+            if (result.get() == yesButton) {
+                Deck toRemove = deckLoader.getDeckByName(selectedDeckName);
+                if (toRemove != null) {
+                    deckLoader.deleteDeck(toRemove); // Delete using DeckLoader
+                    deckListView.getItems().remove(selectedDeckName);
+                    populateDeckListView(deckListView);
+                }
             }
         }
     });
@@ -311,7 +324,7 @@ private void showDeckEditWindow(Deck selectedDeck) {
     }
 
     Button saveDeckButton = new Button("Save Deck");
-        saveDeckButton.setOnAction(e -> {
+    saveDeckButton.setOnAction(e -> {
             // Create a new stage for the popup
             Stage popupStage = new Stage();
             popupStage.initModality(Modality.APPLICATION_MODAL); // Make it block other user input
