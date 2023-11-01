@@ -1,16 +1,16 @@
 
 package T7DeckBuilder;
 
-import T7DeckBuilder.DeckPackage.DeckLoader;
-import T7DeckBuilder.DeckPackage.Deck;
-import T7DeckBuilder.CardPackage.CardLoader;
-import T7DeckBuilder.CardPackage.CardWithQuantity;
-import T7DeckBuilder.CardPackage.Card;
+import T7DeckBuilder.DeckPackage.*;
+import T7DeckBuilder.CardPackage.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -23,6 +23,10 @@ import javafx.stage.Stage;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.collections.ObservableList;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 import javafx.stage.Modality;
 
 public class App extends Application {
@@ -115,19 +119,103 @@ public class App extends Application {
     }
 
     private void showAnalyzeWindow() {
-        // Create a new blank window
-        Stage analyzeStage = new Stage();
-        analyzeStage.setTitle("Analyze Window");
-        StackPane blankLayout = new StackPane();
-        Scene blankScene = new Scene(blankLayout, 300, 150);
+        VBox analyzeLayout = new VBox(10);
+        analyzeLayout.setAlignment(Pos.CENTER);
+        Scene analyzeScene = new Scene(analyzeLayout, 500, 400);
 
-        // Set the blank scene
-        analyzeStage.setScene(blankScene);
+        HBox buttonBox = new HBox(10);
+        buttonBox.setAlignment(Pos.TOP_RIGHT);
 
-        // Show the blank window
-        analyzeStage.show();
+        Button exitButton = new Button("Exit");
+        Button backButton = new Button("Back");
+        Button analyzeDeckButton = new Button("Analyze");
+
+        ListView<String> deckListView = new ListView<>();
+
+        // Ensure deckLoader is properly instantiated and has loaded decks
+        deckLoader = new DeckLoader();
+
+        // Populate the ListView with loaded decks
+        populateDeckListView(deckListView);
+
+        exitButton.setOnAction(e -> System.exit(0));
+        backButton.setOnAction(e -> primaryStage.setScene(mainScene));
+
+        analyzeDeckButton.setOnAction(e -> {
+            String selectedDeckName = deckListView.getSelectionModel().getSelectedItem();
+            if (selectedDeckName != null && !selectedDeckName.equals("No decks available")) {
+                Deck toAnalyze = deckLoader.getDeckByName(selectedDeckName);
+                if (toAnalyze != null) {
+                    // Implement a function to analyze the selected deck and display a bar graph
+                    analyzeManaCostCurve(toAnalyze);
+                } else {
+                    Alert alert = new Alert(Alert.AlertType.ERROR, "The selected deck was not found!");
+                    alert.showAndWait();
+                }
+            } else {
+                Alert alert = new Alert(Alert.AlertType.WARNING, "Please select a deck to analyze!");
+                alert.showAndWait();
+            }
+        });
+
+        buttonBox.getChildren().addAll(analyzeDeckButton, backButton, exitButton);
+        analyzeLayout.getChildren().addAll(buttonBox, deckListView);
+        primaryStage.setScene(analyzeScene);
     }
+    
+    private void analyzeManaCostCurve(Deck deck) {
+        // Extract the data for the mana cost curve from the deck
+        // You'll need to have some method to get this from your Deck object
+        // For now, I'll use hardcoded data as the example did
+        String jsonFilePath = deck.getJsonFilePath();
+        deck = Deck.loadFromJson(jsonFilePath);
+        
+        int[] manaCostArray = deck.extractManaCosts(deck);
+        
+        
+        Map<String, Integer> manaCostCurveData = new HashMap<>();
+        manaCostCurveData.put("1", manaCostArray[0]);
+        manaCostCurveData.put("2", manaCostArray[1]);
+        manaCostCurveData.put("3", manaCostArray[2]);
+        manaCostCurveData.put("4", manaCostArray[3]);
+        manaCostCurveData.put("5", manaCostArray[4]);
+        manaCostCurveData.put("6", manaCostArray[5]);
+        manaCostCurveData.put("7", manaCostArray[6]);
+        manaCostCurveData.put("8+", manaCostArray[7]);
 
+        // Set up the chart axes
+        final CategoryAxis xAxis = new CategoryAxis();
+        final NumberAxis yAxis = new NumberAxis();
+        xAxis.setLabel("Mana Cost");
+        yAxis.setLabel("Number of Cards");
+        
+        // Set the categories for the X-axis in the desired order
+        xAxis.setCategories(FXCollections.<String>observableArrayList("1", "2", "3", "4", "5", "6", "7", "8+"));
+
+
+        // Create the bar chart
+        final BarChart<String, Number> barChart = new BarChart<>(xAxis, yAxis);
+        barChart.setTitle("Cost Curve of MTG Deck");
+
+        // Add data to the chart
+        XYChart.Series<String, Number> series = new XYChart.Series<>();
+        series.setName(deck.getName());  // Use the deck's name as the series name
+
+        for (Map.Entry<String, Integer> entry : manaCostCurveData.entrySet()) {
+            series.getData().add(new XYChart.Data<>(entry.getKey(), entry.getValue()));
+        }
+
+        barChart.getData().addAll(series);
+
+        // Display the scene
+        Scene scene = new Scene(barChart, 800, 600);
+        Stage newStage = new Stage();
+        newStage.setTitle("MTG Deck Cost Curve");
+        newStage.setScene(scene);
+        newStage.show();
+    }
+    
+    
     private void showDecklistWindow() {
         VBox decklistLayout = new VBox(10);
         decklistLayout.setAlignment(Pos.CENTER);

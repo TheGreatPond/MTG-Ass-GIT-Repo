@@ -260,4 +260,28 @@ public class Deck {
         }
     }
 
+    /**
+ * Extracts the total mana cost for all the cards in the given deck.
+ *
+ * @param deck The deck to analyze.
+ * @return An array of size 8 where each index (0-7) corresponds to mana costs
+ * 1-8, respectively. The last index includes costs of 8 or more.
+ */
+    public int[] extractManaCosts(Deck deck) {
+        int[] manaCostArray = new int[8];
+
+        for (CardWithQuantity cardWithQuantity : deck.getCards()) {
+            int cardManaCost = cardWithQuantity.getCard().getTotalMana();
+            int quantity = cardWithQuantity.getQuantity();
+
+            if (cardManaCost >= 8) {
+                manaCostArray[7] += quantity;  // Add to the last index for mana costs 8 or more.
+            } else if (cardManaCost >= 1) {
+                manaCostArray[cardManaCost - 1] += quantity; // Indexing starts from 0, so we subtract 1.
+            }
+        }
+
+        return manaCostArray;
+    }
+
 }

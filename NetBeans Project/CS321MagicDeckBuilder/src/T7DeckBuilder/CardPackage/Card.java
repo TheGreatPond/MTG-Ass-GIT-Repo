@@ -134,5 +134,7 @@ public class Card {
     public String getImageFile() {
         return imageFile;
     }
+    
+    
 }
 
