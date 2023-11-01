@@ -1,7 +1,7 @@
 
 package AppClasses;
 
-import T7DeckBuilder.*;
+//import T7DeckBuilder.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -16,12 +16,16 @@ import javafx.stage.Stage;
  *
  * @author Adam
  */
-public class MTGDeckBuilder extends App {
+public class MTGDeckBuilder{
     private Stage primaryStage;
     private BorderPane mainLayout;
     private Scene mainScene;
+    private final DeckManager DM;
     
-    @Override
+    public MTGDeckBuilder(){
+        DM = new DeckManager(mainScene,primaryStage);
+    }
+    
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("MTG Deck Builder");
@@ -47,9 +51,9 @@ public class MTGDeckBuilder extends App {
         topBox.setAlignment(Pos.TOP_RIGHT);
 
         Button exitButton = createButton("Exit", e -> System.exit(0));
-        Button cardListButton = createButton("Card List", e -> showCardViewerScene());
+        //Button cardListButton = createButton("Card List", e -> showCardViewerScene());
 
-        topBox.getChildren().addAll(exitButton, cardListButton);
+        topBox.getChildren().addAll(exitButton);
         return topBox;
     }
     
@@ -71,5 +75,21 @@ public class MTGDeckBuilder extends App {
         Button button = new Button(text);
         button.setOnAction(handler);
         return button;
+    }
+    
+    private void showDecklistWindow(){
+        DM.showDecklistWindow(mainScene, primaryStage);
+    }
+
+    private Button showHelpWindow() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private Button showAnalyzeWindow() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private Button showCardViewerScene() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
