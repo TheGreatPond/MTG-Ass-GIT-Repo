@@ -76,6 +76,7 @@ public void start(Stage primaryStage) {
     grid.add(helpButton, 0, 0);
     grid.add(analyzeButton, 1, 0);
     grid.add(decklistButton, 0, 1);
+    grid.add(cardListButton, 1, 1);
 
     // Set the top HBox and grid in the main layout
     mainLayout.setTop(topBox);
@@ -232,7 +233,7 @@ private void showDecklistWindow() {
     });
 
 
-    buttonBox.getChildren().addAll(createDeckButton, deleteDeckButton, editDeckButton, exitButton, backButton);
+    buttonBox.getChildren().addAll(createDeckButton, deleteDeckButton, editDeckButton, backButton, exitButton);
     decklistLayout.getChildren().addAll(buttonBox, deckListView);
     primaryStage.setScene(decklistScene);
 }
