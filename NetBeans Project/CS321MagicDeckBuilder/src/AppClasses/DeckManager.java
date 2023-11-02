@@ -33,14 +33,10 @@ import javafx.stage.Stage;
  * @author Adam
  */
 public class DeckManager {
-    private final Scene mainScene;   // Store the reference to the main scene.
-    private final Stage primaryStage; // Store the reference to the primary stage
-    private DeckLoader deckLoader;// DeckLoader instance
+    private DeckLoader deckLoader;
     private static final int MAX_DECKS = 10;
 
     public DeckManager(Scene mainScene, Stage primaryStage) {
-        this.mainScene = mainScene;
-        this.primaryStage = primaryStage;
         this.deckLoader = new DeckLoader();
     }
 
@@ -94,7 +90,6 @@ public class DeckManager {
                         }
                         // Add only the name to the ListView
                         populateDeckListView(deckListView);
-                        //items.add(trimmedName);
                     }
                 });
             } else {
@@ -171,56 +166,68 @@ public class DeckManager {
         initEditorWindow(selectedDeck);
     }
     
-    private void initEditorWindow(Deck selectedDeck){
+   private void initEditorWindow(Deck selectedDeck) {
         Stage deckEditStage = new Stage();
+        Deck[] updatedDeckHolder = new Deck[1];
+
+        initializeDeckEditor(deckEditStage, selectedDeck, updatedDeckHolder);
+
+        ScrollPane scrollPane = createCardGrid(deckEditStage);
+
+        addCardsToGrid((GridPane) scrollPane.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
+
+        VBox layout = new VBox(10);
+        layout.setAlignment(Pos.CENTER);
+        layout.getChildren().addAll(scrollPane, createSaveDeckButton(selectedDeck, updatedDeckHolder));
+
+        Scene deckEditScene = new Scene(layout, 1280, 900);
+        deckEditStage.setScene(deckEditScene);
+        deckEditStage.show();
+    }
+    
+    private void initializeDeckEditor(Stage deckEditStage, Deck selectedDeck, Deck[] updatedDeckHolder) {
         deckEditStage.setTitle("Deck Edit Window");
 
         VBox layout = new VBox(10);
         layout.setAlignment(Pos.CENTER);
 
+        CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json");
 
-        // Load card data from WAR_cards.json
-        List<Card> allCards = CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json");
-
-        // Load the selected deck from the JSON file to get the updated quantities
         String jsonFilePath = selectedDeck.getJsonFilePath();
         Deck updatedDeck = Deck.loadFromJson(jsonFilePath);
 
-        //puts the deck in an array so that it can be edited by a lambda expression
-        Deck[] updatedDeckHolder = { Deck.loadFromJson(jsonFilePath) };
-            if (updatedDeckHolder[0] == null) {
-                updatedDeckHolder[0] = selectedDeck;
-            }
-
-        if (updatedDeck == null) {
-            updatedDeck = selectedDeck;
-        }
-
-        // Creates a grid for the cards
+        updatedDeckHolder[0] = updatedDeck != null ? updatedDeck : selectedDeck;
+    }
+    
+    private ScrollPane createCardGrid(Stage deckEditStage) {
         GridPane cardGrid = new GridPane();
         cardGrid.setHgap(10);
         cardGrid.setVgap(10);
         cardGrid.setAlignment(Pos.CENTER);
-        
-        ScrollPane scrollPane = new ScrollPane(cardGrid); // Wrap the cardGrid inside the ScrollPane
-        scrollPane.setFitToWidth(true); // This makes the ScrollPane expand horizontally with the cardGrid
+
+        ScrollPane scrollPane = new ScrollPane(cardGrid);
+        scrollPane.setFitToWidth(true);
 
         AnchorPane anchorPane = new AnchorPane();
-        anchorPane.getChildren().add(scrollPane); // Add ScrollPane to the AnchorPane instead of cardGrid
+        anchorPane.getChildren().add(scrollPane);
 
-        
-        // Adjust the card grid positioning based on the window size
+        adjustGridSizeBasedOnWindowSize(deckEditStage, scrollPane);
+
+        return scrollPane;
+    }
+    
+    private void adjustGridSizeBasedOnWindowSize(Stage deckEditStage, ScrollPane scrollPane) {
+        // Width listener
         deckEditStage.widthProperty().addListener((obs, oldVal, newVal) -> {
-            // 10% of the window width for left and right margins
             double horizontalMargin = newVal.doubleValue() * 0.01;
-            double width = newVal.doubleValue() * 0.80; // 80% of the total width
+            double width = newVal.doubleValue() * 0.80;
             scrollPane.setPrefWidth(width);
             AnchorPane.setLeftAnchor(scrollPane, horizontalMargin);
             AnchorPane.setRightAnchor(scrollPane, horizontalMargin);
         });
 
+        // Height listener
         deckEditStage.heightProperty().addListener((obs, oldVal, newVal) -> {
-            // 10% of the window height for top margin and 20% for bottom margin
             double topMargin = newVal.doubleValue() * 0.01;
             double bottomMargin = newVal.doubleValue() * 0.20;
             double height = newVal.doubleValue() - (topMargin + bottomMargin);
@@ -228,97 +235,65 @@ public class DeckManager {
             AnchorPane.setTopAnchor(scrollPane, topMargin);
             AnchorPane.setBottomAnchor(scrollPane, bottomMargin);
         });
-        
-        //keeps track of rows and colums for the grid logic
+    }
+    
+    private void addCardsToGrid(GridPane cardGrid, List<Card> allCards, Deck[] updatedDeckHolder) {
         int col = 0;
         int row = 0;
 
         for (Card card : allCards) {
-            VBox cardVBox = new VBox(5); // Vertical box for each card and its details
-            cardVBox.setAlignment(Pos.CENTER);
-
-            // Assuming Card has a method getImagePath() that returns path to card's image
-            Image cardImage = new Image("file:" + card.getImageFile());
-            ImageView cardImageView = new ImageView(cardImage);
-            cardImageView.setFitHeight(100);
-            cardImageView.setFitWidth(70);
-            
-            HBox cardInfoHBox = new HBox(10); // Horizontal box for card name, plus and minus buttons
-            cardInfoHBox.setAlignment(Pos.CENTER);
-            
-            Label cardLabel = new Label(card.getName());
-            Button plusButton = new Button("+");
-            Button minusButton = new Button("-");
-
-            CardWithQuantity cardWithQuantity = updatedDeck.getCards().stream()
-                .filter(cwq -> cwq.getCard().getCardID() == card.getCardID())
-                .findFirst()
-                .orElse(new CardWithQuantity(card, 0));
-
-            Label quantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
-
-            plusButton.setOnAction(e -> {
-                cardWithQuantity.incrementQuantity();
-                quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
-                updateCardInDeck(updatedDeckHolder[0], cardWithQuantity); // Use updatedDeckHolder[0]
-            });
-
-            minusButton.setOnAction(e -> {
-                if (cardWithQuantity.getQuantity() > 0) {
-                    cardWithQuantity.decrementQuantity();
-                    quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
-                    updateCardInDeck(updatedDeckHolder[0], cardWithQuantity); // Use updatedDeckHolder[0]
-                }
-            });
-
-            cardInfoHBox.getChildren().addAll(minusButton, cardLabel, plusButton);
-            cardVBox.getChildren().addAll(cardImageView, cardInfoHBox, quantityLabel);
-            
-            cardGrid.add(cardVBox, col, row); // Add to grid
-            
+            VBox cardVBox = createCardBox(card, updatedDeckHolder);
+            cardGrid.add(cardVBox, col, row);
 
             col++;
-            if (col > 4) { // If more than 5 columns, go to the next row
+            if (col > 4) {
                 col = 0;
                 row++;
             }
         }
+    }
+    
+    private VBox createCardBox(Card card, Deck[] updatedDeckHolder) {
+        VBox cardVBox = new VBox(5);
+        cardVBox.setAlignment(Pos.CENTER);
 
-        Button saveDeckButton = new Button("Save Deck");
-        saveDeckButton.setOnAction(e -> {
-                // Create a new stage for the popup
-                Stage popupStage = new Stage();
-                popupStage.initModality(Modality.APPLICATION_MODAL); // Make it block other user input
+        Image cardImage = new Image("file:" + card.getImageFile());
+        ImageView cardImageView = new ImageView(cardImage);
+        cardImageView.setFitHeight(100);
+        cardImageView.setFitWidth(70);
 
-                // Create a VBox layout for the popup contents
-                VBox popupVBox = new VBox();
-                popupVBox.setAlignment(Pos.CENTER);
+        HBox cardInfoHBox = new HBox(10);
+        cardInfoHBox.setAlignment(Pos.CENTER);
 
-                // Add a label to show a message to the user
-                Label savingLabel = new Label("Saving your changes...");
-                popupVBox.getChildren().add(savingLabel);
+        Label cardLabel = new Label(card.getName());
+        Button plusButton = new Button("+");
+        Button minusButton = new Button("-");
 
-                // Set the scene for the popup
-                Scene popupScene = new Scene(popupVBox, 200, 100);
-                popupStage.setScene(popupScene);
+        CardWithQuantity cardWithQuantity = updatedDeckHolder[0].getCards().stream()
+                .filter(cwq -> cwq.getCard().getCardID() == card.getCardID())
+                .findFirst()
+                .orElse(new CardWithQuantity(card, 0));
 
-                // Show the popup
-                popupStage.show();
+        Label quantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
 
-                // Run the saving operation on a new thread to avoid blocking the UI thread
-                Thread saveThread = new Thread(() -> {
-                    selectedDeck.setCards(new ArrayList<>(updatedDeckHolder[0].getCards())); // Update selectedDeck to match updatedDeck
-                    deckLoader.saveDeck(selectedDeck);
+        plusButton.setOnAction(e -> {
+            cardWithQuantity.incrementQuantity();
+            quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
+            updateCardInDeck(updatedDeckHolder[0], cardWithQuantity);
+        });
 
-                    // Close the popup on the JavaFX Application thread once the save operation completes
-                    Platform.runLater(() -> {
-                        popupStage.close();
-                    });
-                });
+        minusButton.setOnAction(e -> {
+            if (cardWithQuantity.getQuantity() > 0) {
+                cardWithQuantity.decrementQuantity();
+                quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
+                updateCardInDeck(updatedDeckHolder[0], cardWithQuantity);
+            }
+        });
 
-                // Start the save thread
-                saveThread.start();
-            });
+        cardInfoHBox.getChildren().addAll(minusButton, cardLabel, plusButton);
+        cardVBox.getChildren().addAll(cardImageView, cardInfoHBox, quantityLabel);
+
+        return cardVBox;
     }
     
     private void updateCardInDeck(Deck deck, CardWithQuantity cardWithQuantity) {
@@ -329,5 +304,38 @@ public class DeckManager {
         if (cardWithQuantity.getQuantity() > 0) {
             deck.getCards().add(cardWithQuantity);
         }
+    }
+    
+    private Button createSaveDeckButton(Deck selectedDeck, Deck[] updatedDeckHolder) {
+        Button saveDeckButton = new Button("Save Deck");
+        saveDeckButton.setOnAction(e -> saveDeck(selectedDeck, updatedDeckHolder));
+
+        return saveDeckButton;
+    }
+    
+    private void saveDeck(Deck selectedDeck, Deck[] updatedDeckHolder) {
+        Stage popupStage = new Stage();
+        popupStage.initModality(Modality.APPLICATION_MODAL);
+
+        VBox popupVBox = new VBox();
+        popupVBox.setAlignment(Pos.CENTER);
+
+        Label savingLabel = new Label("Saving your changes...");
+        popupVBox.getChildren().add(savingLabel);
+
+        Scene popupScene = new Scene(popupVBox, 200, 100);
+        popupStage.setScene(popupScene);
+        popupStage.show();
+
+        Thread saveThread = new Thread(() -> {
+            selectedDeck.setCards(new ArrayList<>(updatedDeckHolder[0].getCards()));
+            deckLoader.saveDeck(selectedDeck);
+
+            Platform.runLater(() -> {
+                popupStage.close();
+            });
+        });
+
+        saveThread.start();
     }
 }

@@ -7,9 +7,11 @@ import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
@@ -20,10 +22,13 @@ public class MTGDeckBuilder{
     private Stage primaryStage;
     private BorderPane mainLayout;
     private Scene mainScene;
-    private final DeckManager DM;
+    private Stage helpStage;
+    private DeckManager DM;
+    private CardListViewer CLV;
+    private AnalyzerWindow AW;
     
     public MTGDeckBuilder(){
-        DM = new DeckManager(mainScene,primaryStage);
+        
     }
     
     public void start(Stage primaryStage) {
@@ -32,7 +37,10 @@ public class MTGDeckBuilder{
 
         // Initialize the main layout and scene
         initLayout();
-
+        
+        DM = new DeckManager(mainScene,primaryStage);
+        CLV = new CardListViewer();
+        AW = new AnalyzerWindow(mainScene,primaryStage);
         // Set and show the main scene
         primaryStage.setScene(mainScene);
         primaryStage.show();
@@ -81,15 +89,28 @@ public class MTGDeckBuilder{
         DM.showDecklistWindow(mainScene, primaryStage);
     }
 
-    private Button showHelpWindow() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    private void showHelpWindow() {
+        helpStage = new Stage();
+        helpStage.setTitle("Help");
+        StackPane helpLayout = new StackPane();
+        Scene helpScene = new Scene(helpLayout, 300, 150);
+
+        // Add help text
+        Label helpLabel = new Label("This is the help text.");
+        helpLayout.getChildren().add(helpLabel);
+
+        // Set the help scene
+        helpStage.setScene(helpScene);
+
+        // Show the help window
+        helpStage.show();
     }
 
-    private Button showAnalyzeWindow() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    private void showAnalyzeWindow() {
+        AW.showAnalyzeWindow(mainScene,primaryStage);
     }
 
-    private Button showCardViewerScene() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    private void showCardViewerScene() {
+        CLV.showCardViewerScene(mainScene,primaryStage);
     }
 }
