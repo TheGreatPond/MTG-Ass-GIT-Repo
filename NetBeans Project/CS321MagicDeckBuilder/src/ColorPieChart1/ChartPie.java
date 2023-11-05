@@ -1,5 +1,5 @@
 
-package ColorPieChart;
+package ColorPieChart1;
 
 /**
  *
@@ -31,7 +31,7 @@ public class ChartPie extends Application {
                 new PieChart.Data("Black", 30));
         final PieChart chart = new PieChart(pieChartData);
         chart.setTitle("Color Distribution");
-        scene.getStylesheets().add("/ColorPieChart/style.css");
+        scene.getStylesheets().add("styles/pie_style.css");
 
         ((Group) scene.getRoot()).getChildren().add(chart);
         stage.setScene(scene);

@@ -49,7 +49,7 @@ public class ChartManaCurve extends Application {
             
         Scene scene  = new Scene(bc,800,600);
         bc.getData().addAll(series1);
-        scene.getStylesheets().add("/ManaCurve/style.css");
+        scene.getStylesheets().add("/styles/mana_style.css");
         stage.setScene(scene);
         stage.show();
     }

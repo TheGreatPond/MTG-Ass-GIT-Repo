@@ -1,0 +1,86 @@
+{
+    "cards": [
+        {
+            "quantity": 4,
+            "cardID": 461013
+        },
+        {
+            "quantity": 4,
+            "cardID": 461023
+        },
+        {
+            "quantity": 3,
+            "cardID": 461017
+        },
+        {
+            "quantity": 3,
+            "cardID": 461038
+        },
+        {
+            "quantity": 3,
+            "cardID": 461014
+        },
+        {
+            "quantity": 3,
+            "cardID": 461033
+        },
+        {
+            "quantity": 4,
+            "cardID": 461125
+        },
+        {
+            "quantity": 3,
+            "cardID": 461024
+        },
+        {
+            "quantity": 3,
+            "cardID": 461155
+        },
+        {
+            "quantity": 2,
+            "cardID": 461027
+        },
+        {
+            "quantity": 4,
+            "cardID": 461028
+        },
+        {
+            "quantity": 2,
+            "cardID": 461035
+        },
+        {
+            "quantity": 2,
+            "cardID": 460953
+        },
+        {
+            "quantity": 4,
+            "cardID": 461183
+        },
+        {
+            "quantity": 4,
+            "cardID": 461184
+        },
+        {
+            "quantity": 4,
+            "cardID": 461185
+        },
+        {
+            "quantity": 4,
+            "cardID": 461186
+        },
+        {
+            "quantity": 4,
+            "cardID": 461187
+        },
+        {
+            "quantity": 2,
+            "cardID": 460951
+        },
+        {
+            "quantity": 2,
+            "cardID": 460928
+        }
+    ],
+    "name": "Deck Name",
+    "hashID": 1698812135250
+}
