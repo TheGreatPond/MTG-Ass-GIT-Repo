@@ -34,6 +34,9 @@ import javafx.stage.Stage;
  */
 public class DeckManager {
     private DeckLoader deckLoader;
+    private Scene deckEditScene;
+    private Label LquantityLabel;
+    private Stage deckEditStage;
     private static final int MAX_DECKS = 10;
 
     public DeckManager(Scene mainScene, Stage primaryStage) {
@@ -167,20 +170,32 @@ public class DeckManager {
     }
     
    private void initEditorWindow(Deck selectedDeck) {
-        Stage deckEditStage = new Stage();
+        deckEditStage = new Stage();
         Deck[] updatedDeckHolder = new Deck[1];
 
         initializeDeckEditor(deckEditStage, selectedDeck, updatedDeckHolder);
 
         ScrollPane scrollPane = createCardGrid(deckEditStage);
+        
+        ScrollPane deckScroll = createDeckList(deckEditStage);  // Adds in the list of cards that are in the deck
 
         addCardsToGrid((GridPane) scrollPane.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
 
-        VBox layout = new VBox(10);
+        // adds the cards to the list of cards in the deck
+        addToList((GridPane) deckScroll.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
+        
+        deckScroll.setMinWidth(170);
+        scrollPane.setMinWidth(1130);
+        
+        HBox layout = new HBox(1);
         layout.setAlignment(Pos.CENTER);
-        layout.getChildren().addAll(scrollPane, createSaveDeckButton(selectedDeck, updatedDeckHolder));
-
-        Scene deckEditScene = new Scene(layout, 1280, 900);
+        layout.getChildren().addAll(scrollPane,deckScroll);
+        
+        VBox whole = new VBox(10);
+        whole.setAlignment(Pos.CENTER);
+        whole.getChildren().addAll(layout,createSaveDeckButton(selectedDeck, updatedDeckHolder));
+        
+        deckEditScene = new Scene(whole, 1300, 900);
         deckEditStage.setScene(deckEditScene);
         deckEditStage.show();
     }
@@ -201,12 +216,12 @@ public class DeckManager {
     
     private ScrollPane createCardGrid(Stage deckEditStage) {
         GridPane cardGrid = new GridPane();
-        cardGrid.setHgap(10);
-        cardGrid.setVgap(10);
-        cardGrid.setAlignment(Pos.CENTER);
+        cardGrid.setHgap(5);
+        cardGrid.setVgap(5);
+        cardGrid.setAlignment(Pos.CENTER_LEFT);
 
         ScrollPane scrollPane = new ScrollPane(cardGrid);
-        scrollPane.setFitToWidth(true);
+        //scrollPane.setFitToWidth(true);
 
         AnchorPane anchorPane = new AnchorPane();
         anchorPane.getChildren().add(scrollPane);
@@ -219,11 +234,12 @@ public class DeckManager {
     private void adjustGridSizeBasedOnWindowSize(Stage deckEditStage, ScrollPane scrollPane) {
         // Width listener
         deckEditStage.widthProperty().addListener((obs, oldVal, newVal) -> {
-            double horizontalMargin = newVal.doubleValue() * 0.01;
-            double width = newVal.doubleValue() * 0.80;
+            double leftMargin = newVal.doubleValue() * 0.01;
+            double rightMargin = newVal.doubleValue() * 0.20;
+            double width = newVal.doubleValue() - (leftMargin + rightMargin);
             scrollPane.setPrefWidth(width);
-            AnchorPane.setLeftAnchor(scrollPane, horizontalMargin);
-            AnchorPane.setRightAnchor(scrollPane, horizontalMargin);
+            AnchorPane.setLeftAnchor(scrollPane, leftMargin);
+            AnchorPane.setRightAnchor(scrollPane, rightMargin);
         });
 
         // Height listener
@@ -292,7 +308,7 @@ public class DeckManager {
 
         cardInfoHBox.getChildren().addAll(minusButton, cardLabel, plusButton);
         cardVBox.getChildren().addAll(cardImageView, cardInfoHBox, quantityLabel);
-
+        
         return cardVBox;
     }
     
@@ -337,5 +353,83 @@ public class DeckManager {
         });
 
         saveThread.start();
+    }
+    
+    // New List creation
+    private ScrollPane createDeckList(Stage deckEditStage) {
+        GridPane cardGrid = new GridPane();
+        cardGrid.setHgap(1);
+        cardGrid.setVgap(1);
+        cardGrid.setAlignment(Pos.CENTER_RIGHT);
+
+        ScrollPane scrollPane = new ScrollPane(cardGrid);
+        //scrollPane.setFitToWidth(true);
+
+        AnchorPane anchorPane = new AnchorPane();
+        anchorPane.getChildren().add(scrollPane);
+
+        adjust(deckEditStage, scrollPane);
+
+        return scrollPane;
+    }
+    private void adjust(Stage deckEditStage, ScrollPane scrollPane) {
+        // Width listener
+        deckEditStage.widthProperty().addListener((obs, oldVal, newVal) -> {
+            double leftMargin = newVal.doubleValue() * 0.01;
+            double rightMargin = newVal.doubleValue() * 0.20;
+            double width = newVal.doubleValue() - (leftMargin + rightMargin);
+            scrollPane.setPrefWidth(width);
+            AnchorPane.setLeftAnchor(scrollPane, leftMargin);
+            AnchorPane.setRightAnchor(scrollPane, rightMargin);
+        });
+
+        // Height listener
+        deckEditStage.heightProperty().addListener((obs, oldVal, newVal) -> {
+            double topMargin = newVal.doubleValue() * 0.01;
+            double bottomMargin = newVal.doubleValue() * 0.20;
+            double height = newVal.doubleValue() - (topMargin + bottomMargin);
+            scrollPane.setPrefHeight(height);
+            AnchorPane.setTopAnchor(scrollPane, topMargin);
+            AnchorPane.setBottomAnchor(scrollPane, bottomMargin);
+        });
+    }
+    private HBox createList(Card card, Deck[] updatedDeckHolder) {
+        HBox cardVBox = new HBox(2);
+        cardVBox.setAlignment(Pos.CENTER_RIGHT);
+
+        HBox cardInfoHBox = new HBox(1);
+        cardInfoHBox.setAlignment(Pos.CENTER_RIGHT);
+
+        Label cardLabel = new Label(card.getName());
+
+        CardWithQuantity cardWithQuantity = updatedDeckHolder[0].getCards().stream()
+                .filter(cwq -> cwq.getCard().getCardID() == card.getCardID())
+                .findFirst()
+                .orElse(new CardWithQuantity(card, 0));
+
+        LquantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
+
+        cardInfoHBox.getChildren().addAll(cardLabel);
+        cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
+
+        return cardVBox;
+    }
+    private void addToList(GridPane cardGrid, List<Card> allCards, Deck[] updatedDeckHolder) {
+        int col = 0;
+        int row = 0;
+
+        for (Card card : allCards) {
+            HBox cardVBox = createList(card, updatedDeckHolder);
+            if(!"0".equals(LquantityLabel.getText()))
+            {
+                cardGrid.add(cardVBox, col, row);
+                col++;
+                if (col > 0) 
+                {
+                    col = 0;
+                    row++;
+                }
+            } 
+        }
     }
 }
