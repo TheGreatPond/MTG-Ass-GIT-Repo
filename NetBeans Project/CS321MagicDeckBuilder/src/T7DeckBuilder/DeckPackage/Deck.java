@@ -283,5 +283,31 @@ public class Deck {
 
         return manaCostArray;
     }
+    public int[] extractColorDistribution(Deck deck) {
+        int[] colorDistributionArray = new int[7];
+
+        for (CardWithQuantity cardWithQuantity : deck.getCards()) {
+            String cardColor = cardWithQuantity.getCard().getColors();
+            int quantity = cardWithQuantity.getQuantity();
+            System.out.println(cardColor);
+            if (cardColor== "") {
+                colorDistributionArray[0] += quantity;  // Add to the last index for mana costs 8 or more.
+            } else if (cardColor== "[\"B\"]") {
+                colorDistributionArray[1] += quantity;  // Add to the last index for mana costs 8 or more.
+            } else if (cardColor== "U") {
+                colorDistributionArray[2] += quantity;  // Add to the last index for mana costs 8 or more.
+            } else if (cardColor== "G") {
+                colorDistributionArray[3] += quantity;  // Add to the last index for mana costs 8 or more.
+            } else if (cardColor== "W") {
+                colorDistributionArray[4] += quantity;  // Add to the last index for mana costs 8 or more.
+            } else if (cardColor== "B") {
+                colorDistributionArray[5] += quantity;  // Add to the last index for mana costs 8 or more.
+            } else  {
+                colorDistributionArray[6] += quantity;  // Add to the last index for mana costs 8 or more.
+            }
+        }
+
+        return colorDistributionArray;
+    }
 
 }

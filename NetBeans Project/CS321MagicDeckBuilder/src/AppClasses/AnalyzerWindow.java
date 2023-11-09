@@ -222,7 +222,7 @@ public class AnalyzerWindow {
         }
        
         
-        int[] colorDistribuitionArray = updatedDeck.extractManaCosts(updatedDeck);
+        int[] colorDistribuitionArray = updatedDeck.extractColorDistribution(updatedDeck);
                 
         ObservableList<PieChart.Data> pieChartData =
                 FXCollections.observableArrayList(
