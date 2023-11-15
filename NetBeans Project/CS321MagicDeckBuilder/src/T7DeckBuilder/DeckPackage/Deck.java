@@ -285,22 +285,34 @@ public class Deck {
     }
     public int[] extractColorDistribution(Deck deck) {
         int[] colorDistributionArray = new int[7];
+        
+        Card blueCard = Card.getCardFromID(463840);
+        String blueColor= blueCard.getColors();
+        Card whiteCard = Card.getCardFromID(460952);
+        String whiteColor= whiteCard.getColors();
+        Card greenCard = Card.getCardFromID(461092);
+        String greenColor= greenCard.getColors();
+        Card redCard = Card.getCardFromID(461073);
+        String redColor= redCard.getColors();
+        Card blackCard = Card.getCardFromID(461021);
+        String blackColor= blackCard.getColors();
+        
 
         for (CardWithQuantity cardWithQuantity : deck.getCards()) {
             String cardColor = cardWithQuantity.getCard().getColors();
             int quantity = cardWithQuantity.getQuantity();
-            System.out.println(cardColor);
+            //System.out.println(cardColor);
             if (cardColor== "") {
                 colorDistributionArray[0] += quantity;  // Add to the last index for mana costs 8 or more.
-            } else if (cardColor== "[\"B\"]") {
+            } else if (cardColor.equals(redColor)) {
                 colorDistributionArray[1] += quantity;  // Add to the last index for mana costs 8 or more.
-            } else if (cardColor== "U") {
+            } else if (cardColor.equals(blueColor)) {
                 colorDistributionArray[2] += quantity;  // Add to the last index for mana costs 8 or more.
-            } else if (cardColor== "G") {
+            } else if (cardColor.equals(greenColor)) {
                 colorDistributionArray[3] += quantity;  // Add to the last index for mana costs 8 or more.
-            } else if (cardColor== "W") {
+            } else if (cardColor.equals(whiteColor)) {
                 colorDistributionArray[4] += quantity;  // Add to the last index for mana costs 8 or more.
-            } else if (cardColor== "B") {
+            } else if (cardColor.equals(blackColor)) {
                 colorDistributionArray[5] += quantity;  // Add to the last index for mana costs 8 or more.
             } else  {
                 colorDistributionArray[6] += quantity;  // Add to the last index for mana costs 8 or more.
