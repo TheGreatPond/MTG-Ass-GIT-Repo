@@ -13,6 +13,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .data3.chart-pie { -fx-pie-color: green; }
 .data4.chart-pie { -fx-pie-color: white; }
 .data5.chart-pie { -fx-pie-color: black; }
+.data6.chart-pie { -fx-pie-color: purple; }
 
 .chart {
    -fx-background-color: lightgrey;

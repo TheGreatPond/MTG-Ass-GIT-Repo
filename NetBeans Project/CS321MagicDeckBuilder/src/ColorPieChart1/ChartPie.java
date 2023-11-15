@@ -1,5 +1,5 @@
 
-package ColorPieChart;
+package ColorPieChart1;
 
 /**
  *
@@ -23,15 +23,17 @@ public class ChartPie extends Application {
  
         ObservableList<PieChart.Data> pieChartData =
                 FXCollections.observableArrayList(
-                new PieChart.Data("Other", 13),
+                new PieChart.Data("Colorless", 13),
                 new PieChart.Data("Red", 13),
                 new PieChart.Data("Blue", 25),
                 new PieChart.Data("Green", 10),
                 new PieChart.Data("White", 22),
-                new PieChart.Data("Black", 30));
+                new PieChart.Data("Black", 22),
+                new PieChart.Data("Multicolor", 30));
+                
         final PieChart chart = new PieChart(pieChartData);
         chart.setTitle("Color Distribution");
-        scene.getStylesheets().add("/ColorPieChart/style.css");
+        scene.getStylesheets().add("styles/pie_style.css");
 
         ((Group) scene.getRoot()).getChildren().add(chart);
         stage.setScene(scene);
