@@ -48,7 +48,10 @@ public class Deck {
      * Stores the name of the deck object
      */
     private String name; // Deck name
-
+    /**
+     * Stores the colorDistriburion of the deck object
+     */
+    private int[] colorDistribution = new int[7];// 5 colors, colorless, and multicolored are counted here 
     /**
      * Constructor for the deck object using a name
      * @param name 
@@ -283,7 +286,7 @@ public class Deck {
 
         return manaCostArray;
     }
-    public int[] extractColorDistribution(Deck deck) {
+    public void setColorDistribution(Deck deck) {
         int[] colorDistributionArray = new int[7];
         
         Card blueCard = Card.getCardFromID(463840);
@@ -303,23 +306,27 @@ public class Deck {
             int quantity = cardWithQuantity.getQuantity();
             //System.out.println(cardColor);
             if (cardColor== "") {
-                colorDistributionArray[0] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[0] += quantity;  // Add to the last index for mana costs 8 or more.
             } else if (cardColor.equals(redColor)) {
-                colorDistributionArray[1] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[1] += quantity;  // Add to the last index for mana costs 8 or more.
             } else if (cardColor.equals(blueColor)) {
-                colorDistributionArray[2] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[2] += quantity;  // Add to the last index for mana costs 8 or more.
             } else if (cardColor.equals(greenColor)) {
-                colorDistributionArray[3] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[3] += quantity;  // Add to the last index for mana costs 8 or more.
             } else if (cardColor.equals(whiteColor)) {
-                colorDistributionArray[4] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[4] += quantity;  // Add to the last index for mana costs 8 or more.
             } else if (cardColor.equals(blackColor)) {
-                colorDistributionArray[5] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[5] += quantity;  // Add to the last index for mana costs 8 or more.
             } else  {
-                colorDistributionArray[6] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[6] += quantity;  // Add to the last index for mana costs 8 or more.
             }
         }
-
-        return colorDistributionArray;
+    }
+    
+    public int[] getColorDistribution(Deck deck) {
+    return colorDistribution;
     }
 
 }
+
+    

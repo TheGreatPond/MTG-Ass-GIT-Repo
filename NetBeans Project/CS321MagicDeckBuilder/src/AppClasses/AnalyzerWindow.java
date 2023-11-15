@@ -5,8 +5,10 @@ import T7DeckBuilder.CardPackage.CardLoader;
 import T7DeckBuilder.DeckPackage.Deck;
 import T7DeckBuilder.DeckPackage.DeckLoader;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
@@ -221,8 +223,10 @@ public class AnalyzerWindow {
             updatedDeck = selectedDeck;
         }
        
+        updatedDeck.setColorDistribution(updatedDeck);
+            
         
-        int[] colorDistribuitionArray = updatedDeck.extractColorDistribution(updatedDeck);
+        int[] colorDistribuitionArray = updatedDeck.getColorDistribution(updatedDeck);
                 
         ObservableList<PieChart.Data> pieChartData =
                 FXCollections.observableArrayList(
