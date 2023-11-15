@@ -36,6 +36,9 @@ public class DeckManager {
     private DeckLoader deckLoader;
     private Scene deckEditScene;
     private Label LquantityLabel;
+    private Button plusButton;
+    private Button minusButton;
+    //private Label quantityLabel;
     private Stage deckEditStage;
     private static final int MAX_DECKS = 10;
 
@@ -282,8 +285,8 @@ public class DeckManager {
         cardInfoHBox.setAlignment(Pos.CENTER);
 
         Label cardLabel = new Label(card.getName());
-        Button plusButton = new Button("+");
-        Button minusButton = new Button("-");
+        plusButton = new Button("+");
+        minusButton = new Button("-");
 
         CardWithQuantity cardWithQuantity = updatedDeckHolder[0].getCards().stream()
                 .filter(cwq -> cwq.getCard().getCardID() == card.getCardID())
@@ -406,9 +409,9 @@ public class DeckManager {
                 .filter(cwq -> cwq.getCard().getCardID() == card.getCardID())
                 .findFirst()
                 .orElse(new CardWithQuantity(card, 0));
-
+        
         LquantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
-
+        
         cardInfoHBox.getChildren().addAll(cardLabel);
         cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
 
