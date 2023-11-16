@@ -30,7 +30,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Adam
+ * @author Adam Pierce
  */
 public class DeckManager {
     private DeckLoader deckLoader;
