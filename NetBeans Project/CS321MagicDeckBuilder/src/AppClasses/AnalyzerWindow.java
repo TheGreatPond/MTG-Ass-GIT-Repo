@@ -65,7 +65,7 @@ public class AnalyzerWindow {
         Button backButton = new Button("Back");
         backButton.setOnAction(e -> primaryStage.setScene(mainScene));
 
-        Button analyzeDeckButton = new Button("Analyze");
+        Button analyzeDeckButton = new Button("Maan Curve");
         analyzeDeckButton.setOnAction(e -> analyzeSelectedDeck(analyzeLayout));
         
         Button pieChartDeckButton = new Button("PieChart");
