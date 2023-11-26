@@ -1,0 +1,26 @@
+{
+    "cards": [
+        {
+            "quantity": 2,
+            "cardID": 460936
+        },
+        {
+            "quantity": 4,
+            "cardID": 460931
+        },
+        {
+            "quantity": 4,
+            "cardID": 460932
+        },
+        {
+            "quantity": 4,
+            "cardID": 460928
+        },
+        {
+            "quantity": 4,
+            "cardID": 460934
+        }
+    ],
+    "name": "beep",
+    "hashID": 1701039317367
+}

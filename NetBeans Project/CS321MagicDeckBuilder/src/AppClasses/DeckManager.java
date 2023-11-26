@@ -182,10 +182,10 @@ public class DeckManager {
         
         ScrollPane deckScroll = createDeckList(deckEditStage);  // Adds in the list of cards that are in the deck
 
-        addCardsToGrid((GridPane) scrollPane.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
+        addCardsToGrid((GridPane) scrollPane.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder, deckScroll);
 
         // adds the cards to the list of cards in the deck
-        addToList((GridPane) deckScroll.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
+        updateEditorCardList((GridPane) deckScroll.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
         
         deckScroll.setMinWidth(170);
         scrollPane.setMinWidth(1130);
@@ -196,7 +196,7 @@ public class DeckManager {
         
         VBox whole = new VBox(10);
         whole.setAlignment(Pos.CENTER);
-        whole.getChildren().addAll(layout,createSaveDeckButton(selectedDeck, updatedDeckHolder));
+        whole.getChildren().addAll(layout,createSaveDeckButton(selectedDeck, updatedDeckHolder, deckScroll));
         
         deckEditScene = new Scene(whole, 1300, 900);
         deckEditStage.setScene(deckEditScene);
@@ -256,12 +256,12 @@ public class DeckManager {
         });
     }
     
-    private void addCardsToGrid(GridPane cardGrid, List<Card> allCards, Deck[] updatedDeckHolder) {
+    private void addCardsToGrid(GridPane cardGrid, List<Card> allCards, Deck[] updatedDeckHolder, ScrollPane deckScroll) {
         int col = 0;
         int row = 0;
 
         for (Card card : allCards) {
-            VBox cardVBox = createCardBox(card, updatedDeckHolder);
+            VBox cardVBox = createCardBox(card, updatedDeckHolder, deckScroll);
             cardGrid.add(cardVBox, col, row);
 
             col++;
@@ -272,7 +272,7 @@ public class DeckManager {
         }
     }
     
-    private VBox createCardBox(Card card, Deck[] updatedDeckHolder) {
+    private VBox createCardBox(Card card, Deck[] updatedDeckHolder, ScrollPane deckScroll) {
         VBox cardVBox = new VBox(5);
         cardVBox.setAlignment(Pos.CENTER);
 
@@ -299,6 +299,7 @@ public class DeckManager {
             cardWithQuantity.incrementQuantity();
             quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
             updateCardInDeck(updatedDeckHolder[0], cardWithQuantity);
+            updateEditorCardList((GridPane) deckScroll.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
         });
 
         minusButton.setOnAction(e -> {
@@ -307,6 +308,7 @@ public class DeckManager {
                 quantityLabel.setText(String.valueOf(cardWithQuantity.getQuantity()));
                 updateCardInDeck(updatedDeckHolder[0], cardWithQuantity);
             }
+            updateEditorCardList((GridPane) deckScroll.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
         });
 
         cardInfoHBox.getChildren().addAll(minusButton, cardLabel, plusButton);
@@ -325,14 +327,14 @@ public class DeckManager {
         }
     }
     
-    private Button createSaveDeckButton(Deck selectedDeck, Deck[] updatedDeckHolder) {
+    private Button createSaveDeckButton(Deck selectedDeck, Deck[] updatedDeckHolder, ScrollPane deckScroll) {
         Button saveDeckButton = new Button("Save Deck");
-        saveDeckButton.setOnAction(e -> saveDeck(selectedDeck, updatedDeckHolder));
-
+        saveDeckButton.setOnAction(e -> saveDeck(selectedDeck, updatedDeckHolder, deckScroll));
+        
         return saveDeckButton;
     }
     
-    private void saveDeck(Deck selectedDeck, Deck[] updatedDeckHolder) {
+    private void saveDeck(Deck selectedDeck, Deck[] updatedDeckHolder, ScrollPane deckScroll) {
         Stage popupStage = new Stage();
         popupStage.initModality(Modality.APPLICATION_MODAL);
 
@@ -356,7 +358,11 @@ public class DeckManager {
         });
 
         saveThread.start();
+        
+        //initEditorWindow(selectedDeck);
+        updateEditorCardList((GridPane) deckScroll.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
     }
+    
     
     // New List creation
     private ScrollPane createDeckList(Stage deckEditStage) {
@@ -417,10 +423,10 @@ public class DeckManager {
 
         return cardVBox;
     }
-    private void addToList(GridPane cardGrid, List<Card> allCards, Deck[] updatedDeckHolder) {
+    private void updateEditorCardList(GridPane cardGrid, List<Card> allCards, Deck[] updatedDeckHolder) {
         int col = 0;
         int row = 0;
-
+        cardGrid.getChildren().clear();
         for (Card card : allCards) {
             HBox cardVBox = createList(card, updatedDeckHolder);
             if(!"0".equals(LquantityLabel.getText()))

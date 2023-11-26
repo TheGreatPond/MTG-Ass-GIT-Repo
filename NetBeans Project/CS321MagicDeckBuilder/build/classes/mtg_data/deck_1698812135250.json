@@ -49,10 +49,6 @@
             "cardID": 461035
         },
         {
-            "quantity": 2,
-            "cardID": 460953
-        },
-        {
             "quantity": 4,
             "cardID": 461183
         },
@@ -119,6 +115,158 @@
         {
             "quantity": 4,
             "cardID": 460993
+        },
+        {
+            "quantity": 1,
+            "cardID": 460929
+        },
+        {
+            "quantity": 1,
+            "cardID": 460930
+        },
+        {
+            "quantity": 1,
+            "cardID": 460931
+        },
+        {
+            "quantity": 1,
+            "cardID": 460932
+        },
+        {
+            "quantity": 1,
+            "cardID": 460937
+        },
+        {
+            "quantity": 1,
+            "cardID": 460936
+        },
+        {
+            "quantity": 4,
+            "cardID": 460935
+        },
+        {
+            "quantity": 1,
+            "cardID": 460934
+        },
+        {
+            "quantity": 1,
+            "cardID": 460933
+        },
+        {
+            "quantity": 1,
+            "cardID": 460938
+        },
+        {
+            "quantity": 1,
+            "cardID": 460939
+        },
+        {
+            "quantity": 1,
+            "cardID": 460940
+        },
+        {
+            "quantity": 1,
+            "cardID": 460941
+        },
+        {
+            "quantity": 1,
+            "cardID": 460942
+        },
+        {
+            "quantity": 1,
+            "cardID": 460947
+        },
+        {
+            "quantity": 1,
+            "cardID": 460946
+        },
+        {
+            "quantity": 1,
+            "cardID": 460945
+        },
+        {
+            "quantity": 1,
+            "cardID": 460944
+        },
+        {
+            "quantity": 1,
+            "cardID": 460943
+        },
+        {
+            "quantity": 1,
+            "cardID": 460948
+        },
+        {
+            "quantity": 1,
+            "cardID": 460949
+        },
+        {
+            "quantity": 1,
+            "cardID": 460950
+        },
+        {
+            "quantity": 1,
+            "cardID": 460952
+        },
+        {
+            "quantity": 1,
+            "cardID": 460957
+        },
+        {
+            "quantity": 1,
+            "cardID": 460956
+        },
+        {
+            "quantity": 1,
+            "cardID": 460955
+        },
+        {
+            "quantity": 1,
+            "cardID": 460954
+        },
+        {
+            "quantity": 3,
+            "cardID": 460953
+        },
+        {
+            "quantity": 1,
+            "cardID": 460958
+        },
+        {
+            "quantity": 1,
+            "cardID": 460959
+        },
+        {
+            "quantity": 1,
+            "cardID": 460960
+        },
+        {
+            "quantity": 1,
+            "cardID": 460961
+        },
+        {
+            "quantity": 1,
+            "cardID": 460962
+        },
+        {
+            "quantity": 1,
+            "cardID": 460967
+        },
+        {
+            "quantity": 1,
+            "cardID": 460966
+        },
+        {
+            "quantity": 1,
+            "cardID": 460965
+        },
+        {
+            "quantity": 1,
+            "cardID": 460964
+        },
+        {
+            "quantity": 1,
+            "cardID": 460963
         }
     ],
     "name": "Deck Name",
