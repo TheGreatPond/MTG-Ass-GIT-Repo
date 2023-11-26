@@ -86,11 +86,47 @@
         },
         {
             "quantity": 2,
+            "cardID": 461087
+        },
+        {
+            "quantity": 4,
+            "cardID": 461066
+        },
+        {
+            "quantity": 4,
             "cardID": 461067
         },
         {
-            "quantity": 2,
-            "cardID": 461087
+            "quantity": 4,
+            "cardID": 461065
+        },
+        {
+            "quantity": 4,
+            "cardID": 461064
+        },
+        {
+            "quantity": 4,
+            "cardID": 461063
+        },
+        {
+            "quantity": 4,
+            "cardID": 461058
+        },
+        {
+            "quantity": 4,
+            "cardID": 461059
+        },
+        {
+            "quantity": 4,
+            "cardID": 461060
+        },
+        {
+            "quantity": 4,
+            "cardID": 461061
+        },
+        {
+            "quantity": 4,
+            "cardID": 461062
         }
     ],
     "name": "Deck Name",

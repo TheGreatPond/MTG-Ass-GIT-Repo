@@ -67,13 +67,13 @@ public class AnalyzerWindow {
         Button backButton = new Button("Back");
         backButton.setOnAction(e -> primaryStage.setScene(mainScene));
 
-        Button analyzeDeckButton = new Button("Analyze");
+        Button analyzeDeckButton = new Button("Mana Curve");
         analyzeDeckButton.setOnAction(e -> analyzeSelectedDeck(analyzeLayout));
         
-        /*Button pieChartDeckButton = new Button("PieChart");
+        Button pieChartDeckButton = new Button("Pie Chart");
         pieChartDeckButton.setOnAction(e -> pieChartSelectedDeck(analyzeLayout));
-        */
-        buttonBox.getChildren().addAll(analyzeDeckButton, /*pieChartDeckButton,*/ backButton, exitButton);
+        
+        buttonBox.getChildren().addAll(analyzeDeckButton, pieChartDeckButton, backButton, exitButton);
         return buttonBox;
     }
 
@@ -123,16 +123,6 @@ public class AnalyzerWindow {
             Deck toAnalyze = deckLoader.getDeckByName(selectedDeckName);
             if (toAnalyze != null) {
                 analyzeManaCostCurve(toAnalyze);
-            } else {
-                showAlert(Alert.AlertType.ERROR, "The selected deck was not found!");
-            }
-        } else {
-            showAlert(Alert.AlertType.WARNING, "Please select a deck to analyze!");
-        }
-        if (selectedDeckName != null && !selectedDeckName.equals("No decks available")) {
-            Deck toAnalyze = deckLoader.getDeckByName(selectedDeckName);
-            if (toAnalyze != null) {
-                analyzePieChart(toAnalyze);
             } else {
                 showAlert(Alert.AlertType.ERROR, "The selected deck was not found!");
             }
