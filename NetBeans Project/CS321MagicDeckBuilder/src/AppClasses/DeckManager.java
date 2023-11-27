@@ -418,11 +418,53 @@ public class DeckManager {
         
         LquantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
         
+       
+        
+        Card blueCard = Card.getCardFromID(463840);
+        String blueColor= blueCard.getColors();
+        Card whiteCard = Card.getCardFromID(460952);
+        String whiteColor= whiteCard.getColors();
+        Card greenCard = Card.getCardFromID(461092);
+        String greenColor= greenCard.getColors();
+        Card redCard = Card.getCardFromID(461073);
+        String redColor= redCard.getColors();
+        Card blackCard = Card.getCardFromID(461021);
+        String blackColor= blackCard.getColors();
+        
         
         Image cardImage = new Image("file:" + card.getImageFile());
         ImageView cardImageView = new ImageView(cardImage);
         cardImageView.setFitHeight(20);
         cardImageView.setFitWidth(20);
+        
+        String cardColor=card.getColors();
+            //System.out.println(cardColor);
+            if (cardColor== "") {
+                cardImage = new Image("file:" + "src/mtg_data/image_data/C.jpg");//colorless
+                cardImageView = new ImageView(cardImage); 
+            } else if (cardColor.equals(redColor)) {
+                cardImage = new Image("file:" + "src/mtg_data/image_data/R.jpg");//red
+                cardImageView = new ImageView(cardImage); 
+            } else if (cardColor.equals(blueColor)) {
+                cardImage = new Image("file:" + "src/mtg_data/image_data/U.jpg");//blue
+                cardImageView = new ImageView(cardImage); 
+            } else if (cardColor.equals(greenColor)) {
+                cardImage = new Image("file:" + "src/mtg_data/image_data/G.jpg");//green
+                cardImageView = new ImageView(cardImage); 
+            } else if (cardColor.equals(whiteColor)) {
+                cardImage = new Image("file:" + "src/mtg_data/image_data/W.jpg");//white
+                cardImageView = new ImageView(cardImage); 
+            } else if (cardColor.equals(blackColor)) {
+                cardImage = new Image("file:" + "src/mtg_data/image_data/B.jpg");//black
+                cardImageView = new ImageView(cardImage); 
+            } else  {
+                cardImage = new Image("file:" + "src/mtg_data/image_data/M.jpg");//multicolor
+                cardImageView = new ImageView(cardImage); 
+            }
+        
+            cardImageView.setFitHeight(20);
+            cardImageView.setFitWidth(20);
+        
         
         cardInfoHBox.getChildren().addAll(cardLabel);
         cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
