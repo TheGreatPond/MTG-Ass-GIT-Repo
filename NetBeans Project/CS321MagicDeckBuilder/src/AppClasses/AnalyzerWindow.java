@@ -65,7 +65,7 @@ public class AnalyzerWindow {
         Button backButton = new Button("Back");
         backButton.setOnAction(e -> primaryStage.setScene(mainScene));
 
-        Button analyzeDeckButton = new Button("Maan Curve");
+        Button analyzeDeckButton = new Button("Mana Curve");
         analyzeDeckButton.setOnAction(e -> analyzeSelectedDeck(analyzeLayout));
         
         Button pieChartDeckButton = new Button("PieChart");
@@ -226,22 +226,6 @@ public class AnalyzerWindow {
         
         final PieChart chart = new PieChart(pieChartData);
         
-        /* // Create the bar chart
-        final BarChart<String, Number> barChart = new BarChart<>(xAxis, yAxis);
-        barChart.setTitle("Cost Curve of MTG Deck");
-
-        // Add data to the chart
-        XYChart.Series<String, Number> series = new XYChart.Series<>();
-        series.setName(selectedDeck.getName());  // Use the deck's name as the series name
-
-        for (Map.Entry<String, Integer> entry : manaCostCurveData.entrySet()) {
-            series.getData().add(new XYChart.Data<>(entry.getKey(), entry.getValue()));
-        }
-
-        barChart.getData().addAll(series);
-
-        // Display the scene
-        */
         Scene scene = new Scene(chart, 800, 600);
         scene.getStylesheets().add("/styles/pie_style.css");
         Stage newStage = new Stage();
