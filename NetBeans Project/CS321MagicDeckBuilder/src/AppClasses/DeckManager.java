@@ -404,10 +404,10 @@ public class DeckManager {
     }
     private HBox createList(Card card, Deck[] updatedDeckHolder) {
         HBox cardVBox = new HBox(2);
-        cardVBox.setAlignment(Pos.CENTER_RIGHT);
+        cardVBox.setAlignment(Pos.CENTER_LEFT);
 
         HBox cardInfoHBox = new HBox(1);
-        cardInfoHBox.setAlignment(Pos.CENTER_RIGHT);
+        cardInfoHBox.setAlignment(Pos.CENTER_LEFT);
 
         Label cardLabel = new Label(card.getName());
 
@@ -418,8 +418,16 @@ public class DeckManager {
         
         LquantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
         
+        
+        Image cardImage = new Image("file:" + card.getImageFile());
+        ImageView cardImageView = new ImageView(cardImage);
+        cardImageView.setFitHeight(20);
+        cardImageView.setFitWidth(20);
+        
         cardInfoHBox.getChildren().addAll(cardLabel);
         cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
+        cardInfoHBox.getChildren().addAll(cardImageView);
+        //cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
 
         return cardVBox;
     }
@@ -429,6 +437,7 @@ public class DeckManager {
         cardGrid.getChildren().clear();
         for (Card card : allCards) {
             HBox cardVBox = createList(card, updatedDeckHolder);
+            
             if(!"0".equals(LquantityLabel.getText()))
             {
                 cardGrid.add(cardVBox, col, row);
