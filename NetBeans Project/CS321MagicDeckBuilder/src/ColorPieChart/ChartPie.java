@@ -1,5 +1,5 @@
 
-package ColorPieChart1;
+package ColorPieChart;
 
 /**
  *
