@@ -38,22 +38,34 @@ public class DeckManager {
     private Label LquantityLabel;
     private Button plusButton;
     private Button minusButton;
-    //private Label quantityLabel;
     private Stage deckEditStage;
     private static final int MAX_DECKS = 10;
 
+    /**
+     * Creates the deckLoader
+     * @param mainScene
+     * @param primaryStage 
+     */
     public DeckManager(Scene mainScene, Stage primaryStage) {
         this.deckLoader = new DeckLoader();
     }
 
+    /**
+     * @author Adam Pierce
+     * Creates a window for creating, editing,and deleting decks
+     * @param mainScene
+     * @param primaryStage 
+     */
     public void showDecklistWindow(Scene mainScene, Stage primaryStage) {     
         VBox decklistLayout = new VBox(10);
         decklistLayout.setAlignment(Pos.CENTER);
         Scene decklistScene = new Scene(decklistLayout, 500, 400);
 
+        // Creates button box
         HBox buttonBox = new HBox(10);
         buttonBox.setAlignment(Pos.TOP_RIGHT);
-
+        
+        // Creates buttons
         Button exitButton = new Button("Exit");
         Button backButton = new Button("Back");
         Button createDeckButton = new Button("Create Deck");
@@ -71,6 +83,10 @@ public class DeckManager {
         createDeckButton.setOnAction(e -> {
             ObservableList<String> items = deckListView.getItems();
 
+            /**
+             * Checks if the current number of decks in the list is less than the MAX_DECKS variable.
+             * If less, then the user is prompted to create a new deck that does not share a name with an already created deck.
+             */
             if (items.size() < MAX_DECKS || items.contains("No decks available")) {
                 TextInputDialog dialog = new TextInputDialog("Deck Name");
                 dialog.setTitle("Create New Deck");
@@ -104,6 +120,10 @@ public class DeckManager {
             }
         });
         
+        /**
+         * Checks to see if there is a selected deck.
+         * If a deck is selected, prompts user to see if they intent to delete the currently selected deck.
+         */
         deleteDeckButton.setOnAction(e -> {
             String selectedDeckName = deckListView.getSelectionModel().getSelectedItem();
             if (selectedDeckName != null && !selectedDeckName.equals("No decks available")) {
@@ -130,13 +150,18 @@ public class DeckManager {
             }
         });
 
+        /**
+         * Checks to see if a deck is selected.
+         * If a deck is selected, then it loads the deck into the deck editor window.
+         */
         editDeckButton.setOnAction(e -> {
             String selectedDeckName = deckListView.getSelectionModel().getSelectedItem();
             if (selectedDeckName != null && !selectedDeckName.equals("No decks available")) {
                 Deck toEdit = deckLoader.getDeckByName(selectedDeckName);
 
                 if (toEdit != null) {
-                    showDeckEditWindow(toEdit); // Implement this method to show the deck editing interface
+                    // Uses selected deck as argument for Deck Edit Window function
+                    showDeckEditWindow(toEdit);
                 } else {
                     Alert alert = new Alert(Alert.AlertType.ERROR, "The selected deck was not found!");
                     alert.showAndWait();
@@ -152,6 +177,11 @@ public class DeckManager {
         primaryStage.setScene(decklistScene);
     }
     
+    /**
+     * @author Adam Pierce
+     * Populates the deck list with all available cards in the selected deck
+     * @param deckListView 
+     */
     private void populateDeckListView(ListView<String> deckListView) {
         // Clear existing items
         deckListView.getItems().clear();
@@ -168,10 +198,21 @@ public class DeckManager {
         }
     }
     
+    /**
+     * @author Adam Pierce
+     * Calls the init function to create the Editor Window
+     * @param selectedDeck 
+     */
     private void showDeckEditWindow(Deck selectedDeck){
         initEditorWindow(selectedDeck);
     }
     
+    /**
+     * @author Adam Pierce
+     * Initializes the Editor Window with the layout.
+     * Creates Scroll Planes and adds in the grid of cards in the scroll planes
+     * @param selectedDeck 
+     */
    private void initEditorWindow(Deck selectedDeck) {
         deckEditStage = new Stage();
         Deck[] updatedDeckHolder = new Deck[1];
@@ -203,6 +244,13 @@ public class DeckManager {
         deckEditStage.show();
     }
     
+   /**
+    * @author Adam Pierce
+    * Creates the Window and loads card data into the updatedDeck object
+    * @param deckEditStage
+    * @param selectedDeck
+    * @param updatedDeckHolder 
+    */
     private void initializeDeckEditor(Stage deckEditStage, Deck selectedDeck, Deck[] updatedDeckHolder) {
         deckEditStage.setTitle("Deck Edit Window");
 
@@ -217,6 +265,12 @@ public class DeckManager {
         updatedDeckHolder[0] = updatedDeck != null ? updatedDeck : selectedDeck;
     }
     
+    /**
+     * @author Adam Pierce
+     * Creates the grid of cards
+     * @param deckEditStage
+     * @return scrollPane
+     */
     private ScrollPane createCardGrid(Stage deckEditStage) {
         GridPane cardGrid = new GridPane();
         cardGrid.setHgap(5);
@@ -234,6 +288,11 @@ public class DeckManager {
         return scrollPane;
     }
     
+    /**
+     * Uses listeners to scale the grid based on the current measurement of the window
+     * @param deckEditStage
+     * @param scrollPane 
+     */
     private void adjustGridSizeBasedOnWindowSize(Stage deckEditStage, ScrollPane scrollPane) {
         // Width listener
         deckEditStage.widthProperty().addListener((obs, oldVal, newVal) -> {
@@ -256,6 +315,14 @@ public class DeckManager {
         });
     }
     
+    /**
+     * @author Adam Pierce
+     * Adds all the cards in the current list of allCards to the grid
+     * @param cardGrid
+     * @param allCards
+     * @param updatedDeckHolder
+     * @param deckScroll 
+     */
     private void addCardsToGrid(GridPane cardGrid, List<Card> allCards, Deck[] updatedDeckHolder, ScrollPane deckScroll) {
         int col = 0;
         int row = 0;
@@ -272,6 +339,15 @@ public class DeckManager {
         }
     }
     
+    /**
+     * @author Adam Pierce
+     * Creates the box for each card in the grid to sit in.
+     * Also creates the plus and minus buttons to add the cards to the deck object.
+     * @param card
+     * @param updatedDeckHolder
+     * @param deckScroll
+     * @return cardVBox
+     */
     private VBox createCardBox(Card card, Deck[] updatedDeckHolder, ScrollPane deckScroll) {
         VBox cardVBox = new VBox(5);
         cardVBox.setAlignment(Pos.CENTER);
@@ -317,6 +393,12 @@ public class DeckManager {
         return cardVBox;
     }
     
+    /**
+     * @author Adam Pierce
+     * Updates the deck when card quantity is changed
+     * @param deck
+     * @param cardWithQuantity 
+     */
     private void updateCardInDeck(Deck deck, CardWithQuantity cardWithQuantity) {
         // Remove the card with the same ID if it exists.
         deck.getCards().removeIf(cwq -> cwq.getCard().getCardID() == cardWithQuantity.getCard().getCardID());
@@ -327,6 +409,14 @@ public class DeckManager {
         }
     }
     
+    /**
+     * @author Adam Pierce
+     * Creates a button to save the current status of the deck in the editor
+     * @param selectedDeck
+     * @param updatedDeckHolder
+     * @param deckScroll
+     * @return saveDeckBUtton
+     */
     private Button createSaveDeckButton(Deck selectedDeck, Deck[] updatedDeckHolder, ScrollPane deckScroll) {
         Button saveDeckButton = new Button("Save Deck");
         saveDeckButton.setOnAction(e -> saveDeck(selectedDeck, updatedDeckHolder, deckScroll));
@@ -334,6 +424,14 @@ public class DeckManager {
         return saveDeckButton;
     }
     
+    /**
+     * @author Adam Pierce
+     * Saves the Deck.
+     * Creates a popup window while the deck is being saved to make sure the user doesn't close the window before the save is complete.
+     * @param selectedDeck
+     * @param updatedDeckHolder
+     * @param deckScroll 
+     */
     private void saveDeck(Deck selectedDeck, Deck[] updatedDeckHolder, ScrollPane deckScroll) {
         Stage popupStage = new Stage();
         popupStage.initModality(Modality.APPLICATION_MODAL);
@@ -358,13 +456,16 @@ public class DeckManager {
         });
 
         saveThread.start();
-        
-        //initEditorWindow(selectedDeck);
         updateEditorCardList((GridPane) deckScroll.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
     }
     
     
     // New List creation
+    /**
+     * @author 
+     * @param deckEditStage
+     * @return scrollPane
+     */
     private ScrollPane createDeckList(Stage deckEditStage) {
         GridPane cardGrid = new GridPane();
         cardGrid.setHgap(1);
@@ -381,6 +482,13 @@ public class DeckManager {
 
         return scrollPane;
     }
+    
+    /**
+     * @author 
+     * Changes the height and width of the planes to fit within the window
+     * @param deckEditStage
+     * @param scrollPane 
+     */
     private void adjust(Stage deckEditStage, ScrollPane scrollPane) {
         // Width listener
         deckEditStage.widthProperty().addListener((obs, oldVal, newVal) -> {
@@ -402,6 +510,14 @@ public class DeckManager {
             AnchorPane.setBottomAnchor(scrollPane, bottomMargin);
         });
     }
+    
+    /**
+     * @author
+     * 
+     * @param card
+     * @param updatedDeckHolder
+     * @return cardVBox
+     */
     private HBox createList(Card card, Deck[] updatedDeckHolder) {
         HBox cardVBox = new HBox(2);
         cardVBox.setAlignment(Pos.CENTER_LEFT);
@@ -473,6 +589,14 @@ public class DeckManager {
 
         return cardVBox;
     }
+    
+    /**
+     * @author
+     * 
+     * @param cardGrid
+     * @param allCards
+     * @param updatedDeckHolder 
+     */
     private void updateEditorCardList(GridPane cardGrid, List<Card> allCards, Deck[] updatedDeckHolder) {
         int col = 0;
         int row = 0;

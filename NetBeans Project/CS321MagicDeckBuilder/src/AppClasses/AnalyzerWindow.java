@@ -25,7 +25,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Adam
+ * @authors Adam Pierce, Lake Sessions
  */
 public class AnalyzerWindow {
 
@@ -33,17 +33,31 @@ public class AnalyzerWindow {
     private final Scene mainScene;
     private final DeckLoader deckLoader = new DeckLoader();
 
+    /**
+     * Creates the primaryStage and mainScene
+     * @param mainScene
+     * @param primaryStage 
+     */
     public AnalyzerWindow(Scene mainScene, Stage primaryStage) {
         this.primaryStage = primaryStage;
         this.mainScene = mainScene;
     }
 
+    /**
+     * Initiates the scene and layout
+     * @param mainScene
+     * @param primaryStage 
+     */
     public void showAnalyzeWindow(Scene mainScene, Stage primaryStage) {
         VBox analyzeLayout = createAnalyzeLayout();
         Scene analyzeScene = new Scene(analyzeLayout, 500, 400);
         primaryStage.setScene(analyzeScene);
     }
 
+    /**
+     * Creates the list of decks to choose from
+     * @return analyzeLayout
+     */
     private VBox createAnalyzeLayout() {
         VBox analyzeLayout = new VBox(10);
         analyzeLayout.setAlignment(Pos.CENTER);
@@ -55,6 +69,11 @@ public class AnalyzerWindow {
         return analyzeLayout;
     }
 
+    /**
+     * Creates the buttons for interacting with the window
+     * @param analyzeLayout
+     * @return buttonBox
+     */
     private HBox createButtonBox(VBox analyzeLayout) {
         HBox buttonBox = new HBox(10);
         buttonBox.setAlignment(Pos.TOP_RIGHT);
@@ -75,16 +94,23 @@ public class AnalyzerWindow {
         return buttonBox;
     }
 
+    /**
+     * Creates the list of decks
+     * @return deckListView
+     */
     private ListView<String> createDeckListView() {
         ListView<String> deckListView = new ListView<>();
         populateDeckListView(deckListView);
         return deckListView;
     }
 
+    /**
+     * Populates the deck list with the current decks in the deckLoader
+     * @param deckListView 
+     */
     private void populateDeckListView(ListView<String> deckListView) {
         // Populate the ListView with loaded decks
-        // Assuming deckLoader has a method to get deck names
-         // Clear existing items
+        // Clear existing items
         deckListView.getItems().clear();
 
         // Reload decks from DeckLoader
@@ -99,6 +125,10 @@ public class AnalyzerWindow {
         }
     }
 
+    /**
+     * Checks to see if the currently selected deck is valid to be analyzed for the color chart
+     * @param analyzeLayout 
+     */
     private void pieChartSelectedDeck(VBox analyzeLayout) {
         ListView<String> deckListView = (ListView<String>) analyzeLayout.getChildren().get(1); // Assuming deckListView is the second child
         String selectedDeckName = deckListView.getSelectionModel().getSelectedItem();
@@ -114,6 +144,10 @@ public class AnalyzerWindow {
         }
     }
     
+    /**
+     * Checks to see if the currently selected deck is valid to be analyzed for the mana cost chart
+     * @param analyzeLayout 
+     */
     private void analyzeSelectedDeck(VBox analyzeLayout) {
         ListView<String> deckListView = (ListView<String>) analyzeLayout.getChildren().get(1); // Assuming deckListView is the second child
         String selectedDeckName = deckListView.getSelectionModel().getSelectedItem();
@@ -129,11 +163,20 @@ public class AnalyzerWindow {
         }
     }
 
+    /**
+     * Creates an alert depending on the message in the argument
+     * @param alertType
+     * @param message 
+     */
     private void showAlert(Alert.AlertType alertType, String message) {
         Alert alert = new Alert(alertType, message);
         alert.showAndWait();
     }
 
+    /**
+     * Loads the cards from the deck and checks how much mana they cost
+     * @param selectedDeck 
+     */
     private void analyzeManaCostCurve(Deck selectedDeck) {
         //loads card data into memory
         CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json");
@@ -196,7 +239,11 @@ public class AnalyzerWindow {
         newStage.show();
     }
     
-        private void analyzePieChart(Deck selectedDeck) {
+    /**
+     * Loads data from deck to see what color each card is.
+     * @param selectedDeck 
+     */
+    private void analyzePieChart(Deck selectedDeck) {
         //loads card data into memory
         CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json");
         

@@ -1,7 +1,6 @@
 
 package AppClasses;
 
-//import T7DeckBuilder.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -15,8 +14,9 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
- *
- * @author Adam
+ * @author Adam Pierce
+ * The Class for the main window.
+ * Creates the objects for the Stage,Layout,Scene,DeckManager,CardListViewer,and AnalyzerWindow
  */
 public class MTGDeckBuilder{
     private Stage primaryStage;
@@ -30,7 +30,12 @@ public class MTGDeckBuilder{
     public MTGDeckBuilder(){
         
     }
-    
+    /**
+     * @author Adam Pierce
+     * Creates the primaryStage and call initLayout() to set up UI
+     * Creates a DeckManager,CardListViewer,and AnalyzerWindow objects
+     * @param primaryStage
+     */
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("MTG Deck Builder");
@@ -46,6 +51,11 @@ public class MTGDeckBuilder{
         primaryStage.show();
     }
     
+    /**
+     * @author Adam Pierce
+     * Creates a BorderPane and sets the scene variables for the mayLayout
+     * Edits the mainLayout to create a topBox and a grid in the center of the window
+     */
     private void initLayout() {
         mainLayout = new BorderPane();
         mainScene = new Scene(mainLayout, 300, 200);
@@ -53,7 +63,12 @@ public class MTGDeckBuilder{
         mainLayout.setTop(createTopBox());
         mainLayout.setCenter(createMainGrid());
     }
-
+    
+    /**
+     * @author Adam Pierce
+     * Creates a new horizontal box for the exit button
+     * @return Exit button
+     */
     private HBox createTopBox() {
         HBox topBox = new HBox();
         topBox.setAlignment(Pos.TOP_RIGHT);
@@ -65,6 +80,11 @@ public class MTGDeckBuilder{
         return topBox;
     }
     
+    /**
+     * @author Adam Pierce
+     * Populates the grid of buttons for the main window
+     * @return grid
+     */
     private GridPane createMainGrid() {
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.CENTER);
@@ -79,16 +99,31 @@ public class MTGDeckBuilder{
         return grid;
     }
     
+    /**
+     * @author Adam Pierce
+     * Creates a button depending on the EventHandler passed as argument
+     * @param text
+     * @param handler
+     * @return button
+     */
     private Button createButton(String text, EventHandler<ActionEvent> handler) {
         Button button = new Button(text);
         button.setOnAction(handler);
         return button;
     }
     
+    /**
+     * @author Adam Pierce
+     * Shows the main decklist editor window
+     */
     private void showDecklistWindow(){
         DM.showDecklistWindow(mainScene, primaryStage);
     }
 
+    /**
+     * @author Adam Pierce
+     * Shows the help text window
+     */
     private void showHelpWindow() {
         helpStage = new Stage();
         helpStage.setTitle("Help");
@@ -106,10 +141,18 @@ public class MTGDeckBuilder{
         helpStage.show();
     }
 
+    /**
+     * @author Adam Pierce
+     * Shows the Analyzer Window
+     */
     private void showAnalyzeWindow() {
         AW.showAnalyzeWindow(mainScene,primaryStage);
     }
 
+    /**
+     * @author Adam Pierce
+     * Shows the Card List Window
+     */
     private void showCardViewerScene() {
         CLV.showCardViewerScene(mainScene,primaryStage);
     }

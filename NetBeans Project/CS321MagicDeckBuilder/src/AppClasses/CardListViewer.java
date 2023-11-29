@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Adam
+ * @author Adam Pierce
  */
 public class CardListViewer{
     private Scene cardViewerScene;
@@ -24,7 +24,11 @@ public class CardListViewer{
         
     }
     
-
+    /**
+     * Creates the layout for the Window
+     * @param mainScene
+     * @param primaryStage 
+     */
     public void showCardViewerScene(Scene mainScene, Stage primaryStage) {
         Stage cardViewerStage = initCardViewerWindow();
         VBox cardViewerLayout = initCardViewerLayout();
@@ -41,12 +45,20 @@ public class CardListViewer{
         cardViewerStage.show();
     }
 
+    /**
+     * Initiates the stage
+     * @return cardViewerStage
+     */
     private Stage initCardViewerWindow() {
         Stage cardViewerStage = new Stage();
         cardViewerStage.setTitle("Card Viewer");
         return cardViewerStage;
     }
 
+    /**
+     * Initiates the window size and position
+     * @return cardViewerLayout
+     */
     private VBox initCardViewerLayout() {
         VBox cardViewerLayout = new VBox(10);
         cardViewerLayout.setAlignment(Pos.CENTER);
@@ -54,10 +66,19 @@ public class CardListViewer{
         return cardViewerLayout;
     }
 
+    /**
+     * Loads all the cards into a list
+     * @return List
+     */
     private List<Card> loadCardData() {
         return CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json");
     }
 
+    /**
+     * Goes through the list of all cards and adds the cards to the List View
+     * @param cards
+     * @return cardListView
+     */
     private ListView<String> setupCardListView(List<Card> cards) {
         ListView<String> cardListView = new ListView<>();
         for (Card card : cards) {
@@ -67,6 +88,12 @@ public class CardListViewer{
         return cardListView;
     }
 
+    /**
+     * Creates an area to view the cards information
+     * @param cards
+     * @param cardListView
+     * @return cardInfoBox
+     */
     private HBox setupCardInfoView(List<Card> cards, ListView<String> cardListView) {
         TextArea cardInfoTextArea = new TextArea();
         cardInfoTextArea.setEditable(false);
@@ -90,6 +117,12 @@ public class CardListViewer{
         return cardInfoBox;
     }
 
+    /**
+     * Looks for the selected card
+     * @param cards
+     * @param cardName
+     * @return card
+     */
     private Card findSelectedCard(List<Card> cards, String cardName) {
         for (Card card : cards) {
             if (card.getName().equals(cardName)) {
@@ -99,6 +132,12 @@ public class CardListViewer{
         return null;
     }
 
+    /**
+     * Shows the selected card's information in the text box and the image of the card on the bottom right.
+     * @param cardInfoTextArea
+     * @param imageView
+     * @param selectedCard 
+     */
     private void updateCardInfo(TextArea cardInfoTextArea, ImageView imageView, Card selectedCard) {
         cardInfoTextArea.setText("Name: " + selectedCard.getName() + "\n" +
                                  "Color: " + selectedCard.getColors() + "\n" +
