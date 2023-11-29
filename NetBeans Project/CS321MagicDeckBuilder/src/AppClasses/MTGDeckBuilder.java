@@ -59,6 +59,8 @@ public class MTGDeckBuilder{
     private void initLayout() {
         mainLayout = new BorderPane();
         mainScene = new Scene(mainLayout, 300, 200);
+        
+        mainScene.getStylesheets().add("/styles/main_menu.css");
 
         mainLayout.setTop(createTopBox());
         mainLayout.setCenter(createMainGrid());
@@ -129,6 +131,7 @@ public class MTGDeckBuilder{
         helpStage.setTitle("Help");
         StackPane helpLayout = new StackPane();
         Scene helpScene = new Scene(helpLayout, 700, 150);
+        helpScene.getStylesheets().add("/styles/help_menu.css");
 
         // Add help text
         Label helpLabel = new Label("Welcome to MTG Deck Builder. \n\n To analyze the Mana Curve or Color Distribution of a deck, click the analyze button on the main menu \n\n To build or edit a deck please click the Decklist button from the main menu. \n\n To view individual card stats, please click the Card List button on the main menu");

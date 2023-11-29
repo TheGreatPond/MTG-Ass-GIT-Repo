@@ -51,6 +51,7 @@ public class AnalyzerWindow {
     public void showAnalyzeWindow(Scene mainScene, Stage primaryStage) {
         VBox analyzeLayout = createAnalyzeLayout();
         Scene analyzeScene = new Scene(analyzeLayout, 500, 400);
+        analyzeScene.getStylesheets().add("/styles/main_menu.css");
         primaryStage.setScene(analyzeScene);
     }
 

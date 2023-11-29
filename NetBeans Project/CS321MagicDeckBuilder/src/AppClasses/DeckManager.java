@@ -66,6 +66,8 @@ public class DeckManager {
         VBox decklistLayout = new VBox(10);
         decklistLayout.setAlignment(Pos.CENTER);
         Scene decklistScene = new Scene(decklistLayout, 500, 400);
+        
+        decklistScene.getStylesheets().add("/styles/main_menu.css");
 
         // Creates button box
         HBox buttonBox = new HBox(10);
@@ -244,6 +246,8 @@ public class DeckManager {
         VBox whole = new VBox(10);
         whole.setAlignment(Pos.CENTER);
         whole.getChildren().addAll(layout,createSaveDeckButton(selectedDeck, updatedDeckHolder, deckScroll));
+        
+        deckEditScene.getStylesheets().add("/styles/deck_edit_menu.css");
         
         deckEditScene = new Scene(whole, 1300, 900);
         deckEditStage.setScene(deckEditScene);
