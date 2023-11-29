@@ -276,7 +276,7 @@ public class AnalyzerWindow {
         Scene scene = new Scene(chart, 800, 600);
         scene.getStylesheets().add("/styles/pie_style.css");
         Stage newStage = new Stage();
-        newStage.setTitle("MTG Deck Cost Curve");
+        newStage.setTitle("MTG Deck Color Ratio");
         newStage.setScene(scene);
         newStage.show();
     }
