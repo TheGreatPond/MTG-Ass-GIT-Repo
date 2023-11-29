@@ -131,7 +131,7 @@ public class MTGDeckBuilder{
         Scene helpScene = new Scene(helpLayout, 700, 150);
 
         // Add help text
-        Label helpLabel = new Label("Welcome to MTG Deck Builder. \n\n To analyze manacurve or color distribution of a deck, click the analyze button on the main menu \n\n To build or edit a deck please click the Decklist button from the main menu");
+        Label helpLabel = new Label("Welcome to MTG Deck Builder. \n\n To analyze the Mana Curve or Color Distribution of a deck, click the analyze button on the main menu \n\n To build or edit a deck please click the Decklist button from the main menu. \n\n To view individual card stats, please click the Card List button on the main menu");
         helpLayout.getChildren().add(helpLabel);
 
         // Set the help scene

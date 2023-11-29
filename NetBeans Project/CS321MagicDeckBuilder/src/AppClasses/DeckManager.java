@@ -618,8 +618,12 @@ public class DeckManager {
                     cardImageView.setFitHeight(20);
                     cardImageView.setFitWidth(20);
 
-                    cardInfoHBox.getChildren().addAll(cardLabel, cardImageView);
+                    //cardInfoHBox.getChildren().addAll(cardLabel, cardImageView);
+                    //cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
+                    
+                    cardInfoHBox.getChildren().addAll(cardLabel);
                     cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
+                    cardInfoHBox.getChildren().addAll(cardImageView);
                 });
             } catch (InterruptedException | ExecutionException e) {
                 Thread.currentThread().interrupt();
