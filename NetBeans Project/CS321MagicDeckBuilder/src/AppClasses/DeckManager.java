@@ -8,6 +8,12 @@ import T7DeckBuilder.DeckPackage.DeckLoader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
@@ -512,7 +518,7 @@ public class DeckManager {
     }
     
     /**
-     * @author
+     * @author Adam Pierce and Lake Sessions
      * 
      * @param card
      * @param updatedDeckHolder
@@ -531,64 +537,100 @@ public class DeckManager {
                 .filter(cwq -> cwq.getCard().getCardID() == card.getCardID())
                 .findFirst()
                 .orElse(new CardWithQuantity(card, 0));
-        
-        LquantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
-        
-       
-        
-        Card blueCard = Card.getCardFromID(463840);
-        String blueColor= blueCard.getColors();
-        Card whiteCard = Card.getCardFromID(460952);
-        String whiteColor= whiteCard.getColors();
-        Card greenCard = Card.getCardFromID(461092);
-        String greenColor= greenCard.getColors();
-        Card redCard = Card.getCardFromID(461073);
-        String redColor= redCard.getColors();
-        Card blackCard = Card.getCardFromID(461021);
-        String blackColor= blackCard.getColors();
-        
-        
-        Image cardImage = new Image("file:" + card.getImageFile());
-        ImageView cardImageView = new ImageView(cardImage);
-        cardImageView.setFitHeight(20);
-        cardImageView.setFitWidth(20);
-        
-        String cardColor=card.getColors();
-            //System.out.println(cardColor);
-            if (cardColor== "") {
-                cardImage = new Image("file:" + "src/mtg_data/image_data/C.jpg");//colorless
-                cardImageView = new ImageView(cardImage); 
-            } else if (cardColor.equals(redColor)) {
-                cardImage = new Image("file:" + "src/mtg_data/image_data/R.jpg");//red
-                cardImageView = new ImageView(cardImage); 
-            } else if (cardColor.equals(blueColor)) {
-                cardImage = new Image("file:" + "src/mtg_data/image_data/U.jpg");//blue
-                cardImageView = new ImageView(cardImage); 
-            } else if (cardColor.equals(greenColor)) {
-                cardImage = new Image("file:" + "src/mtg_data/image_data/G.jpg");//green
-                cardImageView = new ImageView(cardImage); 
-            } else if (cardColor.equals(whiteColor)) {
-                cardImage = new Image("file:" + "src/mtg_data/image_data/W.jpg");//white
-                cardImageView = new ImageView(cardImage); 
-            } else if (cardColor.equals(blackColor)) {
-                cardImage = new Image("file:" + "src/mtg_data/image_data/B.jpg");//black
-                cardImageView = new ImageView(cardImage); 
-            } else  {
-                cardImage = new Image("file:" + "src/mtg_data/image_data/M.jpg");//multicolor
-                cardImageView = new ImageView(cardImage); 
-            }
-        
-            cardImageView.setFitHeight(20);
-            cardImageView.setFitWidth(20);
-        
-        
-        cardInfoHBox.getChildren().addAll(cardLabel);
-        cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
-        cardInfoHBox.getChildren().addAll(cardImageView);
-        //cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
 
-        return cardVBox;
-    }
+        LquantityLabel = new Label(String.valueOf(cardWithQuantity.getQuantity()));
+
+        ExecutorService executor = Executors.newCachedThreadPool();
+        final int taskCount = 5; // Number of parallel tasks
+        CountDownLatch latch = new CountDownLatch(taskCount);
+        List<Future<String>> colorFutures = new ArrayList<>();
+
+        // Submit tasks to fetch colors for each card in parallel
+        colorFutures.add(executor.submit(() -> {
+            try {
+                return Card.getCardFromID(463840).getColors(); // blue
+            } finally {
+                latch.countDown();
+            }
+        }));
+        colorFutures.add(executor.submit(() -> {
+            try {
+                return Card.getCardFromID(460952).getColors(); // white
+            } finally {
+                latch.countDown();
+            }
+        }));
+        colorFutures.add(executor.submit(() -> {
+            try {
+                return Card.getCardFromID(461092).getColors(); // green
+            } finally {
+                latch.countDown();
+            }
+        }));
+        colorFutures.add(executor.submit(() -> {
+            try {
+                return Card.getCardFromID(461073).getColors(); // red
+            } finally {
+                latch.countDown();
+            }
+        }));
+        colorFutures.add(executor.submit(() -> {
+            try {
+                return Card.getCardFromID(461021).getColors(); // black
+            } finally {
+                latch.countDown();
+            }
+        }));
+
+        // Wait for all tasks to complete
+        new Thread(() -> {
+            try {
+                latch.await();
+                String blueColor = colorFutures.get(0).get();
+                String whiteColor = colorFutures.get(1).get();
+                String greenColor = colorFutures.get(2).get();
+                String redColor = colorFutures.get(3).get();
+                String blackColor = colorFutures.get(4).get();
+
+                // Processing after all colors are fetched
+                Platform.runLater(() -> {
+                    Image cardImage;
+                    ImageView cardImageView;
+                    String cardColor = card.getColors();
+
+                    if (cardColor.equals("")) {
+                        cardImage = new Image("file:" + "src/mtg_data/image_data/C.jpg"); // colorless
+                    } else if (cardColor.equals(redColor)) {
+                        cardImage = new Image("file:" + "src/mtg_data/image_data/R.jpg"); // red
+                    } else if (cardColor.equals(blueColor)) {
+                        cardImage = new Image("file:" + "src/mtg_data/image_data/U.jpg"); // blue
+                    } else if (cardColor.equals(greenColor)) {
+                        cardImage = new Image("file:" + "src/mtg_data/image_data/G.jpg"); // green
+                    } else if (cardColor.equals(whiteColor)) {
+                        cardImage = new Image("file:" + "src/mtg_data/image_data/W.jpg"); // white
+                    } else if (cardColor.equals(blackColor)) {
+                        cardImage = new Image("file:" + "src/mtg_data/image_data/B.jpg"); // black
+                    } else {
+                        cardImage = new Image("file:" + "src/mtg_data/image_data/M.jpg"); // multicolor
+                    }
+
+                    cardImageView = new ImageView(cardImage);
+                    cardImageView.setFitHeight(20);
+                    cardImageView.setFitWidth(20);
+
+                    cardInfoHBox.getChildren().addAll(cardLabel, cardImageView);
+                    cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
+                });
+            } catch (InterruptedException | ExecutionException e) {
+                Thread.currentThread().interrupt();
+                throw new RuntimeException(e);
+            }
+        }).start();
+
+    executor.shutdown(); // Don't forget to shut down the executor
+
+    return cardVBox;
+}
     
     /**
      * @author
