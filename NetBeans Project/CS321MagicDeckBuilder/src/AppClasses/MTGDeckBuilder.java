@@ -128,10 +128,10 @@ public class MTGDeckBuilder{
         helpStage = new Stage();
         helpStage.setTitle("Help");
         StackPane helpLayout = new StackPane();
-        Scene helpScene = new Scene(helpLayout, 300, 150);
+        Scene helpScene = new Scene(helpLayout, 700, 150);
 
         // Add help text
-        Label helpLabel = new Label("This is the help text.");
+        Label helpLabel = new Label("Welcome to MTG Deck Builder. \n\n To analyze manacurve or color distribution of a deck, click the analyze button on the main menu \n\n To build or edit a deck please click the Decklist button from the main menu");
         helpLayout.getChildren().add(helpLabel);
 
         // Set the help scene
