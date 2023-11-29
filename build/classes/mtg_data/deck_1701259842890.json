@@ -1,0 +1,34 @@
+{
+    "cards": [
+        {
+            "quantity": 1,
+            "cardID": 461027
+        },
+        {
+            "quantity": 1,
+            "cardID": 461022
+        },
+        {
+            "quantity": 4,
+            "cardID": 461032
+        },
+        {
+            "quantity": 1,
+            "cardID": 461037
+        },
+        {
+            "quantity": 1,
+            "cardID": 461036
+        },
+        {
+            "quantity": 1,
+            "cardID": 460929
+        },
+        {
+            "quantity": 4,
+            "cardID": 460928
+        }
+    ],
+    "name": "test",
+    "hashID": 1701259842890
+}
