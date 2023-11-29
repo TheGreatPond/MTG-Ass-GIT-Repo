@@ -531,7 +531,7 @@ public class DeckManager {
         HBox cardInfoHBox = new HBox(1);
         cardInfoHBox.setAlignment(Pos.CENTER_LEFT);
 
-        Label cardLabel = new Label(card.getName());
+        var cardLabel = new Label(card.getName());
 
         CardWithQuantity cardWithQuantity = updatedDeckHolder[0].getCards().stream()
                 .filter(cwq -> cwq.getCard().getCardID() == card.getCardID())
@@ -618,11 +618,6 @@ public class DeckManager {
                     cardImageView.setFitHeight(20);
                     cardImageView.setFitWidth(20);
 
-                    //cardInfoHBox.getChildren().addAll(cardLabel, cardImageView);
-                    //cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
-                    
-                    cardInfoHBox.getChildren().addAll(cardLabel);
-                    cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
                     cardInfoHBox.getChildren().addAll(cardImageView);
                 });
             } catch (InterruptedException | ExecutionException e) {
@@ -631,8 +626,11 @@ public class DeckManager {
             }
         }).start();
 
-    executor.shutdown(); // Don't forget to shut down the executor
-
+    executor.shutdown();
+    
+    cardInfoHBox.getChildren().addAll(cardLabel);
+    cardVBox.getChildren().addAll(cardInfoHBox, LquantityLabel);
+    
     return cardVBox;
 }
     
