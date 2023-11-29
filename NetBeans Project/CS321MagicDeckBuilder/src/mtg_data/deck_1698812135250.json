@@ -83,6 +83,18 @@
         {
             "quantity": 1,
             "cardID": 460938
+        },
+        {
+            "quantity": 1,
+            "cardID": 460928
+        },
+        {
+            "quantity": 1,
+            "cardID": 460929
+        },
+        {
+            "quantity": 1,
+            "cardID": 460930
         }
     ],
     "name": "Deck Name",

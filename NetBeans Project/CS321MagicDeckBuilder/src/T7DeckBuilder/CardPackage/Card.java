@@ -60,7 +60,7 @@ public class Card {
     private final String imageFile;
     
     /**
-     * This function builds the card parameters using the object imported by the jsonjava library
+     * This function builds the card parameters using the object imported by the javaJson library
      * @param jsonObject 
      */
     public Card(JSONObject jsonObject) {
