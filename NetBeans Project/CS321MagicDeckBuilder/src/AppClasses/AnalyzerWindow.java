@@ -25,7 +25,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @authors Adam Pierce, Lake Sessions
+ * @author Adam Pierce, Lake Sessions
  */
 public class AnalyzerWindow {
 
