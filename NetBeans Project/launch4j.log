@@ -1,0 +1,105 @@
+
+
+Version:	3.50
+CmdLine:	C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\NetBeans Project\magic.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\NetBeans Project\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Qt\5.15.2\msvc2019\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\lakes\AppData\Local\Microsoft\WindowsApps;C:\Users\lakes\.dotnet\tools;C:\Users\lakes\AppData\Local\GitHubDesktop\bin;C:\intelFPGA_lite\21.1\questa_fse\win64;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Qt\5.15.2\msvc2019\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\lakes\AppData\Local\Microsoft\WindowsApps;C:\Users\lakes\.dotnet\tools;C:\Users\lakes\AppData\Local\GitHubDesktop\bin;C:\intelFPGA_lite\21.1\questa_fse\win64;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Oculus\Support\oculus-runtime\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\system32\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\Wbem\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\WindowsPowerShell\v1.0\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\OpenSSH\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\dotnet\bin\javaw.exe (not found)
+Check launcher:	C:\Qt\5.15.2\msvc2019\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lakes\AppData\Local\Microsoft\WindowsApps\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lakes\.dotnet\tools\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lakes\AppData\Local\GitHubDesktop\bin\javaw.exe (not found)
+Check launcher:	C:\intelFPGA_lite\21.1\questa_fse\win64\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_381 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	-jar "C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\NetBeans Project\magic.exe"
+Args length:	90/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\NetBeans Project\magic.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\NetBeans Project\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Qt\5.15.2\msvc2019\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\lakes\AppData\Local\Microsoft\WindowsApps;C:\Users\lakes\.dotnet\tools;C:\Users\lakes\AppData\Local\GitHubDesktop\bin;C:\intelFPGA_lite\21.1\questa_fse\win64;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Qt\5.15.2\msvc2019\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\lakes\AppData\Local\Microsoft\WindowsApps;C:\Users\lakes\.dotnet\tools;C:\Users\lakes\AppData\Local\GitHubDesktop\bin;C:\intelFPGA_lite\21.1\questa_fse\win64;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Oculus\Support\oculus-runtime\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\system32\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\Wbem\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\WindowsPowerShell\v1.0\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\OpenSSH\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\dotnet\bin\javaw.exe (not found)
+Check launcher:	C:\Qt\5.15.2\msvc2019\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lakes\AppData\Local\Microsoft\WindowsApps\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lakes\.dotnet\tools\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lakes\AppData\Local\GitHubDesktop\bin\javaw.exe (not found)
+Check launcher:	C:\intelFPGA_lite\21.1\questa_fse\win64\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_381 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	-jar "C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\NetBeans Project\magic.exe"
+Args length:	90/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\NetBeans Project\magic.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\NetBeans Project\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Qt\5.15.2\msvc2019\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\lakes\AppData\Local\Microsoft\WindowsApps;C:\Users\lakes\.dotnet\tools;C:\Users\lakes\AppData\Local\GitHubDesktop\bin;C:\intelFPGA_lite\21.1\questa_fse\win64;C:\Program Files\Java\jre-1.8\bin
+JRE paths:	;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Qt\5.15.2\msvc2019\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\lakes\AppData\Local\Microsoft\WindowsApps;C:\Users\lakes\.dotnet\tools;C:\Users\lakes\AppData\Local\GitHubDesktop\bin;C:\intelFPGA_lite\21.1\questa_fse\win64;C:\Program Files\Java\jre-1.8\bin
+Check launcher:	C:\Program Files\Oculus\Support\oculus-runtime\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\system32\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\Wbem\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\WindowsPowerShell\v1.0\bin\javaw.exe (not found)
+Check launcher:	C:\Windows\System32\OpenSSH\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\dotnet\bin\javaw.exe (not found)
+Check launcher:	C:\Qt\5.15.2\msvc2019\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lakes\AppData\Local\Microsoft\WindowsApps\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lakes\.dotnet\tools\bin\javaw.exe (not found)
+Check launcher:	C:\Users\lakes\AppData\Local\GitHubDesktop\bin\javaw.exe (not found)
+Check launcher:	C:\intelFPGA_lite\21.1\questa_fse\win64\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe (OK)
+Version string: 1.008.000_381 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jre-1.8\bin\javaw.exe
+Launcher args:	-jar "C:\Temp\TechFighter\TechFighter\Unity-Version-of-MTG-Ass\NetBeans Project\magic.exe"
+Args length:	90/32768 chars
+Exit code:	0
