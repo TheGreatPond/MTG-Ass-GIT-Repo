@@ -7,17 +7,10 @@
         <property name="store.dir" value="dist"/>
         <property name="lib.dir" value="dist/lib"/>
         <property name="store.jar" value="${store.dir}/${store.jar.name}.jar"/>
-        <property name="resources.dir" value=".\src\mtg_data"/>
 
         <!-- Clean up previous build if necessary -->
         <delete file="${store.jar}"/>
         <mkdir dir="${store.dir}"/>
-        
-         <!-- Copy resources to the build directory -->
-        <copy todir="${build.classes.dir}">
-            <fileset dir="${resources.dir}" includes="**/*.*"/> <!-- Copy all files in resources dir -->
-        </copy>
-
 
         <!-- Creating the fat jar -->
         <jar destfile="${store.jar}" filesetmanifest="mergewithoutmain">
