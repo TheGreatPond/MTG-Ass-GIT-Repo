@@ -90,13 +90,13 @@ public class MTGDeckBuilder{
     private GridPane createMainGrid() {
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.CENTER);
-        grid.setVgap(10);
-        grid.setHgap(10);
+        grid.setVgap(15);
+        grid.setHgap(15);
 
-        grid.add(createButton("Help", e -> showHelpWindow()), 0, 0);
+        grid.add(createButton("  Help  ", e -> showHelpWindow()), 1, 1);
         grid.add(createButton("Analyze", e -> showAnalyzeWindow()), 1, 0);
-        grid.add(createButton("Decklist", e -> showDecklistWindow()), 0, 1);
-        grid.add(createButton("Card List", e -> showCardViewerScene()), 1, 1);
+        grid.add(createButton(" Decklist ", e -> showDecklistWindow()), 0, 0);
+        grid.add(createButton("Card List", e -> showCardViewerScene()), 0, 1);
 
         return grid;
     }
@@ -127,14 +127,22 @@ public class MTGDeckBuilder{
      * Shows the help text window
      */
     private void showHelpWindow() {
+        
+        String helpText = "This is the main menu of MTG Deck Builder.\n\nThe main menu has 3 other"
+                + " buttons being: Card List, DeckList, and Analyze. \n\nEach button brings you to a corresponding menu\n\n"
+                + " - Card List: This button opens up a window that lets you see all of the accessible cards in the program\n\n"
+                + " - DeckList: This button opens up the deck menu, which lets you create and/or edit decks\n\n"
+                + " - Analyze: This button opens up the deck analysis menu, allowing you to see stats about existing decks";
+        
         helpStage = new Stage();
         helpStage.setTitle("Help");
         StackPane helpLayout = new StackPane();
-        Scene helpScene = new Scene(helpLayout, 700, 150);
-        helpScene.getStylesheets().add("/styles/help_menu.css");
+        Scene helpScene = new Scene(helpLayout, 1000, 500);
 
+        helpScene.getStylesheets().add("/styles/help_menu.css");
+        
         // Add help text
-        Label helpLabel = new Label("Welcome to MTG Deck Builder. \n\n To analyze the Mana Curve or Color Distribution of a deck, click the analyze button on the main menu \n\n To build or edit a deck please click the Decklist button from the main menu. \n\n To view individual card stats, please click the Card List button on the main menu");
+        Label helpLabel = new Label(helpText);
         helpLayout.getChildren().add(helpLabel);
 
         // Set the help scene

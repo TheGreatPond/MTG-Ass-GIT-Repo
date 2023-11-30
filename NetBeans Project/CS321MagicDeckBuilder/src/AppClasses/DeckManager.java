@@ -30,6 +30,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -79,7 +80,8 @@ public class DeckManager {
         Button createDeckButton = new Button("Create Deck");
         Button deleteDeckButton = new Button("Delete Deck");
         Button editDeckButton = new Button("Edit Deck");
-
+        Button helpButton = new Button("Help");
+        
         ListView<String> deckListView = new ListView<>();
 
         // Populate the ListView with loaded decks
@@ -180,7 +182,38 @@ public class DeckManager {
             }
         });
         
-        buttonBox.getChildren().addAll(createDeckButton, deleteDeckButton, editDeckButton, backButton, exitButton);
+        helpButton.setOnAction(e -> {
+            String helpText = "This is the deck builder menu, where you can create and/or edit decks as needed.\n\n"
+                    + "This menu has the following buttons: Help, Create Deck, Delete Deck, Edit Deck, Back, and Exit.\n\n"
+                    + "Create Deck: This button prompts you for a name for your deck. Once you confirm the deck is saved to memory.\n\n"
+                    + "Deletee Deck: This lets you delete any deck you've made. To delete a deck first select it in the menu, then click this button.\n\n"
+                    + "Edit Deck: This lets you open the deck editor menu. To dit a deck first select it in the menu, then click this button.\n"
+                    + "This opens up another window that lets you access all cards found on the card list page from the main menu. To add a card\n"
+                    + "click the + under an image, and click - to remove it. You can have a max of 4 for each card. Once finished, click the \"Save Deck\" button.\n\n"
+                    + "Back: This brings you to the main menu.\n\nExit: This exits the program.";
+            
+            Stage helpStage;
+            
+            helpStage = new Stage();
+            helpStage.setTitle("Help");
+            StackPane helpLayout = new StackPane();
+            Scene helpScene = new Scene(helpLayout, 1300, 500);
+
+            helpScene.getStylesheets().add("/styles/help_menu.css");
+            
+            // Add help text
+            Label helpLabel = new Label(helpText);
+            helpLayout.getChildren().add(helpLabel);
+
+            // Set the help scene
+            helpStage.setScene(helpScene);
+
+            // Show the help window
+            helpStage.show();
+        });
+        
+        
+        buttonBox.getChildren().addAll(helpButton, createDeckButton, deleteDeckButton, editDeckButton, backButton, exitButton);
         decklistLayout.getChildren().addAll(buttonBox, deckListView);
         primaryStage.setScene(decklistScene);
     }
@@ -247,9 +280,9 @@ public class DeckManager {
         whole.setAlignment(Pos.CENTER);
         whole.getChildren().addAll(layout,createSaveDeckButton(selectedDeck, updatedDeckHolder, deckScroll));
         
-        deckEditScene.getStylesheets().add("/styles/deck_edit_menu.css");
         
         deckEditScene = new Scene(whole, 1300, 900);
+        deckEditScene.getStylesheets().add("/styles/deck_edit_menu.css");
         deckEditStage.setScene(deckEditScene);
         deckEditStage.show();
     }

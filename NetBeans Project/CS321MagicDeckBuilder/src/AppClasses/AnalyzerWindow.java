@@ -18,8 +18,10 @@ import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -91,7 +93,38 @@ public class AnalyzerWindow {
         Button pieChartDeckButton = new Button("PieChart");
         pieChartDeckButton.setOnAction(e -> pieChartSelectedDeck(analyzeLayout));
 
-        buttonBox.getChildren().addAll(analyzeDeckButton, pieChartDeckButton, backButton, exitButton);
+        Button helpButton = new Button("Help");
+        helpButton.setOnAction(e -> {
+            String helpText = "This is the deck analysis menu, where you can analyze data about the decks you've created.\n\n"
+                    + "This menu has the following buttons: Help, Analyze, Back, and Exit.\n\n"
+                    + "Analyze: This button lets you analyze a deck. To analyze a deck first select it in the menu, then click this button.\n"
+                    + "This opens up two new windows, one being a pie chart and the other being a bar graph.\n"
+                    + "The pie chart shows you the distribution of cards by their color, with multicolors being their own category.\n"
+                    + "The bar graph shows you the mana costs of all the cards in your deck from least to greatest.\n\n"
+                    + "Back: This brings you to the main menu.\n\nExit: This exits the program.";
+            
+            Stage helpStage;
+            
+            helpStage = new Stage();
+            helpStage.setTitle("Help");
+            StackPane helpLayout = new StackPane();
+            Scene helpScene = new Scene(helpLayout, 1000, 500);
+
+            helpScene.getStylesheets().add("/styles/help_menu.css");
+            
+            // Add help text
+            Label helpLabel = new Label(helpText);
+            helpLayout.getChildren().add(helpLabel);
+
+            // Set the help scene
+            helpStage.setScene(helpScene);
+
+            // Show the help window
+            helpStage.show();
+        });
+        
+        
+        buttonBox.getChildren().addAll(helpButton,analyzeDeckButton, pieChartDeckButton, backButton, exitButton);
         return buttonBox;
     }
 
