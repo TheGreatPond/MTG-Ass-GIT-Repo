@@ -505,7 +505,8 @@ public class DeckManager {
     
     // New List creation
     /**
-     * @author 
+     * @author Sarah Haddin
+     * creates a single 1xN grid to create a list of all cards within the deck
      * @param deckEditStage
      * @return scrollPane
      */
@@ -527,7 +528,7 @@ public class DeckManager {
     }
     
     /**
-     * @author 
+     * @author Sarah Haddin
      * Changes the height and width of the planes to fit within the window
      * @param deckEditStage
      * @param scrollPane 
@@ -555,8 +556,8 @@ public class DeckManager {
     }
     
     /**
-     * @author Adam Pierce and Lake Sessions
-     * 
+     * @author Adam Pierce, Lake Sessions, and Sarah Haddin
+     * adds in a new HBox for each new card added to the deck
      * @param card
      * @param updatedDeckHolder
      * @return cardVBox
@@ -672,7 +673,7 @@ public class DeckManager {
 }
     
     /**
-     * @author
+     * @author Sarah Haddin
      * 
      * @param cardGrid
      * @param allCards
