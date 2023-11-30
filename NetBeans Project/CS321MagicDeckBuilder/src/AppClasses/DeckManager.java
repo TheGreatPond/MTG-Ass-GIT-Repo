@@ -8,7 +8,6 @@ import T7DeckBuilder.DeckPackage.DeckLoader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -36,8 +35,14 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
- *
- * @author Adam Pierce
+ * Creates the window for creating and editing decks
+ * <p>
+ * Each deck is loaded into the deckLoader object and then displayed to the user.
+ * LquanityLabel is used to store the number of each cards in the deck so that it can be displayed to the 
+ * user when editing the deck.
+ * The MAX_DECKS is set to 10. 
+ * </p>
+ * 
  */
 public class DeckManager {
     private DeckLoader deckLoader;
@@ -182,11 +187,12 @@ public class DeckManager {
             }
         });
         
+        // Help text added by Michael
         helpButton.setOnAction(e -> {
             String helpText = "This is the deck builder menu, where you can create and/or edit decks as needed.\n\n"
                     + "This menu has the following buttons: Help, Create Deck, Delete Deck, Edit Deck, Back, and Exit.\n\n"
                     + "Create Deck: This button prompts you for a name for your deck. Once you confirm the deck is saved to memory.\n\n"
-                    + "Deletee Deck: This lets you delete any deck you've made. To delete a deck first select it in the menu, then click this button.\n\n"
+                    + "Delete Deck: This lets you delete any deck you've made. To delete a deck first select it in the menu, then click this button.\n\n"
                     + "Edit Deck: This lets you open the deck editor menu. To dit a deck first select it in the menu, then click this button.\n"
                     + "This opens up another window that lets you access all cards found on the card list page from the main menu. To add a card\n"
                     + "click the + under an image, and click - to remove it. You can have a max of 4 for each card. Once finished, click the \"Save Deck\" button.\n\n"
@@ -262,11 +268,12 @@ public class DeckManager {
 
         ScrollPane scrollPane = createCardGrid(deckEditStage);
         
-        ScrollPane deckScroll = createDeckList(deckEditStage);  // Adds in the list of cards that are in the deck
+        // Adds in the list of cards that are in the deck
+        ScrollPane deckScroll = createDeckList(deckEditStage);  
 
         addCardsToGrid((GridPane) scrollPane.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder, deckScroll);
 
-        // adds the cards to the list of cards in the deck
+        // Adds the cards to the list of cards in the deck
         updateEditorCardList((GridPane) deckScroll.getContent(), CardLoader.loadCardsFromJson("src/mtg_data/WAR_cards.json"), updatedDeckHolder);
         
         deckScroll.setMinWidth(170);

@@ -116,7 +116,7 @@ public class MTGDeckBuilder{
     
     /**
      * @author Adam Pierce
-     * Shows the main decklist editor window
+     * Shows the main deck list editor window
      */
     private void showDecklistWindow(){
         DM.showDecklistWindow(mainScene, primaryStage);

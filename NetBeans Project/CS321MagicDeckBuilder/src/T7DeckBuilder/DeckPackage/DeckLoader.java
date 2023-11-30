@@ -52,7 +52,7 @@ public class DeckLoader {
             Files.newDirectoryStream(Paths.get(DECKS_DIRECTORY),
                 path -> path.toString().endsWith(".json") && !path.getFileName().toString().equals("WAR_cards.json"))
                 .forEach(filePath -> {
-                    // Extract the deck name from the file path (without the .json extension)
+                    // Extract the deck name from the file path without the .json extension
                     String deckName = filePath.getFileName().toString().replace(".json", "");
 
                     // Only load the deck if it's not already in the loadedDecks list
@@ -102,7 +102,6 @@ public class DeckLoader {
             int cardID = cardObj.getInt("cardID");
             int quantity = cardObj.getInt("quantity");
 
-            // Assuming you have a way to get a Card object from cardID
             Card card = Card.getCardFromID(cardID);
             if (card != null) {
                 deck.addCard(card, quantity);

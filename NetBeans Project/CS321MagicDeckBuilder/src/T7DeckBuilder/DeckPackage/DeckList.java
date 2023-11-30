@@ -44,12 +44,12 @@ public class DeckList {
         File[] files = directory.listFiles((dir, name) -> name.startsWith("deck_") && name.endsWith(".json"));
 
         if (files == null || files.length == 0) {
-            // No decks available. The JavaFX object will need to handle this case.
+            
             return;
         }
 
         for (File file : files) {
-            //reads the directory for JSON objects to import data from
+            // Reads the directory for JSON objects to import data from
             try {
                 JSONObject jsonObject = new JSONObject(new String(Files.readAllBytes(Paths.get(file.getPath()))));
 
@@ -57,7 +57,7 @@ public class DeckList {
                 String deckName = jsonObject.getString("name");
                 Deck deck = new Deck(deckName); 
                 
-                //adds deck object to list
+                // Adds deck object to list
                 decks.add(deck);
             } catch (IOException e) {
                 e.printStackTrace();

@@ -49,8 +49,9 @@ public class Deck {
      */
     private String name; // Deck name
     
-         /* Stores the colorDistriburion of the deck object
-     */
+     /**
+      * Stores the colorDistriburion of the deck object
+      */
     private int[] colorDistribution = new int[7];// 5 colors, colorless, and multicolored are counted here 
 
     /**
@@ -288,7 +289,12 @@ public class Deck {
         return manaCostArray;
     }
     
-        public void setColorDistribution(Deck deck) {
+    /**
+     * @author Lake Sessions
+     * Stores how many cards of each color is contained within the deck
+     * @param deck 
+     */
+    public void setColorDistribution(Deck deck) {
         int[] colorDistributionArray = new int[7];
         
         Card blueCard = Card.getCardFromID(463840);
@@ -306,21 +312,20 @@ public class Deck {
         for (CardWithQuantity cardWithQuantity : deck.getCards()) {
             String cardColor = cardWithQuantity.getCard().getColors();
             int quantity = cardWithQuantity.getQuantity();
-            //System.out.println(cardColor);
             if (cardColor== "") {
-                colorDistribution[0] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[0] += quantity;
             } else if (cardColor.equals(redColor)) {
-                colorDistribution[1] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[1] += quantity;
             } else if (cardColor.equals(blueColor)) {
-                colorDistribution[2] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[2] += quantity;
             } else if (cardColor.equals(greenColor)) {
-                colorDistribution[3] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[3] += quantity;
             } else if (cardColor.equals(whiteColor)) {
-                colorDistribution[4] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[4] += quantity; 
             } else if (cardColor.equals(blackColor)) {
-                colorDistribution[5] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[5] += quantity;
             } else  {
-                colorDistribution[6] += quantity;  // Add to the last index for mana costs 8 or more.
+                colorDistribution[6] += quantity;
             }
         }
     }
