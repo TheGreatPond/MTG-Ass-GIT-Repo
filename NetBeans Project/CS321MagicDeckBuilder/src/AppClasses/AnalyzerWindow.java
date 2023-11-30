@@ -90,7 +90,7 @@ public class AnalyzerWindow {
         Button analyzeDeckButton = new Button("Mana Curve");
         analyzeDeckButton.setOnAction(e -> analyzeSelectedDeck(analyzeLayout));
         
-        Button pieChartDeckButton = new Button("PieChart");
+        Button pieChartDeckButton = new Button("Color Chart");
         pieChartDeckButton.setOnAction(e -> pieChartSelectedDeck(analyzeLayout));
 
         Button helpButton = new Button("Help");
